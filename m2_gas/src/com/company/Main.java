@@ -1,13 +1,17 @@
 /*----------------------------------------------------------------------------------------------------------------------
+Author: Brennen Green
+Instructor: Mrs.Tucker
+Class: INF 120
+Date: 08/31/2018
 Program Name: m2_gas
-Description: Used to calculate the total kWH of a household based on user given inputs
+Purpose: Used to calculate the total kWH of a household based on user given inputs
+------------------------------------------------------------------------------------------------------------------------
 INPUTS: numRefrigerators, numDishWasher, numOvens, numMicrowaves, numCoffeeMachines, numComputers, numTV, numWasherDryer
 OTHER VALUES: The program must keep a constant kWH of every application listed above, as well as the average cost of
 kWH which is $0.09047
 OUTPUT: Monthly cost for all the appliances to run
-PROCESSING:
-
-
+PROCESSING: Must multiply amount of each appliance by the average KWH of that appliance, add all of those products up
+and multiply that sum by the average cost per KWH
 ------------------------------------------------------------------------------------------------------------------------
  */
 package com.company;
@@ -26,6 +30,8 @@ public class Main {
         final int COMPUTER_KWH = 21;
         final int TV_KWH = 23;
         final int WASHER_DRYER_KWH = 63;
+        final int CELING_FAN_KWH = 75;
+        final int LAMPS_LIGHT_KWH = 14;
 
         int refrigerators;
         int dishwashers;
@@ -35,6 +41,8 @@ public class Main {
         int computers;
         int tvs;
         int washerDryers;
+        int ceilingFans;
+        int lampsLights;
 
         Scanner scnr = new Scanner(System.in);
 
@@ -55,10 +63,15 @@ public class Main {
         tvs = scnr.nextInt();
         System.out.print("Washer/Dryer: ");
         washerDryers = scnr.nextInt();
+        System.out.print("Celing Fans: ");
+        ceilingFans = scnr.nextInt();
+        System.out.print("Lamps or light fixtures: ");
+        lampsLights = scnr.nextInt();
 
         int totalKwh = (refrigerators * REFRIGERATOR_KWH) + (dishwashers * DISHWASHER_KWH) + (ovens * OVEN_KWH) +
                 (microwaves * MICROWAVE_KWH) + (coffeeMachines * COFFEE_MACHINE_KWH) +
-                (computers * COMPUTER_KWH) + (tvs * TV_KWH) + (washerDryers * WASHER_DRYER_KWH);
+                (computers * COMPUTER_KWH) + (tvs * TV_KWH) + (washerDryers * WASHER_DRYER_KWH) +
+                (ceilingFans * CELING_FAN_KWH) + (lampsLights * LAMPS_LIGHT_KWH);
         double totalCost = totalKwh * COST_PER_KWH;
 
         System.out.println("Total Kilowatts Per Hour " + totalKwh + " Total cost per month: $" + totalCost);
