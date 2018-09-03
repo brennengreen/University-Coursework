@@ -18,7 +18,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Main {
+public class m2Gas {
 
     public static void main(String[] args) {
         final double COST_PER_KWH = 0.09047;
@@ -46,6 +46,10 @@ public class Main {
 
         Scanner scnr = new Scanner(System.in);
 
+        /* Output chunk of the code, all the outputs here involve asking the
+         * user for specific input, which the scanner gathers using nextInt()
+         */
+
         System.out.println("Please input the amount of each appliance you have in your household");
         System.out.print("Refrigerator: ");
         refrigerators = scnr.nextInt();
@@ -68,12 +72,18 @@ public class Main {
         System.out.print("Lamps or light fixtures: ");
         lampsLights = scnr.nextInt();
 
+        /* This big equation is just multiplying all amounts inputted by the
+         * user by the average KWH/month by that appliance.
+         */
         int totalKwh = (refrigerators * REFRIGERATOR_KWH) + (dishwashers * DISHWASHER_KWH) + (ovens * OVEN_KWH) +
                 (microwaves * MICROWAVE_KWH) + (coffeeMachines * COFFEE_MACHINE_KWH) +
                 (computers * COMPUTER_KWH) + (tvs * TV_KWH) + (washerDryers * WASHER_DRYER_KWH) +
                 (ceilingFans * CELING_FAN_KWH) + (lampsLights * LAMPS_LIGHT_KWH);
+
+        // Multiplies the totalKwH by average cost per KWH
         double totalCost = totalKwh * COST_PER_KWH;
 
+        // Pretty prints the totalKwh and estimated cost to user
         System.out.println("Total Kilowatts Per Hour " + totalKwh + " Total cost per month: $" + totalCost);
 
 
