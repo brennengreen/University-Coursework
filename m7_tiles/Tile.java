@@ -4,12 +4,13 @@ Instructor: Mrs.Tucker
 Class: INF 120
 Date: 10/8/2018
 Class Name: Tile
-Purpose: TODO
+Purpose: The tile class is used in the game of
 ------------------------------------------------------------------------------------------------------------------------
 INPUTS: Color provided by driver program, value provided by driver program
 OTHER VALUES:
 OUTPUTS: Tile Color, Tile Value, String Format of class
-PROCESSING: TODO
+PROCESSING: Checks inputs within the tradeTiles() method to ensure proper data
+has been inputted then swaps tile values
 ------------------------------------------------------------------------------------------------------------------------
  */
 public class Tile
@@ -69,5 +70,10 @@ public class Tile
             this.color = color;
             this.value = value;
         }
+    }
+
+    public String toString()
+    {
+      // TODO: Print out all instance data from the Tile class
     }
 }
