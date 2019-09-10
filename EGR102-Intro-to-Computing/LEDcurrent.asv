@@ -1,8 +1,0 @@
-function currentInAmps = LEDcurrent(sourceVoltage, ledVoltageDrop, resistanceOhms)
-%  
-    resistorVoltageDrop = sourceVoltage - ledVoltageDrop;
-    totalCurrent = 
-
-end
-
-
