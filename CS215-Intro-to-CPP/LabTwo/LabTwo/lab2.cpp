@@ -36,8 +36,8 @@ int main() {
 	std::cout << "Enter last name:     ";
 	std::cin >> last_name;
 
-	double hours_worked;
-	double pay_rate; // Could convert pay rate to pennies and use integer, but redundant given the nature of our calculations
+	double hours_worked; // 
+	double pay_rate; // Pay per hour for the hours worked
 	std::cout << "Enter hours worked:  ";
 	std::cin >> hours_worked;
 	std::cout << "Enter pay rate:      ";
@@ -52,7 +52,7 @@ int main() {
 	double state_tax = gross_pay * state_tax_rate;
 	double fed_tax = gross_pay * fed_tax_rate;
 	total_taxes = ss_tax + state_tax + fed_tax;
-	double net_pay = gross_pay - total_taxes;
+	double net_pay = gross_pay - total_taxes; // NetPay is the gross pay after the sum of all taxes are taken out
 
 	// Output the programs results to the user in proper format
 	std::cout << std::endl;
