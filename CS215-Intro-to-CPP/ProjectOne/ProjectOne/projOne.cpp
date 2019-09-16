@@ -12,6 +12,24 @@
 #include "Windows.h"
 #include "Math.h"
 
+bool is_valid_request(std::string request) {
+	/*======================================
+	PARAMS: 
+		std::string request | the current request from the user
+	RETURNS:
+		true if request is valid, false if not
+	=======================================*/
+	char request_letter = tolower(request[0]);
+	if (request_letter == 'c' || request_letter == 'm' || request_letter == 'l' || request_letter == '!')
+		return true;
+	else
+		return false;
+}
+
+void shutdown() {
+	std::cout << "SHUTDOWN\n";
+}
+
 int main() {
 	// =====================NECESSARY CONSTANTS===========================
 	// The maximum and minimum amount of ounces allowed in each cup
@@ -46,9 +64,36 @@ int main() {
 	std::cin >> mocha_tank_level;
 	std::cout << std::endl; // Blank line for spacing
 
-	// ==============================BEVERAGE SELECTION======================
+	// ======================BEVERAGE SELECTION LOOP======================
+	while (true) {
+		std::string current_request;
 
+		std::cout << "PLEASE SELECT YOUR BEVERAGE\n";
+		std::cout << "C. Coffee   $ 0.15 per oz.\n";
+		std::cout << "L. Latte    $ 0.25 per oz.\n";
+		std::cout << "M. Mocha    $ 0.30 per oz.\n";
+		std::cout << "===>";
+		std::cin >> current_request;
+
+		if (current_request[0] == '!') {
+			shutdown();
+			break;
+		}
+
+
+		// If the user did not input a valid request, keep looping until they do
+		while (!is_valid_request(current_request))
+		{
+			std::cout << "Invalid selection! Try again!\n";
+			std::cout << "===>";
+			std::cin >> current_request;
+		}
+
+		
+
+	}
 
 	std::system("pause");
 	return 0;
 }
+
