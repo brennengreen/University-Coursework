@@ -12,3 +12,9 @@ for i=1:20
    pause(.1);
 end
 
+% while (true)
+%     writeDigitalPin(a, "D9", 1)
+%     pause(.5);
+%     writeDigitalPin(a, "D9", 0)
+%     pause(.5);
+% end
