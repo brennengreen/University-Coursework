@@ -80,23 +80,69 @@ int main() {
 		if (mocha_tank_level >= 18) {
 			std::cout << "M. Mocha    $ 0.30 per oz.\n";
 		}
-		std::cout << "===>";
+		std::cout << "===> ";
 		std::cin >> current_request;
-		
 
+		int beverage_tank_level;
+		// Determine which tank to check the levels of
+		switch (tolower(current_request[0])) {
+			case 'c':
+				beverage_tank_level = coffee_tank_level;
+				break;
+			case 'l':
+				beverage_tank_level = latte_tank_level;
+				break;
+			case 'm':
+				beverage_tank_level = mocha_tank_level ;
+				break;
+			case '!':
+				beverage_tank_level = 999999; // The machine will shut down and this selection has no tank
+				break;
+			default:
+				break;
+		}
+		
 		// If the user did not input a valid request, keep looping until they do
-		while (!is_valid_request(current_request))
+		while (!is_valid_request(current_request) || beverage_tank_level < 18)
 		{
 			std::cout << "Invalid selection! Try again!\n";
-			std::cout << "===>";
+			std::cout << "===> ";
 			std::cin >> current_request;
+
+			switch (tolower(current_request[0])) {
+				case 'c':
+					beverage_tank_level = coffee_tank_level;
+					break;
+				case 'l':
+					beverage_tank_level = latte_tank_level;
+					break;
+				case 'm':
+					beverage_tank_level = mocha_tank_level;
+					break;
+				case '!':
+					beverage_tank_level = 999999; // The machine will shut down and this selection has no tank
+					break;
+				default:
+					break;
+			}
 		}
 
-
+		// If the user entered the shutdown command, display shut down message
 		if (current_request[0] == '!') {
 			shutdown();
 		}
+		else { // Complete the remainder of the program
+			int brew_amount = 0;
+			std::cout << "Number of ounces (9-18): ";
+			std::cin >> brew_amount;
+			while (brew_amount < 9 || brew_amount > 18) {
+				std::cout << "Invailid entry!" << std::endl;
+				std::cout << "Number of ounces (9-18): ";
+				std::cin >> brew_amount;
+			}
 
+
+		}
 	}
 
 	std::system("pause");
