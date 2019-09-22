@@ -65,21 +65,24 @@ int main() {
 	std::cout << std::endl; // Blank line for spacing
 
 	// ======================BEVERAGE SELECTION LOOP======================
-	while (true) {
-		std::string current_request;
+	std::string current_request = "";
+	while (current_request[0] != '!') {
 
 		std::cout << "PLEASE SELECT YOUR BEVERAGE\n";
-		std::cout << "C. Coffee   $ 0.15 per oz.\n";
-		std::cout << "L. Latte    $ 0.25 per oz.\n";
-		std::cout << "M. Mocha    $ 0.30 per oz.\n";
+		// Check if each tank has at minimum the maximum amount for a sale,
+		// if a tank doesn't, then don't outpit that option to user
+		if (coffee_tank_level >= 18) {
+			std::cout << "C. Coffee   $ 0.15 per oz.\n";
+		}
+		if (latte_tank_level >= 18) {
+			std::cout << "L. Latte    $ 0.25 per oz.\n";
+		}
+		if (mocha_tank_level >= 18) {
+			std::cout << "M. Mocha    $ 0.30 per oz.\n";
+		}
 		std::cout << "===>";
 		std::cin >> current_request;
-
-		if (current_request[0] == '!') {
-			shutdown();
-			break;
-		}
-
+		
 
 		// If the user did not input a valid request, keep looping until they do
 		while (!is_valid_request(current_request))
@@ -89,7 +92,10 @@ int main() {
 			std::cin >> current_request;
 		}
 
-		
+
+		if (current_request[0] == '!') {
+			shutdown();
+		}
 
 	}
 
