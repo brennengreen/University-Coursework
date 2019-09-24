@@ -223,15 +223,13 @@ int main() {
 			std::cout << "Your Latte is ready! Here is your receipt!" << std::endl;
 			std::cout << "Beverage:       " << beverage_selection << std::endl;
 			std::cout << "Ounces:         " << brew_amount << std::endl;
-			std::cout << "Price per Oz: $ " << cost_of_selection_per_oz << std::endl;
-			std::cout << "Sub Total:    $ " << sub_total << std::endl;
-			std::cout << "Tax:          $ " << tax_total << std::endl;
-			std::cout << "Total:        $ " << total_price << std::endl;
-			std::cout << "Amount Paid   $ " << amount_paid << std::endl;
-			std::cout << "Change:       $ " << change_amount << std::endl;
+			std::cout << "Price per Oz: $ " << std::setprecision(2) << std::fixed << cost_of_selection_per_oz << std::endl;
+			std::cout << "Sub Total:    $ " << std::setprecision(2) << std::fixed << sub_total << std::endl;
+			std::cout << "Tax:          $ " << std::setprecision(2) << std::fixed << tax_total << std::endl;
+			std::cout << "Total:        $ " << std::setprecision(2) << std::fixed << total_price << std::endl;
+			std::cout << "Amount Paid   $ " << std::setprecision(2) << std::fixed << amount_paid << std::endl;
+			std::cout << "Change:       $ " << std::setprecision(2) << std::fixed << change_amount << std::endl;
 			std::system("pause");
-
-			// TODO: Precision on output
 		}
 	}
 
