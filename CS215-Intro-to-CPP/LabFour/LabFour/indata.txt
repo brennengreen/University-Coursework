@@ -1,0 +1,6 @@
+5 10
+Anastasia Apple  88 92  93  77 82  3
+Betty Banana     72 82 100 100 100 0
+Corey Carrot     93 91  95  60 75  0
+Danny Donut      61 58  73  75 77  5
+Eddie Eggplant   93 83 100  90 80  2
