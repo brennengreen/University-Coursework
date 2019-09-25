@@ -14,11 +14,11 @@
 
 using namespace std;
 
-const double NUM_EXAMS = 2.0;
-const double NUM_PROJS = 3.0;
-const double EXAM_WEIGHT = 0.5;
-const double PROJ_WEIGHT = 0.3;
-const double ATTENDANCE_WEIGHT = 0.2;
+const double NUM_EXAMS = 2.0; // The number of exams that will be in the input file
+const double NUM_PROJS = 3.0; // The number of projects that will be in the input file
+const double EXAM_WEIGHT = 0.5; // The weight of which exam grades affect your total grade
+const double PROJ_WEIGHT = 0.3; // The weight of which project grades affect your total grade
+const double ATTENDANCE_WEIGHT = 0.2; // The weight attendance has on your total grade
 
 int main() {
 	std::cout << "---------------------------------" << std::endl;
@@ -28,28 +28,32 @@ int main() {
 
 	string input_file_name;
 	string output_file_name;
+	//======= BEGIN INPUT =======
+	// Take the name of the input and output files from the iostream
 	cout << "Enter input file: ";
 	cin >> input_file_name;
 	cout << "Enter output file: ";
 	cin >> output_file_name;
 
-	ifstream fin(input_file_name, ios::in);
-	ofstream fout(output_file_name, ios::out);
+	ifstream fin(input_file_name, ios::in); // Input file with grades
+	ofstream fout(output_file_name, ios::out); // Output file to print report to
 
-	int num_students;
+	int num_students; // Take the number of students from first line of fin
 	fin >> num_students;
-	double num_class_days;
+	double num_class_days; // Take the number of class days from first line of fin
 	fin >> num_class_days;
 
-	cout << num_students;
-
+	// If the file failed to open then do not complete the program
 	if (!fout.fail()) {
+		//====================== BEGIN OUTPUT =====================
 		fout << "----------------------------------------------\n";
 		fout << "               CLASS GRADES REPORT            \n";
 		fout << "----------------------------------------------\n";
 		fout << "      STUDENT       EXAM  PROJ  ATTN  OVERALL \n";
 		fout << "------------------- ----- ----- ----- ------- \n";
 		int i = 0;
+		// For each student in the input file, parse their information then output
+		// the information to the fout
 		while (i < num_students) {
 			string first_name;
 			string last_name;
@@ -85,9 +89,9 @@ int main() {
 			i++;
 		}
 	}
-	else cout << "Unable to open file";
+	else cout << "Unable to open file"; // If failed to open file, tell user
 
-
+	// Close both files for safe data transfer
 	fin.close();
 	fout.close();
 	std::system("pause");
