@@ -2,8 +2,9 @@
 //							CS215-003 PROJECT ONE																				
 //--------------------------------------------------------------------------
 // Author: Brennen Green
-// Date: 09/12/2019
-// Description:	TODO
+// Date: 09/20/2019
+// Description:	Simulate a coffee shop experience by running a console
+// based machine that tracks coffee sales
 //--------------------------------------------------------------------------
 
 #include <string>
@@ -12,6 +13,7 @@
 #include "Windows.h"
 #include "Math.h"
 
+using namespace std;
 
 // =====================NECESSARY CONSTANTS===========================
 	// The amount of time to wait before brewing
@@ -24,6 +26,8 @@ const double TAX_RATE = 0.06; // Sales tax rate is 6%
 const double COST_COFFEE_PER_OZ = 0.15;
 const double COST_LATTE_PER_OZ = 0.25;
 const double COST_MOCHA_PER_OZ = 0.30;
+// The amount of liquid that can be brewed in one dispense sequence
+const int MAX_DISPENSE_AMOUNT = 3;
 // Beverage Identifiers
 const char COFFEE_IDENTIFIER = 'c';
 const char LATTE_IDENTIFIER = 'l';
@@ -34,11 +38,11 @@ const char SHUTDOWN_IDENTIFIER = '!';
 /*======================================
 			  is_valid_request
 GIVEN:
-	std::string request | the current request from the user
+	string request | the current request from the user
 RETURNS:
 	true if request is valid, false if not
 =======================================*/
-bool is_valid_request(std::string request) {
+bool is_valid_request(string request) {
 	char request_letter = tolower(request[0]);
 	if (request_letter == 'c' || request_letter == 'm' || request_letter == 'l' || request_letter == '!')
 		return true;
@@ -46,60 +50,58 @@ bool is_valid_request(std::string request) {
 		return false;
 }
 
-/*======================================
-			  shutdown
-RETURNS:
-	true if request is valid, false if not
-=======================================*/
-void shutdown() {
-	std::cout << "SHUTDOWN\n";
-}
-
 int main() {
+	// Variables to maintain machine stats
+	int coffee_tank_level, latte_tank_level, mocha_tank_level; // The amount currently in each tank
+	int init_coffee_tank_level, init_latte_tank_level, init_mocha_tank_level; // The amount put in the tank at the beginning
+	
+
 	// ========================PROGRAM STARTUP=============================
 	// Display the authors personal logo and program title
-	std::cout << "---------------------------------" << std::endl;
-	std::cout << "-          CAFE DU MONDE        -" << std::endl;
-	std::cout << "-        By: Brennen Green      -" << std::endl;
-	std::cout << "---------------------------------" << std::endl;
+	cout << "---------------------------------" << endl;
+	cout << "-          CAFE DU MONDE        -" << endl;
+	cout << "-        By: Brennen Green      -" << endl;
+	cout << "---------------------------------" << endl;
 
-	std::cout << std::endl; // Line for spacing
+	cout << endl; // Line for spacing
 	
 	// Start up the machine and ask the technician for fill levels of each beverage tank
-	// Declare necessary variables for each tank
-	int coffee_tank_level, latte_tank_level, mocha_tank_level;
 	// Display prompt to user
-	std::cout << "STARTUP: Enter Tank Levels\n";
-	std::cout << "Coffee tank: ";
-	std::cin >> coffee_tank_level;
-	std::cout << "Latte tank:  ";
-	std::cin >> latte_tank_level;
-	std::cout << "Mocha tank:  ";
-	std::cin >> mocha_tank_level;
-	std::cout << std::endl; // Blank line for spacing
+	cout << "STARTUP: Enter Tank Levels\n";
+	cout << "Coffee tank: ";
+	cin >> init_coffee_tank_level;
+	cout << "Latte tank:  ";
+	cin >> init_latte_tank_level;
+	cout << "Mocha tank:  ";
+	cin >> init_mocha_tank_level;
+	cout << endl; // Blank line for spacing
+
+	coffee_tank_level = init_coffee_tank_level; 
+	latte_tank_level = init_latte_tank_level;
+	mocha_tank_level = init_mocha_tank_level;
 
 	// ======================BEVERAGE SELECTION LOOP======================
-	std::string current_request = "";
+	string current_request = "";
 	while (current_request[0] != SHUTDOWN_IDENTIFIER) {
 
-		std::cout << "PLEASE SELECT YOUR BEVERAGE\n";
+		cout << "PLEASE SELECT YOUR BEVERAGE\n";
 		// Check if each tank has at minimum the maximum amount for a sale,
 		// if a tank doesn't, then don't outpit that option to user
-		if (coffee_tank_level >= 18) {
-			std::cout << "C. Coffee   $ 0.15 per oz.\n";
+		if (coffee_tank_level >= CUP_MAX_OUNCES) {
+			cout << "C. Coffee   $ 0.15 per oz.\n";
 		}
-		if (latte_tank_level >= 18) {
-			std::cout << "L. Latte    $ 0.25 per oz.\n";
+		if (latte_tank_level >= CUP_MAX_OUNCES) {
+			cout << "L. Latte    $ 0.25 per oz.\n";
 		}
-		if (mocha_tank_level >= 18) {
-			std::cout << "M. Mocha    $ 0.30 per oz.\n";
+		if (mocha_tank_level >= CUP_MAX_OUNCES) {
+			cout << "M. Mocha    $ 0.30 per oz.\n";
 		}
-		std::cout << "===> ";
-		std::cin >> current_request;
+		cout << "===> ";
+		cin >> current_request;
 
 		int beverage_tank_level;
 		double cost_of_selection_per_oz;
-		std::string beverage_selection;
+		string beverage_selection;
 		// Determine which tank to check the levels of, set the beverage type, and set the price
 		switch (tolower(current_request[0])) {
 			case COFFEE_IDENTIFIER:
@@ -127,9 +129,9 @@ int main() {
 		// If the user did not input a valid request, keep looping until they do
 		while (!is_valid_request(current_request) || beverage_tank_level < 18)
 		{
-			std::cout << "Invalid selection! Try again!\n";
-			std::cout << "===> ";
-			std::cin >> current_request;
+			cout << "Invalid selection! Try again!\n";
+			cout << "===> ";
+			cin >> current_request;
 
 			// Determine which tank to check the levels of, set the beverage type, and set the price
 			switch (tolower(current_request[0])) {
@@ -159,17 +161,46 @@ int main() {
 		// If the user entered the shutdown command, display shut down message
 		//================== MACHINE PROCESSING / BREWING =================================
 		if (current_request[0] == SHUTDOWN_IDENTIFIER) {
-			shutdown();
+			// ====================== BEGIN SHUTDOWN SEQUENCE =============================
+
+			// Compute the totals for each individual beverage
+			int coffee_sold_oz = init_coffee_tank_level - coffee_tank_level;
+			double coffee_total = coffee_sold_oz * COST_COFFEE_PER_OZ;
+			int latte_sold_oz = init_latte_tank_level - latte_tank_level;
+			double latte_total = latte_sold_oz * COST_LATTE_PER_OZ;
+			int mocha_sold_oz = init_mocha_tank_level - mocha_tank_level;
+			double mocha_total = mocha_sold_oz * COST_MOCHA_PER_OZ;
+			// Compute the totals for the entire machine
+			int ounces_sold = coffee_sold_oz + latte_sold_oz + mocha_sold_oz;
+			double total_sale = coffee_total + latte_total + mocha_total;
+			
+			//=====================FINAL OUTPUT==========================================
+			// Output all totals to user
+			cout << "SHUTDOWN: Totals Sold:" << endl;
+			cout << "BEVERAGE  OUNCES  TOTAL SOLD  LEFT IN TANK" << endl;
+			cout << "--------  ------  ----------  ------------" << endl;
+			// Display coffee totals
+			cout << left << setw(8) << "Coffee" << "  " << right << setw(6) << coffee_sold_oz << "  " <<
+				left << "$" << right << setw(8) << fixed << setprecision(2) << coffee_total << "  " << setw(5) << " " << setw(2) << coffee_tank_level << endl;
+			// Display latte totals																								   
+			cout << left << setw(8) << "Latte" << "  " << right << setw(6) << latte_sold_oz << "  " <<							   
+				left << "$" << right << setw(8) << fixed << setprecision(2) << latte_total << "  " << setw(5) << " " << setw(2) << latte_tank_level << endl;
+			// Display mocha totals																								   
+			cout << left << setw(8) << "Mocha" << "  " << right << setw(6) << mocha_sold_oz << "  " <<							   
+				left << "$" << right << setw(8) << fixed << setprecision(2) << mocha_total << "  " << setw(5) << " " << setw(2) << mocha_tank_level << endl;
+			// TOTAL Values
+			cout << left << setw(8) << "TOTAL" << "  " << right << setw(6) << ounces_sold << "  " <<
+				left << "$" << right << setw(8) << fixed << setprecision(2) << total_sale << endl;
 		}
 		else { // Complete the remainder of the program
 			// Prompt the user for the size of cup to brew
 			int brew_amount = 0;
-			std::cout << "Number of ounces (9-18): ";
-			std::cin >> brew_amount;
-			while (brew_amount < 9 || brew_amount > 18) {
-				std::cout << "Invailid entry!" << std::endl;
-				std::cout << "Number of ounces (9-18): ";
-				std::cin >> brew_amount;
+			cout << "Number of ounces (9-18): ";
+			cin >> brew_amount;
+			while (brew_amount < CUP_MIN_OUNCES || brew_amount > CUP_MAX_OUNCES) {
+				cout << "Invailid entry!" << endl;
+				cout << "Number of ounces (9-18): ";
+				cin >> brew_amount;
 			}
 
 			// =============== PAYMENT ==================
@@ -178,33 +209,33 @@ int main() {
 			double tax_total = round((sub_total * TAX_RATE) * 100) / 100;
 			double total_price = sub_total + tax_total;
 			double amount_paid;
-			std::cout << "Total Price:       $ " << total_price << std::endl;
-			std::cout << "Enter amount paid: $ ";
-			std::cin >> amount_paid;
+			cout << "Total Price:       $ " << total_price << endl;
+			cout << "Enter amount paid: $ ";
+			cin >> amount_paid;
 			while (amount_paid < total_price) { // Ensure the user paid with enough to afford the cup
-				std::cout << "That is not enough! Please try again." << std::endl;
-				std::cout << "Enter amount paid: $ ";
-				std::cin >> amount_paid;
+				cout << "That is not enough! Please try again." << endl;
+				cout << "Enter amount paid: $ ";
+				cin >> amount_paid;
 			}
 			// Display the amount of change the user has received
 			double change_amount = amount_paid - total_price;
-			std::cout << "Your change $ " << change_amount << " falls out of the machine on the floor." << std::endl;
-			std::cout << "Thank you! Your " << beverage_selection << " will now be brewed!" << std::endl;
-			std::cout << std::endl; // New line for spacing 
+			cout << "Your change $ " << change_amount << " falls out of the machine on the floor." << endl;
+			cout << "Thank you! Your " << beverage_selection << " will now be brewed!" << endl;
+			cout << endl; // New line for spacing 
 			Sleep(BREWING_DELAY_MSECONDS);
 			
 			// ========== BEGIN BREWEING ===============
-			std::cout << "A cup drops out of the machine below the " << beverage_selection << " spigot." << std::endl;
+			cout << "A cup drops out of the machine below the " << beverage_selection << " spigot." << endl;
 			int amount_brewed = 0;
 			while (amount_brewed < brew_amount) {
-				if (brew_amount - amount_brewed >= 3)
-					amount_brewed = amount_brewed + 3;
+				if (brew_amount - amount_brewed >= MAX_DISPENSE_AMOUNT)
+					amount_brewed = amount_brewed + MAX_DISPENSE_AMOUNT;
 				else
 					amount_brewed = amount_brewed + (brew_amount - amount_brewed); // Adds the remainder of what's left to brew if less than 3
-				std::cout << std::setw(2) << amount_brewed << " ounces dispensed..." << std::endl;
+				cout << setw(2) << amount_brewed << " ounces dispensed..." << endl;
 				Sleep(BREWING_DELAY_MSECONDS);
 			}
-			std::cout << std::endl; // Spacing
+			cout << endl; // Spacing
 			// Remove the amount brewed from the correct tank
 			switch (tolower(current_request[0])) {
 				case 'c':
@@ -220,20 +251,20 @@ int main() {
 					break;
 			}
 			// =============== DISPLAY RECEIPT =================
-			std::cout << "Your Latte is ready! Here is your receipt!" << std::endl;
-			std::cout << "Beverage:       " << beverage_selection << std::endl;
-			std::cout << "Ounces:         " << brew_amount << std::endl;
-			std::cout << "Price per Oz: $ " << std::setprecision(2) << std::fixed << cost_of_selection_per_oz << std::endl;
-			std::cout << "Sub Total:    $ " << std::setprecision(2) << std::fixed << sub_total << std::endl;
-			std::cout << "Tax:          $ " << std::setprecision(2) << std::fixed << tax_total << std::endl;
-			std::cout << "Total:        $ " << std::setprecision(2) << std::fixed << total_price << std::endl;
-			std::cout << "Amount Paid   $ " << std::setprecision(2) << std::fixed << amount_paid << std::endl;
-			std::cout << "Change:       $ " << std::setprecision(2) << std::fixed << change_amount << std::endl;
-			std::system("pause");
+			cout << "Your Latte is ready! Here is your receipt!" << endl;
+			cout << "Beverage:       " << beverage_selection << endl;
+			cout << "Ounces:         " << brew_amount << endl;
+			cout << "Price per Oz: $ " << setprecision(2) << fixed << cost_of_selection_per_oz << endl;
+			cout << "Sub Total:    $ " << setprecision(2) << fixed << sub_total << endl;
+			cout << "Tax:          $ " << setprecision(2) << fixed << tax_total << endl;
+			cout << "Total:        $ " << setprecision(2) << fixed << total_price << endl;
+			cout << "Amount Paid   $ " << setprecision(2) << fixed << amount_paid << endl;
+			cout << "Change:       $ " << setprecision(2) << fixed << change_amount << endl;
+			system("pause");
 		}
-	}
+	} // Exits loop if user signaled shutdown
 
-	std::system("pause");
+	system("pause");
 	return 0;
 }
 
