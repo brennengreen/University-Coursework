@@ -3,8 +3,8 @@
 //--------------------------------------------------------------------------
 // Author: Brennen Green
 // Date: 09/17/2019
-// Description: A C++ Program that displays a box of selected size to the user
-// filled with characters of a selected type
+// Description:A program that takes in a file given at runtime and generates
+// a grade report based on that file
 //--------------------------------------------------------------------------
 
 #include <iostream>
@@ -32,11 +32,19 @@ int main() {
 	// Take the name of the input and output files from the iostream
 	cout << "Enter input file: ";
 	cin >> input_file_name;
+	ifstream fin(input_file_name, ios::in); // Input file with grades
+	if (fin.fail()) {
+		cout << "Unable to open file: " << input_file_name << endl;
+		system("pause");
+		return 0;
+	}
 	cout << "Enter output file: ";
 	cin >> output_file_name;
-
-	ifstream fin(input_file_name, ios::in); // Input file with grades
 	ofstream fout(output_file_name, ios::out); // Output file to print report to
+
+
+
+
 
 	int num_students; // Take the number of students from first line of fin
 	fin >> num_students;
@@ -88,12 +96,15 @@ int main() {
 			fout << setprecision(1) << std::fixed << setw(5) << weighted_avg << "\n";
 			i++;
 		}
+		fout << "----------------------------------------------\n";
+		cout << "File written to: " << output_file_name << endl;
 	}
 	else cout << "Unable to open file"; // If failed to open file, tell user
 
+	
 	// Close both files for safe data transfer
 	fin.close();
 	fout.close();
-	std::system("pause");
+	system("pause");
 	return 0;
 }
