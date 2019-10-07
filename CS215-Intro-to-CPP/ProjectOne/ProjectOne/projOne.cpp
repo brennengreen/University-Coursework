@@ -5,6 +5,7 @@
 // Date: 09/20/2019
 // Description:	Simulate a coffee shop experience by running a console
 // based machine that tracks coffee sales
+// Assistance: I received help from no one.
 //--------------------------------------------------------------------------
 
 #include <string>
