@@ -3,8 +3,7 @@
 //--------------------------------------------------------------------------
 // Author: Brennen Green
 // Date: 10/8/2019
-// Description:A program that takes in a file given at runtime and generates
-// a grade report based on that file
+// Description: A program that keeps track of a list of friends
 //--------------------------------------------------------------------------
 
 #include <iostream>
@@ -30,7 +29,7 @@ void display_friends(AFriend friends[], int num_friends) {
 	cout << "--- --------------- ------------ --------------------" << endl;
 	for (int i = 0; i < num_friends; ++i) {
 		AFriend& curr_frnd = friends[i];
-		cout << setw(3) << right << i + 1 << " " << setw(15) << left << curr_frnd.name << " " << setw(12) << curr_frnd.phone << " " << setw(20) << left << curr_frnd.email << endl;
+		cout << setw(3) << right << i << " " << setw(15) << left << curr_frnd.name << " " << setw(12) << curr_frnd.phone << " " << setw(20) << left << curr_frnd.email << endl;
 	}
 	cout << endl;
 	cout << "-----------------------------------------------------" << endl;
@@ -49,7 +48,21 @@ AFriend add() {
 }
 
 void edit(AFriend friends[], int num_friends) {
-
+	int user_option = -999;
+	while (user_option < 0 || user_option > num_friends) {
+		cout << "Enter # of friend to edit (0-" << num_friends << "): ";
+		cin >> user_option;
+		if (user_option < 0 || user_option > num_friends) {
+			cout << "Invalid option! Try again." << endl;
+		}
+	}
+	AFriend& chosen_friend = friends[user_option];
+	cout << "Name: ";
+	cin >> chosen_friend.name;
+	cout << "Email: ";
+	cin >> chosen_friend.email;
+	cout << "Phone: ";
+	cin >> chosen_friend.phone;
 }
 
 int main() {
@@ -92,8 +105,14 @@ int main() {
 				std::system("pause");
 				return 0;
 			case 'a':
-				num_friends++;
-				friends[num_friends] = add();
+				if (num_friends < 5) {
+					friends[num_friends] = add();
+					num_friends++;
+				}
+				else {
+					cout << "No more room!" << endl;
+				}
+
 				break;
 			case 'e':
 				edit(friends, num_friends);
@@ -101,6 +120,8 @@ int main() {
 			default:
 				break;
 		}
+
+		user_option = "";
 	}
 
 	
