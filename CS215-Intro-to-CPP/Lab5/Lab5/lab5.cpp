@@ -57,11 +57,14 @@ void edit(AFriend friends[], int num_friends) {
 		}
 	}
 	AFriend& chosen_friend = friends[user_option];
-	cout << "Name: ";
+	cout << "Name: " << chosen_friend.name << endl;
+	cout << "New Name: ";
 	cin >> chosen_friend.name;
-	cout << "Email: ";
+	cout << "Email: " << chosen_friend.email << endl;
+	cout << "New Email: ";
 	cin >> chosen_friend.email;
-	cout << "Phone: ";
+	cout << "Phone: " << chosen_friend.phone << endl;
+	cout << "New Phone: ";
 	cin >> chosen_friend.phone;
 }
 
