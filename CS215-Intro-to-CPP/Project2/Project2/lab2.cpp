@@ -19,6 +19,12 @@ using namespace std;
 const int MAX_ORDER_ITEMS = 5;
 const int READ_ERROR = -1;
 const int MAX_INV_ITEMS = 10;
+const int NUM_OPTIONS = 4;
+const string VALID_OPTIONS = "IOLX";
+const char INV_CHAR = 'I';
+const char ORDER_CHAR = 'O';
+const char LIST_CHAR = 'L';
+const char EXIT_CHAR = 'X';
 
 
 struct item {
@@ -65,12 +71,43 @@ void readInventory(item inv[], int & numberOfInvItems, int & lastOrderNum) {
 	f.close();
 } // readInventory()
 
-bool isValidOption(char option, string, string validOptions) {
-
+bool isValidOption(char option, string validOptions) {
+	for (int i = 0; i < NUM_OPTIONS; ++i) {
+		if (option == validOptions[i]) {
+			return true;
+		}
+	}
+	return false;
 }
 
-string getMainOptions() {
-	return "IOLX";
+//----------------------------------------------------------------------------
+//                                  getMainOption
+//----------------------------------------------------------------------------
+// Returns: the main menu option (a char: ’I’, ’O’, ’L’, or ’X’)
+//----------------------------------------------------------------------------
+char getMainOption() {
+	string userOption;
+	char optionChar = '!'; // sentinel value
+	
+	cout << "---------------------------------" << endl;
+	cout << "-          AMAZON.COM           -" << endl;
+	cout << "-        By: Brennen Green      -" << endl;
+	cout << "---------------------------------" << endl;
+	cout << "I - List our Inventory" << endl;
+	cout << "O - Make an order" << endl;
+	cout << "L - List all Orders made" << endl;
+	cout << "X - Exit" << endl;
+
+	while (!isValidOption(optionChar, VALID_OPTIONS)) {
+		cout << "Enter an option: ";
+		cin >> userOption;
+		optionChar = toupper(userOption[0]);
+		if (!isValidOption(optionChar, VALID_OPTIONS)) {
+			cout << "Invalid option, enter I, O, L or X!\n";
+		}
+	}
+	
+	return toupper(userOption[0]);
 }
 
 void displayList(item inventory[]) {
@@ -78,7 +115,12 @@ void displayList(item inventory[]) {
 }
 
 void displayInventory(item inventory[]) {
-	// Display inventory
+	cout << "+-------------------------------------------------------------------+" << endl;
+	cout << "|                             PRODUCTS                              |" << endl;
+	cout << "+-------------------------------------------------------------------+" << endl;
+	cout << " #   PRODUCT CODE   PRICE   PRODUCT DESCRIPTION                      " << endl;
+	cout << "---  ------------  -------  -----------------------------------------" << endl;
+	displayList(inventory);
 }
 
 void displayOrder(order order[]) {
@@ -90,7 +132,7 @@ void startOrder() {
 }
 
 bool orderItem() {
-
+	return true;
 }
 
 void makeOrder(item inventory[]) {
@@ -106,8 +148,28 @@ void writeOrders(order orders[]) {
 }
 
 int main() {
-	cout 
+	item inventory[MAX_INV_ITEMS];
+	order orders[MAX_ORDER_ITEMS];
+	int lastOrderNum = 0;
+	int numInvItems = 0;
 
+	readInventory(inventory, numInvItems, numInvItems);
+	char userChoice = getMainOption();
 
+	switch (userChoice) {
+		case INV_CHAR:
+			displayInventory(inventory);
+			break;
+		case ORDER_CHAR:
+			break;
+		case LIST_CHAR:
+			break;
+		case EXIT_CHAR:
+			break;
+		default:
+			break;
+	}
+
+	system("pause");
 	return 0;
 }
