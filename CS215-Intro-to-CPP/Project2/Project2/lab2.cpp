@@ -4,12 +4,12 @@
 //--------------------------------------------------------------------------
 // Author: Brennen Green
 // Date: 10/07/2019
-// Description:	Simulate a coffee shop experience by running a console
-// based machine that tracks coffee sales
+// Description:	An amazon-like sales point system tht tracks inventory
 // Assistance: I received help from no one.
 //--------------------------------------------------------------------------
 
 #include <iostream>
+#include <iomanip>
 #include <string>
 #include <fstream>
 
@@ -35,10 +35,10 @@ struct item {
 
 struct order {
 	long orderNumber; // unique order number for this order
-	string custName;
-	double totalPrice;
-	item items[MAX_ORDER_ITEMS];
-	int numItems;
+	string custName; // The identifier for the customer who made the order
+	double totalPrice; // The total price of the order
+	item items[MAX_ORDER_ITEMS]; // An array of the items in the order
+	int numItems; // the number of items in the order
 };
 
 //----------------------------------------------------------------------------
@@ -71,6 +71,13 @@ void readInventory(item inv[], int & numberOfInvItems, int & lastOrderNum) {
 	f.close();
 } // readInventory()
 
+//----------------------------------------------------------------------------
+//                                  isValidOption
+//----------------------------------------------------------------------------
+// Given: An option char, a string of valid options
+// Returns: true or false
+// Validates input based on a set of valid characters
+//----------------------------------------------------------------------------
 bool isValidOption(char option, string validOptions) {
 	for (int i = 0; i < NUM_OPTIONS; ++i) {
 		if (option == validOptions[i]) {
@@ -84,6 +91,8 @@ bool isValidOption(char option, string validOptions) {
 //                                  getMainOption
 //----------------------------------------------------------------------------
 // Returns: the main menu option (a char: ’I’, ’O’, ’L’, or ’X’)
+// Outputs a main menu to the user and passes the valid character chosen
+// along to the program
 //----------------------------------------------------------------------------
 char getMainOption() {
 	string userOption;
@@ -110,21 +119,48 @@ char getMainOption() {
 	return toupper(userOption[0]);
 }
 
-void displayList(item inventory[]) {
+//----------------------------------------------------------------------------
+//                                  displayList
+//----------------------------------------------------------------------------
+// Given: An inventory (could be a basket or inventory), and the size of
+// the array given
+// Outputs the items in an inventory to the user 
+//----------------------------------------------------------------------------
+void displayList(item inventory[], int sizeInventory) {
 	// Display inventory
+	for (int i = 0; i < sizeInventory; ++i) {
+		item currItem = inventory[i];
+		cout << right << setw(3) << i << "  " << setw(12) << currItem.prodCode << "  $" << right << setw(6) << fixed << setprecision(2) << currItem.price << "  " << left << currItem.description << endl;
+	}
 }
 
-void displayInventory(item inventory[]) {
+//----------------------------------------------------------------------------
+//                                  displayInventory
+//----------------------------------------------------------------------------
+// Returns:An inventory (could be a basket or inventory), and the size of
+// the array given
+// Displays the products header menu then invokes displayList w/ an inventory
+//----------------------------------------------------------------------------
+void displayInventory(item inventory[], int inventorySize) {
 	cout << "+-------------------------------------------------------------------+" << endl;
 	cout << "|                             PRODUCTS                              |" << endl;
 	cout << "+-------------------------------------------------------------------+" << endl;
 	cout << " #   PRODUCT CODE   PRICE   PRODUCT DESCRIPTION                      " << endl;
 	cout << "---  ------------  -------  -----------------------------------------" << endl;
-	displayList(inventory);
+	displayList(inventory, inventorySize);
+	cout << "Number of items in inventory: " << inventorySize << endl;
 }
-
-void displayOrder(order order[]) {
-
+//----------------------------------------------------------------------------
+//                                  displayOrder
+//----------------------------------------------------------------------------
+// Given: A single order
+// Displays the order header and important information and invokes displayList
+// with the basket from the given order
+//----------------------------------------------------------------------------
+void displayOrder(order thisOrder) {
+	cout << "ORDER: " << thisOrder.orderNumber << "   " << thisOrder.custName << endl;
+	displayList(thisOrder.items, thisOrder.numItems);
+	cout << "Total              $" << setw(6) << right << thisOrder.totalPrice;
 }
 
 void startOrder() {
@@ -153,12 +189,12 @@ int main() {
 	int lastOrderNum = 0;
 	int numInvItems = 0;
 
-	readInventory(inventory, numInvItems, numInvItems);
+	readInventory(inventory, numInvItems, lastOrderNum);
 	char userChoice = getMainOption();
 
 	switch (userChoice) {
 		case INV_CHAR:
-			displayInventory(inventory);
+			displayInventory(inventory, numInvItems);
 			break;
 		case ORDER_CHAR:
 			break;
