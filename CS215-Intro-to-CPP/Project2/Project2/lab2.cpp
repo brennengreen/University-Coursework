@@ -25,6 +25,7 @@ const char INV_CHAR = 'I';
 const char ORDER_CHAR = 'O';
 const char LIST_CHAR = 'L';
 const char EXIT_CHAR = 'X';
+const int END_ORDER_IDENTIFIER = -1;
 
 
 struct item {
@@ -117,7 +118,7 @@ char getMainOption() {
 	}
 	
 	return toupper(userOption[0]);
-}
+} // getMainOption()
 
 //----------------------------------------------------------------------------
 //                                  displayList
@@ -163,15 +164,38 @@ void displayOrder(order thisOrder) {
 	cout << "Total              $" << setw(6) << right << thisOrder.totalPrice;
 }
 
+//----------------------------------------------------------------------------
+//                                  startOrder
+//----------------------------------------------------------------------------
+// Modifies: Orders(baskets), lastOrderNumber
+// TODO
+//----------------------------------------------------------------------------
 void startOrder() {
+
+
 
 }
 
-bool orderItem() {
+//----------------------------------------------------------------------------
+//                                  orderItem
+//----------------------------------------------------------------------------
+// Given: A partial inventory array
+// Modifies: A single basket
+// Returns: true or false
+// Handles ordering a single item in a basket
+//----------------------------------------------------------------------------
+bool orderItem(item inventory) {
 	return true;
 }
 
-void makeOrder(item inventory[]) {
+//----------------------------------------------------------------------------
+//                                  makeOrder
+//----------------------------------------------------------------------------
+// Given: Inventory partial array
+// Modifies: Orders Partial Array, lastOrderNumber
+// TODO
+//----------------------------------------------------------------------------
+void makeOrder(item inventory[], int& lastOrderNum) {
 
 }
 
@@ -197,10 +221,12 @@ int main() {
 			displayInventory(inventory, numInvItems);
 			break;
 		case ORDER_CHAR:
+			makeOrder(inventory, lastOrderNum);
 			break;
 		case LIST_CHAR:
 			break;
 		case EXIT_CHAR:
+			writeOrders(orders);
 			break;
 		default:
 			break;
