@@ -123,7 +123,7 @@ char getMainOption() {
 //----------------------------------------------------------------------------
 //                                  displayList
 //----------------------------------------------------------------------------
-// Given: An inventory (could be a basket or inventory), and the size of
+// Given: An partial inventory array (could be a basket or inventory), and the size of
 // the array given
 // Outputs the items in an inventory to the user 
 //----------------------------------------------------------------------------
@@ -167,10 +167,10 @@ void displayOrder(order thisOrder) {
 //----------------------------------------------------------------------------
 //                                  startOrder
 //----------------------------------------------------------------------------
-// Modifies: Orders(baskets), lastOrderNumber
+// Modifies: partial array of Orders(baskets), lastOrderNumber
 // TODO
 //----------------------------------------------------------------------------
-void startOrder() {
+void startOrder(order orders, int& lastOrderNum) {
 
 
 
@@ -184,7 +184,7 @@ void startOrder() {
 // Returns: true or false
 // Handles ordering a single item in a basket
 //----------------------------------------------------------------------------
-bool orderItem(item inventory) {
+bool orderItem(item inventory[], order thisOrder) {
 	return true;
 }
 
@@ -195,18 +195,36 @@ bool orderItem(item inventory) {
 // Modifies: Orders Partial Array, lastOrderNumber
 // TODO
 //----------------------------------------------------------------------------
-void makeOrder(item inventory[], int& lastOrderNum) {
+void makeOrder(item inventory[], order orders[], int numOrders, int numItems, int& lastOrderNum) {
+
+}
+//----------------------------------------------------------------------------
+//                                  makeOrder
+//----------------------------------------------------------------------------
+// Given: Inventory partial array
+// Modifies: Orders Partial Array, lastOrderNumber
+// TODO
+//----------------------------------------------------------------------------
+void listOrders(order orders[], int numOrders) {
+
+}
+//----------------------------------------------------------------------------
+//                                  makeOrder
+//----------------------------------------------------------------------------
+// Given: Inventory partial array
+// Modifies: Orders Partial Array, lastOrderNumber
+// TODO
+//----------------------------------------------------------------------------
+void writeOrders(order orders[], int numOrders) {
 
 }
 
-void listOrders(order orders[]) {
 
-}
-
-void writeOrders(order orders[]) {
-
-}
-
+//----------------------------------------------------------------------------
+//                                  main
+//----------------------------------------------------------------------------
+// TODO
+//----------------------------------------------------------------------------
 int main() {
 	item inventory[MAX_INV_ITEMS];
 	order orders[MAX_ORDER_ITEMS];
