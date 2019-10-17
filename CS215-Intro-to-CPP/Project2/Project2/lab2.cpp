@@ -17,6 +17,7 @@ using namespace std;
 
 // CONSTANTS //
 const int MAX_ORDER_ITEMS = 5;
+const int MAX_NUM_ORDERS = 5;
 const int READ_ERROR = -1;
 const int MAX_INV_ITEMS = 10;
 const int NUM_OPTIONS = 4;
@@ -170,10 +171,15 @@ void displayOrder(order thisOrder) {
 // Modifies: partial array of Orders(baskets), lastOrderNumber
 // TODO
 //----------------------------------------------------------------------------
-void startOrder(order orders, int& lastOrderNum) {
-
-
-
+void startOrder(order orders[], int& numOrders, int& lastOrderNum) {
+	order newOrder;
+	newOrder.orderNumber = ++lastOrderNum;
+	newOrder.numItems = 0;
+	newOrder.totalPrice = 0;
+	cout << "Order Number:        " << newOrder.orderNumber << endl;
+	cout << "Enter customer name: ";
+	cin >> newOrder.custName;
+	orders[++numOrders] = newOrder;
 }
 
 //----------------------------------------------------------------------------
@@ -184,8 +190,37 @@ void startOrder(order orders, int& lastOrderNum) {
 // Returns: true or false
 // Handles ordering a single item in a basket
 //----------------------------------------------------------------------------
-bool orderItem(item inventory[], order thisOrder) {
-	return true;
+bool orderItem(item inventory[], int numItems, order orders[], int numOrders) {
+	order& thisOrder = orders[numOrders];
+
+	int userResponse = -999;
+	while (userResponse < -1 && userResponse > numItems) {
+		cout << "Enter an item number: ";
+		cin >> userResponse;
+		if (userResponse < -1 && userResponse > numItems) {
+			cout << "Invailid entry. Enter number -1 to " << numItems << endl;
+		}
+	}
+	if (userResponse == END_ORDER_IDENTIFIER) {
+		return true;
+	}
+	if (thisOrder.numItems >= MAX_ORDER_ITEMS) {
+		cout << "Sorry, the max number of items per order is " << MAX_ORDER_ITEMS << endl;
+		return true;
+	}
+	item chosenItem = inventory[userResponse];
+	item newItem;
+	newItem.description = chosenItem.description;
+	newItem.prodCode = chosenItem.prodCode;
+	newItem.price = chosenItem.price;
+
+	thisOrder.items[thisOrder.numItems] = newItem;
+	thisOrder.numItems++;
+	thisOrder.totalPrice = thisOrder.totalPrice + newItem.price;
+
+	cout << newItem.description << " added to your basket. " << "Current total is $" << thisOrder.totalPrice << endl;
+
+	return false;
 }
 
 //----------------------------------------------------------------------------
@@ -195,8 +230,18 @@ bool orderItem(item inventory[], order thisOrder) {
 // Modifies: Orders Partial Array, lastOrderNumber
 // TODO
 //----------------------------------------------------------------------------
-void makeOrder(item inventory[], order orders[], int numOrders, int numItems, int& lastOrderNum) {
-
+void makeOrder(item inventory[], order orders[], int& numOrders, int numItems, int& lastOrderNum) {
+	if (numOrders >= MAX_NUM_ORDERS) {
+		cout << "Sorry, we can nt take more orders today." << endl;
+	}
+	else {
+		startOrder(orders, numOrders, lastOrderNum);
+		displayInventory(inventory, numItems);
+		bool identifier = false;
+		while (!identifier) {
+			identifier = orderItem(inventory, numItems, orders, numOrders);
+		}
+	}
 }
 //----------------------------------------------------------------------------
 //                                  makeOrder
@@ -230,6 +275,7 @@ int main() {
 	order orders[MAX_ORDER_ITEMS];
 	int lastOrderNum = 0;
 	int numInvItems = 0;
+	int numOrders = 0;
 
 	readInventory(inventory, numInvItems, lastOrderNum);
 	char userChoice = getMainOption();
@@ -239,12 +285,12 @@ int main() {
 			displayInventory(inventory, numInvItems);
 			break;
 		case ORDER_CHAR:
-			makeOrder(inventory, lastOrderNum);
+			makeOrder(inventory, orders, numOrders, numInvItems, lastOrderNum);
 			break;
 		case LIST_CHAR:
 			break;
 		case EXIT_CHAR:
-			writeOrders(orders);
+			writeOrders(orders, numOrders);
 			break;
 		default:
 			break;
