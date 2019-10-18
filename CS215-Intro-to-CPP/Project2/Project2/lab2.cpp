@@ -162,7 +162,8 @@ void displayInventory(item inventory[], int inventorySize) {
 void displayOrder(order thisOrder) {
 	cout << "ORDER: " << thisOrder.orderNumber << "   " << thisOrder.custName << endl;
 	displayList(thisOrder.items, thisOrder.numItems);
-	cout << "Total              $" << setw(6) << right << thisOrder.totalPrice;
+	cout << "Total              $" << setw(6) << right << thisOrder.totalPrice << endl;
+	cout << endl;
 }
 
 //----------------------------------------------------------------------------
@@ -179,8 +180,10 @@ void startOrder(order orders[], int& numOrders, int& lastOrderNum) {
 	newOrder.totalPrice = 0;
 	cout << "Order Number:        " << newOrder.orderNumber << endl;
 	cout << "Enter customer name: ";
-	cin >> newOrder.custName;
-	orders[++numOrders] = newOrder;
+	cin.ignore();
+	getline(cin, newOrder.custName);
+	orders[numOrders] = newOrder;
+	numOrders++;
 }
 
 //----------------------------------------------------------------------------
@@ -192,13 +195,13 @@ void startOrder(order orders[], int& numOrders, int& lastOrderNum) {
 // Handles ordering a single item in a basket
 //----------------------------------------------------------------------------
 bool orderItem(item inventory[], int numItems, order orders[], int numOrders) {
-	order& thisOrder = orders[numOrders];
+	order& thisOrder = orders[numOrders-1];
 
 	int userResponse = -999;
-	while (userResponse < -1 && userResponse > numItems) {
+	while (userResponse < -1 || userResponse >= numItems) {
 		cout << "Enter an item number: ";
 		cin >> userResponse;
-		if (userResponse < -1 && userResponse > numItems) {
+		if (userResponse < -1 || userResponse >= numItems) {
 			cout << "Invailid entry. Enter number -1 to " << numItems << endl;
 		}
 	}
@@ -209,6 +212,7 @@ bool orderItem(item inventory[], int numItems, order orders[], int numOrders) {
 		cout << "Sorry, the max number of items per order is " << MAX_ORDER_ITEMS << endl;
 		return true;
 	}
+	cout << userResponse;
 	item chosenItem = inventory[userResponse];
 	item newItem;
 	newItem.description = chosenItem.description;
@@ -233,17 +237,21 @@ bool orderItem(item inventory[], int numItems, order orders[], int numOrders) {
 // orders array
 //----------------------------------------------------------------------------
 void makeOrder(item inventory[], order orders[], int& numOrders, int numItems, int& lastOrderNum) {
-	if (numOrders >= MAX_NUM_ORDERS) {
-		cout << "Sorry, we can nt take more orders today." << endl;
+	if (numOrders == MAX_NUM_ORDERS) {
+		cout << "Sorry, we can't take more orders today." << endl;
 	}
 	else {
+		order& thisOrder = orders[numOrders];
 		startOrder(orders, numOrders, lastOrderNum);
 		displayInventory(inventory, numItems);
 		bool identifier = false;
 		while (!identifier) {
 			identifier = orderItem(inventory, numItems, orders, numOrders);
 		}
+		cout << "Thank you for your order!" << endl;
+		displayOrder(thisOrder);
 	}
+	system("pause");
 }
 //----------------------------------------------------------------------------
 //                                  listOrders
@@ -253,7 +261,14 @@ void makeOrder(item inventory[], order orders[], int& numOrders, int numItems, i
 // partial array
 //----------------------------------------------------------------------------
 void listOrders(order orders[], int numOrders) {
-
+	cout << "+--------------------------------------------------------------+\n";
+	cout << "-                            ORDERS                            -\n";
+	cout << "+--------------------------------------------------------------+\n";
+	for (int i = 0; i < numOrders; ++i) {
+		displayOrder(orders[i]);
+	}
+	cout << "Total Number of Orders = " << numOrders << endl;
+	cout << endl;
 }
 //----------------------------------------------------------------------------
 //                                  writeOrders
@@ -277,28 +292,34 @@ void writeOrders(order orders[], int numOrders) {
 //----------------------------------------------------------------------------
 int main() {
 	item inventory[MAX_INV_ITEMS];
-	order orders[MAX_ORDER_ITEMS];
+	order orders[MAX_NUM_ORDERS];
 	int lastOrderNum = 0;
 	int numInvItems = 0;
 	int numOrders = 0;
+	int isExiting = 0; // 1 to signal program to exit
 
 	readInventory(inventory, numInvItems, lastOrderNum);
-	char userChoice = getMainOption();
-
-	switch (userChoice) {
-		case INV_CHAR:
-			displayInventory(inventory, numInvItems);
-			break;
-		case ORDER_CHAR:
-			makeOrder(inventory, orders, numOrders, numInvItems, lastOrderNum);
-			break;
-		case LIST_CHAR:
-			break;
-		case EXIT_CHAR:
-			writeOrders(orders, numOrders);
-			break;
-		default:
-			break;
+	char userChoice;
+	while (isExiting != 1) {
+		userChoice = getMainOption();
+		cout << endl;
+		switch (userChoice) {
+			case INV_CHAR:
+				displayInventory(inventory, numInvItems);
+				break;
+			case ORDER_CHAR:
+				makeOrder(inventory, orders, numOrders, numInvItems, lastOrderNum);
+				break;
+			case LIST_CHAR:
+				listOrders(orders, numOrders);
+				break;
+			case EXIT_CHAR:
+				writeOrders(orders, numOrders);
+				isExiting = 1;
+				break;
+			default:
+				break;
+		}
 	}
 
 	system("pause");
