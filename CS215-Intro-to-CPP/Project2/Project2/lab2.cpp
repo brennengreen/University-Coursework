@@ -169,7 +169,8 @@ void displayOrder(order thisOrder) {
 //                                  startOrder
 //----------------------------------------------------------------------------
 // Modifies: partial array of Orders(baskets), lastOrderNumber
-// TODO
+// Initializes the basket for the next available order and gathers the 
+// users name for the order
 //----------------------------------------------------------------------------
 void startOrder(order orders[], int& numOrders, int& lastOrderNum) {
 	order newOrder;
@@ -227,8 +228,9 @@ bool orderItem(item inventory[], int numItems, order orders[], int numOrders) {
 //                                  makeOrder
 //----------------------------------------------------------------------------
 // Given: Inventory partial array
-// Modifies: Orders Partial Array, lastOrderNumber
-// TODO
+// Controls the main processing flow of the make order functionallity of the 
+// program, gets information from the user then appends a new order to the
+// orders array
 //----------------------------------------------------------------------------
 void makeOrder(item inventory[], order orders[], int& numOrders, int numItems, int& lastOrderNum) {
 	if (numOrders >= MAX_NUM_ORDERS) {
@@ -244,21 +246,21 @@ void makeOrder(item inventory[], order orders[], int& numOrders, int numItems, i
 	}
 }
 //----------------------------------------------------------------------------
-//                                  makeOrder
+//                                  listOrders
 //----------------------------------------------------------------------------
 // Given: Inventory partial array
-// Modifies: Orders Partial Array, lastOrderNumber
-// TODO
+// Prints the orders logo and invokes displayOrder for every order in the
+// partial array
 //----------------------------------------------------------------------------
 void listOrders(order orders[], int numOrders) {
 
 }
 //----------------------------------------------------------------------------
-//                                  makeOrder
+//                                  writeOrders
 //----------------------------------------------------------------------------
 // Given: Inventory partial array
-// Modifies: Orders Partial Array, lastOrderNumber
-// TODO
+// Opens the orders.txt file for writing, ensures the file opened properly,
+// then writes the current orders to the file
 //----------------------------------------------------------------------------
 void writeOrders(order orders[], int numOrders) {
 
@@ -268,7 +270,10 @@ void writeOrders(order orders[], int numOrders) {
 //----------------------------------------------------------------------------
 //                                  main
 //----------------------------------------------------------------------------
-// TODO
+// Returns: 0
+// Main is used to declare the inventory and orders partial array and as well
+// used to control the main processing flow of the program invoke several
+// important function calls
 //----------------------------------------------------------------------------
 int main() {
 	item inventory[MAX_INV_ITEMS];
