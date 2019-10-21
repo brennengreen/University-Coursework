@@ -10,7 +10,7 @@ disp("-          BRENNEN GREEN          -")
 disp("+---------------------------------+")
 
 numToReview = input("How many elements do you want to review: ");
-reviewedElements = [];
+reviewedElements = zeros(numToReview);
 numCorrectSymbols = 0;
 numCorrectNumbers = 0;
 for i = 1:numToReview
@@ -38,24 +38,16 @@ for i = 1:numToReview
     end
     pause(0.5);
 end
-reviewedElements = reviewedElements';
 
 if (numToReview <= 0)
    disp("No elements were reviewed"); 
 else
-    fprintf("//-------------------------------------------\\\\ \n")
-    fprintf("|| SESSION REVIEW                            || \n")
-    fprintf("||-------------------------------------------|| \n")
-    fprintf("|| Number of Elements Reviewed:   %d         || \n", numToReview)
-    fprintf("|| Correct Element Symbols:       %d (%4.1f%%) || \n", numCorrectSymbols, (numCorrectSymbols/numToReview)*100)
-    fprintf("|| Correct Atomic Numbers:        %d (%4.1f%%) || \n", numCorrectNumbers, (numCorrectNumbers/numToReview)*100)
-    fprintf("||-------------------------------------------|| \n")
-    fprintf("|| REVIEWED ELEMENTS                         || \n")
-    fprintf("||-------------------------------------------|| \n")
-    for i = 1:numToReview
-        fprintf("|| %d %s                                     ||\n", reviewedElements(i), elementNames(reviewedElements(i))) 
-    end
-    fprintf("\\\\-------------------------------------------//\n")
+    fprintf("//-------------------------------------------\\")
+    fprintf("|| SESSION REVIEW                            ||")
+    fprintf("||-------------------------------------------||")
+    fprintf("|| Number of Elements Reviewed:   %d         ||", numToReview)
+    fprintf("|| Correct Element Symbols:       %d ( %f%)  ||", numCorrectSymbols, (numCorrectSymbols/numToReview))
+    fprintf("||
     
     
     
