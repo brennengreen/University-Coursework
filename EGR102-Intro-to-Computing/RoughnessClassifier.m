@@ -7,7 +7,7 @@
 table
 %}
 
-Connect_Arduino();
+%Connect_Arduino();
 analog = zeros(1,5); %holds voltage reads
 
    for index = 1:5 %run values 1 to 5
@@ -30,12 +30,12 @@ analog = zeros(1,5); %holds voltage reads
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Classify the material based on the highest value
-if (Highest < 3.83675)
+if (AveValue < 3.81232)
     disp("Smooth"); % Smooth
-elseif (Highest >= 3.83675)
-    if (Highest < 3.95894)
+elseif (AveValue >= 3.8)
+    if (AveValue < 3.9)
         disp("Medium"); % Medium
-    elseif (Highest >= 9.5894)
+    elseif (AveValue >=  3.9)
         disp("Rough"); % Rough
     end
 end
