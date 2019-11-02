@@ -9,12 +9,12 @@ public:
 	schedule();
 	// Accessors
 	string getStudentId();
-	string getNumCourses();
+	int getNumCourses();
 	string getCourseID(int index);
 
 	// Mutators
 	void setStudentId(string newId);
-	void addCourse(string courseID);
+	int addCourse(string courseID);
 	int dropCourse(string courseID); // 1=Error 0=Success
 	
 	// ETC

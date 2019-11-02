@@ -65,7 +65,7 @@ void userint::printSchedule(student stu, schedule sched) {
 
 	// for each course registered:
 	for (int i = 0; i < sched.getNumCourses(); i++) {
-		string crsId = sched.getCourseId(i);	// get course ID from the schedule
+		string crsId = sched.getCourseID(i);	// get course ID from the schedule
 		int    crsNdx = cat.search(crsId);      // find the Course in the Catalog
 		course crs = cat.getCourse(crsNdx);     // get a copy of the Course data from the cat
 		totHours += crs.getHours();             // add up number of credits for all courses

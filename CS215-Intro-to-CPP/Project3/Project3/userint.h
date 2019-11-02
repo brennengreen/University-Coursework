@@ -19,6 +19,7 @@ using namespace std;
 #include "studentList.h"
 #include "catalog.h"
 #include "menu.h"
+#include "course.h"
 
 class userint {
 public:
