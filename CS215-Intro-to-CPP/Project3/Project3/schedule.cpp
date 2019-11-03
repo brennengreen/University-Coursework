@@ -24,7 +24,7 @@ int schedule::getNumCourses()
 
 string schedule::getCourseID(int index)
 {
-	if (index > numCourses)
+	if (index > numCourses || index < 0)
 	{
 		return "";
 	}

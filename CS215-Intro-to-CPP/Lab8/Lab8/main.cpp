@@ -1,8 +1,8 @@
 //--------------------------------------------------------
 //                CS 215 - Fall 2019 - Lab 8
 //--------------------------------------------------------
-// Author: YOUR NAME HERE
-// Section: YOUR SECTION HERE
+// Author: Brennen Green
+// Section: 003
 // This program tests the student class for lab 8.
 //--------------------------------------------------------
 
