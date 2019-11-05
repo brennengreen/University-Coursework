@@ -4,6 +4,7 @@
 
 using namespace std;
 
+const string IN_FILE_NAME = "stuList.txt";
 const int MAX_STUDENTS = 50;
 class studentList {
 public:

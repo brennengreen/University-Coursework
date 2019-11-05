@@ -53,7 +53,7 @@ void catalog::print()
 
 void catalog::read()
 {
-	ifstream fin("catalog.txt");
+	ifstream fin(OUT_FILE_NAME);
 	int endFound = 0; // 1 If end has been found
 	int i = 0;
 	if (!fin.fail)
@@ -80,4 +80,5 @@ void catalog::read()
 			}
 		}
 	}
+	fin.close();
 }
