@@ -1,4 +1,4 @@
-a = arduino('com3','uno') %only needed if arduino not connected
+%a = arduino('com3','uno') %only needed if arduino not connected
 analog = zeros(1,100); %holds voltage reads
 test = 0; %sets initial test number
 while 1==1 %continually run

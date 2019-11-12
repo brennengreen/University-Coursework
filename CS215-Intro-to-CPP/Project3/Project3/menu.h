@@ -18,7 +18,7 @@ public:
 
 	// Menu Controls
 	char doMenu();
-	bool validOption();
+	bool validOption(char userChoice);
 private:
 	char menuOptions[MAX_OPTIONS];
 	int numOptions;

@@ -1,5 +1,6 @@
 #include "menu.h"
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -35,10 +36,27 @@ void menu::addOption(char identifier, string desc)
 
 char menu::doMenu()
 {
-	return 0;
+	cout << title << endl;
+	for (int i = 0; i < numOptions; i++)
+	{
+		cout << menuOptions[i] << "-" << optionDescs[i];
+	}
+	char userChoice = char();
+	bool isValidOption = false;
+	while (!validOption)
+	{
+		cout << "Enter option: ";
+		cin >> userChoice;
+		isValidOption = validOption(userChoice);
+	}
 }
 
-bool menu::validOption()
+bool menu::validOption(char userChoice)
 {
+	for (int i = 0; i < numOptions; i++)
+	{
+		if (menuOptions[i] == userChoice)
+			return true;
+	}
 	return false;
 }
