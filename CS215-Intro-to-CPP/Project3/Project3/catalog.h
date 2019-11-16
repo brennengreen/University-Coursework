@@ -5,7 +5,9 @@
 using namespace std;
 
 const int MAX_COURSES = 50;
-const string OUT_FILE_NAME = "catalog.txt";
+const string IN_CATALOG_FILE = "catalog.txt";
+const int CRS_NOT_FOUND = -1;
+
 
 class catalog {
 public:

@@ -45,12 +45,16 @@ student studentList::search(int idx)
 	{
 		return student();
 	}
+	else
+	{
+		return stuArray[idx];
+	}
 }
 
 void studentList::read()
 {
-	ifstream fin(IN_FILE_NAME);
-	if (!fin.fail)
+	ifstream fin(IN_STU_LIST);
+	if (fin.is_open())
 	{
 		fin >> numStudents;
 		for (int i = 0; i < numStudents; i++)

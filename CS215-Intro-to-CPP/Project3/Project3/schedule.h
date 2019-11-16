@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-const int MAX_COURSES = 10;
+const int MAX_STU_COURSES = 10;
 
 class schedule {
 public:
@@ -21,6 +21,6 @@ public:
 	void print();
 private:
 	string studentId;
-	string courseIDs[MAX_COURSES];
+	string courseIDs[MAX_STU_COURSES];
 	int numCourses;
 };

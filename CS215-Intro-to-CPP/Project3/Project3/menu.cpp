@@ -12,6 +12,7 @@ menu::menu() {
 		optionDescs[i] = string();
 		menuOptions[i] = char();
 	}
+	numOptions = 0;
 }
 
 void menu::setTitle(string newTitle)
@@ -39,16 +40,18 @@ char menu::doMenu()
 	cout << title << endl;
 	for (int i = 0; i < numOptions; i++)
 	{
-		cout << menuOptions[i] << "-" << optionDescs[i];
+		cout << menuOptions[i] << "-" << optionDescs[i] << endl;
 	}
 	char userChoice = char();
 	bool isValidOption = false;
-	while (!validOption)
+	while (!isValidOption)
 	{
 		cout << "Enter option: ";
 		cin >> userChoice;
+		userChoice = toupper(userChoice);
 		isValidOption = validOption(userChoice);
 	}
+	return userChoice;
 }
 
 bool menu::validOption(char userChoice)
