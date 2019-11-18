@@ -1,6 +1,13 @@
 #pragma once
 #include "schedule.h"
 
+//----------------------------------------------------------------------
+//                         schedList class
+//----------------------------------------------------------------------
+// This class helps keep track of a list of schedules of all known
+// students
+//----------------------------------------------------------------------
+
 const int MAX_SCHEDULES = 50;
 const string IN_FILE_NAME = "schedList.txt";
 const string OUT_FILE_NAME = "schedList_1.txt";

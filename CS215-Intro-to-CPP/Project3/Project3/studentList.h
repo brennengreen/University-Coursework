@@ -2,6 +2,13 @@
 #include "student.h"
 #include <string>
 
+//----------------------------------------------------------------------
+//                         studentList class
+//----------------------------------------------------------------------
+// This class allows the program to keep a continuous list of students
+// who are currently registered
+//----------------------------------------------------------------------
+
 using namespace std;
 
 const string IN_STU_LIST = "stuList.txt";

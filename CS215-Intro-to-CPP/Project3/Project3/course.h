@@ -1,5 +1,13 @@
 #pragma once
 #include <string>
+
+//----------------------------------------------------------------------
+//                         course class
+//----------------------------------------------------------------------
+// This class implements the course class which allows the programmer
+// to create objects to represent classes easily
+//----------------------------------------------------------------------
+
 using namespace std;
 
 class course {
