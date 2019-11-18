@@ -1,10 +1,15 @@
 #include "catalog.h"
+#include "course.h"
 #include <fstream>
 #include <string>
 
 
 catalog::catalog() {
-
+	for (int i = 0; i < MAX_COURSES; i++)
+	{
+		courses[i] = course();
+	}
+	numCourses = 0;
 }
 
 int catalog::getNumCourses()
@@ -35,7 +40,7 @@ int catalog::search(string id)
 			return i;
 		}
 	}
-	return -1;
+	return CRS_NOT_FOUND;
 }
 
 void catalog::print()
@@ -53,12 +58,12 @@ void catalog::print()
 
 void catalog::read()
 {
-	ifstream fin(OUT_FILE_NAME);
+	ifstream fin(IN_CATALOG_FILE);
 	int endFound = 0; // 1 If end has been found
 	int i = 0;
-	if (!fin.fail)
+	if (fin.is_open())
 	{
-		while (endFound = 0)
+		while (endFound == 0)
 		{
 			string id, dept, num, title;
 			int hours;
@@ -68,7 +73,7 @@ void catalog::read()
 			{
 				endFound = 1;
 			}
-			else
+			else if (hours >= 1) // Ensure course is valid
 			{
 				courses[i].setId(id);
 				courses[i].setDepartment(dept);
@@ -79,6 +84,6 @@ void catalog::read()
 				i++;
 			}
 		}
+		fin.close();
 	}
-	fin.close();
 }

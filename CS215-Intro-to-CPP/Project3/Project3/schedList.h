@@ -11,7 +11,7 @@ public:
 	schedule getSchedule(int idx);
 	schedule getSchedule(string id);
 
-	void addSchedule();
+	void addSchedule(schedule searchSchedule);
 	void print();
 	void read();
 	void write();

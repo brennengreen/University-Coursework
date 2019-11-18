@@ -6,7 +6,7 @@ using namespace std;
 schedule::schedule() {
 	studentId = "";
 	numCourses = 0;
-	for (int i = 0; i < MAX_COURSES; i++)
+	for (int i = 0; i < MAX_STU_COURSES; i++)
 	{
 		courseIDs[i] = "";
 	}
@@ -41,7 +41,7 @@ void schedule::setStudentId(string newId)
 
 int schedule::addCourse(string courseID)
 {
-	if (numCourses == MAX_COURSES)
+	if (numCourses == MAX_STU_COURSES)
 	{
 		return -1; // Array is full
 	}
@@ -49,6 +49,7 @@ int schedule::addCourse(string courseID)
 	{
 		courseIDs[numCourses] = courseID;
 		numCourses++;
+		return 0;
 	}
 }
 
@@ -58,7 +59,11 @@ int schedule::dropCourse(string courseID)
 	{
 		if (courseIDs[i] == courseID)
 		{
-			courseIDs[i] = "";
+			for (int j = i; j < numCourses - 1; j++) // Loop from the found course index to the end of the array and shift all values to the left 1
+			{
+				courseIDs[j] = courseIDs[j + 1]; // Current course = the index of the course after it
+			}
+			courseIDs[numCourses] = "";
 			numCourses--;
 			return 0;
 		}
