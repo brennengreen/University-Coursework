@@ -6,6 +6,10 @@
 
 using namespace std;
 
+//-------------------------------------------------------------------
+//                               constructor
+//-------------------------------------------------------------------
+// initializes the objects (data members) used by the class
 studentList::studentList() {
 	for (int i = 0; i < MAX_STUDENTS; i++)
 	{
@@ -14,6 +18,10 @@ studentList::studentList() {
 	numStudents = 0;
 }
 
+//-------------------------------------------------------------------
+//                               print
+//-------------------------------------------------------------------
+// Stringified representation of the student list
 void studentList::print()
 {
 	cout << "================ STUDENT LIST <" << numStudents << "> ================" << endl;
@@ -26,6 +34,11 @@ void studentList::print()
 	system("pause");
 }
 
+//-------------------------------------------------------------------
+//                               search(id)
+//-------------------------------------------------------------------
+// Given an id searches the student array for a match or returns
+// an empty student object if none is found
 student studentList::search(string id)
 {
 	for (int i = 0; i < numStudents; i++)
@@ -39,6 +52,11 @@ student studentList::search(string id)
 	return student();
 }
 
+//-------------------------------------------------------------------
+//                               search(idx)
+//-------------------------------------------------------------------
+// Given an integer which is an index to an array, returns the student
+// at that index or an empty student if index is out of bounds
 student studentList::search(int idx)
 {
 	if (idx > numStudents || idx < 0)
@@ -51,6 +69,11 @@ student studentList::search(int idx)
 	}
 }
 
+//-------------------------------------------------------------------
+//                               read
+//-------------------------------------------------------------------
+// With a specified input file, reads the data in a specific format
+// to populate the list of students
 void studentList::read()
 {
 	ifstream fin(IN_STU_LIST);
@@ -71,5 +94,5 @@ void studentList::read()
 
 	}
 
-	fin.close();
-}
+	fin.close(); // Close for safety
+} // read()
