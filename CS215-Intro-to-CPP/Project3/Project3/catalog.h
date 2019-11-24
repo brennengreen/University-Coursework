@@ -2,6 +2,13 @@
 #include "course.h"
 #include <iostream>
 
+//----------------------------------------------------------------------
+//                         catalog class
+//----------------------------------------------------------------------
+// This class implements the catalog of courses available for the 
+// student registration project
+//----------------------------------------------------------------------
+
 using namespace std;
 
 const int MAX_COURSES = 50;

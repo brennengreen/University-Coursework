@@ -1,2 +1,8 @@
-﻿  schedList.cpp
-  Project3.vcxproj -> F:\University-Coursework\CS215-Intro-to-CPP\Project3\Debug\Project3.exe
+﻿  main.cpp
+  schedList.cpp
+  schedule.cpp
+  student.cpp
+  studentList.cpp
+  userint.cpp
+  Generating Code...
+  Project3.vcxproj -> D:\University-Coursework\CS215-Intro-to-CPP\Project3\Debug\Project3.exe

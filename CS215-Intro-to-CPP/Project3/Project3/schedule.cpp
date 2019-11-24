@@ -3,6 +3,10 @@
 #include <iomanip>
 using namespace std;
 
+//-------------------------------------------------------------------
+//                               constructor
+//-------------------------------------------------------------------
+// initializes the objects (data members) used by the class
 schedule::schedule() {
 	studentId = "";
 	numCourses = 0;
@@ -12,16 +16,28 @@ schedule::schedule() {
 	}
 }
 
+//-------------------------------------------------------------------
+//                               getStudentId
+//-------------------------------------------------------------------
+// Returns this schedule student's id
 string schedule::getStudentId()
 {
 	return studentId;
 }
 
+//-------------------------------------------------------------------
+//                               getNumCourses
+//-------------------------------------------------------------------
+// Returns this schedule's number of courses
 int schedule::getNumCourses()
 {
 	return numCourses;
 }
 
+//-------------------------------------------------------------------
+//                               getCourseID
+//-------------------------------------------------------------------
+// Returns the course id of a course in this schedule
 string schedule::getCourseID(int index)
 {
 	if (index > numCourses || index < 0)
@@ -34,11 +50,20 @@ string schedule::getCourseID(int index)
 	}
 }
 
+//-------------------------------------------------------------------
+//                               setStudentId
+//-------------------------------------------------------------------
+// Sets the schedules student id to newId
 void schedule::setStudentId(string newId)
 {
 	studentId = newId;
 }
 
+//-------------------------------------------------------------------
+//                               addCourse
+//-------------------------------------------------------------------
+// Given a courseId and given course array is not full, adds new 
+// course
 int schedule::addCourse(string courseID)
 {
 	if (numCourses == MAX_STU_COURSES)
@@ -53,6 +78,11 @@ int schedule::addCourse(string courseID)
 	}
 }
 
+//-------------------------------------------------------------------
+//                               dropCourse
+//-------------------------------------------------------------------
+// Given a course id, searches the courses array for the course then
+// deletes it from the array
 int schedule::dropCourse(string courseID)
 {
 	for (int i = 0; i < numCourses; i++)
@@ -69,8 +99,12 @@ int schedule::dropCourse(string courseID)
 		}
 	}
 	return -1; // Not Found
-}
+} // dropCourse
 
+//-------------------------------------------------------------------
+//                               print
+//-------------------------------------------------------------------
+// Stringified representation of the course schedule
 void schedule::print()
 {
 	cout << left << setw(5) << studentId << " " << right << setw(2) << numCourses << " ";

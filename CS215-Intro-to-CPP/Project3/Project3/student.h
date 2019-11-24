@@ -1,6 +1,12 @@
 #pragma once
-
 #include <string>
+
+//----------------------------------------------------------------------
+//                         student class
+//----------------------------------------------------------------------
+// This class implements the student object type which allows the
+// program to keep track of many different students in a concise way
+//----------------------------------------------------------------------
 
 using namespace std;
 
