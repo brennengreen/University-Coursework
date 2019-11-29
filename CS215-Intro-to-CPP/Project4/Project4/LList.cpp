@@ -4,14 +4,23 @@
 //----------------------------------------------------
 //				constructor & destructor
 //----------------------------------------------------
-// FINISH THESE!
 LList::LList() {
-
+	head = NULL;
 	cout << "LList: constructed!\n";
 }
 
 LList::~LList() {
-
+	if (head != NULL) // If head is not null, a list exists
+	{
+		node * p = head;
+		while (p->next != NULL)
+		{
+			node * curr = p;
+			p = p->next;
+			delete curr;
+			curr = NULL;
+		}
+	}
 	cout << "LList: destructed!\n";
 }
 
@@ -23,7 +32,16 @@ LList::~LList() {
 //          the given search key, or NULL for not found
 //----------------------------------------------------
 node * LList::search(int srchKey) {
-
+	node * p = head;
+	while (p->next != NULL)
+	{
+		if (p->key == srchKey)
+		{
+			return p;
+		}
+		p = p->next;
+	}
+	return NULL;
 } // search()
 
 //----------------------------------------------------
@@ -35,7 +53,15 @@ node * LList::search(int srchKey) {
 // Otherwise, prints "not found"
 //----------------------------------------------------
 void LList::findNode(int srchkey) {
-
+	node * foundNode = search(srchkey);
+	if (foundNode != NULL)
+	{
+		foundNode->print();
+	}
+	else
+	{
+		cout << "Not Found" << endl;
+	}
 } // findNode()
 
 //----------------------------------------------------
@@ -48,7 +74,24 @@ void LList::findNode(int srchkey) {
 //               the list
 //----------------------------------------------------
 node * LList::getb4(node * r) {
-
+	node * p = head;
+	node * prev;
+	if (r == p)
+	{
+		return NULL;
+	}
+	p = p->next;
+	prev = head;
+	while (p->next != NULL)
+	{
+		if (p == r)
+		{
+			return prev;
+		}
+		p = p->next;
+		prev = prev->next;
+	}
+	return NULL;
 } // getb4()
 
 //----------------------------------------------------
