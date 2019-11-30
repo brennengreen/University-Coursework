@@ -123,7 +123,22 @@ void LList::insert(int k, string d) {
 // (including setting the NEXT pointer in the node to NULL)
 //----------------------------------------------------
 bool LList::remove(node * r) {
+	node * nodeB4 = getb4(r);
+	if (r == NULL || (nodeB4 == NULL && r != head))
+	{
+		return false;
+	}
 
+	if (r == head) // The head needs to be handled a bit different since nothing is before it
+	{
+		head = r->next;
+	}
+	else
+	{
+		nodeB4->next = r->next;
+	}
+	r->next = NULL;
+	return true;
 } // remove()
 
 //----------------------------------------------------
@@ -146,7 +161,21 @@ bool LList::drop(int k) {
 // Returns: a pointer to the node with the highest key
 //          or NULL when there list is empty.
 node * LList::max() {
-
+	node * p = head;
+	if (p == NULL)
+		return NULL;
+	int max = -999999999999;
+	node * maxNode;
+	while (p->next != NULL)
+	{
+		if (p->key > max)
+		{
+			max = p->key;
+			maxNode = p;
+		}
+		p = p->next;
+	}
+	return maxNode;
 } // max()
 
 //----------------------------------------------------
