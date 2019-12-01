@@ -33,6 +33,12 @@ LList::~LList() {
 //----------------------------------------------------
 node * LList::search(int srchKey) {
 	node * p = head;
+	if (head == NULL)
+		return NULL;
+	if (p->key == srchKey)
+	{
+		return p;
+	}
 	while (p->next != NULL)
 	{
 		if (p->key == srchKey)
@@ -108,6 +114,39 @@ node * LList::getb4(node * r) {
 //     of the list.
 //----------------------------------------------------
 void LList::insert(int k, string d) {
+	node * newNode = new node;
+	newNode->key = k;
+	newNode->data = d;
+
+	node * dupNode = search(k);
+	if (dupNode != NULL) // Found a duplicate
+	{
+		node * nodeB4 = getb4(dupNode);
+		if (nodeB4 != NULL)
+		{
+			nodeB4->next = newNode;
+		}
+		newNode->next = dupNode->next;
+		dupNode->next = NULL;
+		newNode->dup = dupNode;
+
+		if (dupNode == head)
+		{
+			head = newNode;
+		}
+	}
+	else
+	{
+		if (head == NULL)
+		{
+			head = newNode;
+		}
+		else
+		{
+			newNode->next = head;
+			head = newNode;
+		}
+	}
 
 } // insert()
 
@@ -152,7 +191,24 @@ bool LList::remove(node * r) {
 // When found, removes and deletes the node
 //----------------------------------------------------
 bool LList::drop(int k) {
-
+	node * p = head;
+	while (p->next != NULL)
+	{
+		if (p->key == k)
+		{
+			if (remove(p) == true)
+			{
+				delete p;
+				p = NULL;
+				return true;
+			}
+			else // Failed to remove the node from list
+			{
+				return false;
+			}
+		}
+	}
+	return false;
 } // drop()
 
 //----------------------------------------------------
@@ -165,7 +221,7 @@ node * LList::max() {
 	if (p == NULL)
 		return NULL;
 	int max = -999999999999;
-	node * maxNode;
+	node * maxNode = new node();
 	while (p->next != NULL)
 	{
 		if (p->key > max)

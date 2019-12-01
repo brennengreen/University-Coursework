@@ -1,0 +1,4 @@
+﻿  LList.cpp
+d:\university-coursework\cs215-intro-to-cpp\project4\project4\llist.cpp(223): warning C4305: 'initializing': truncation from '__int64' to 'int'
+d:\university-coursework\cs215-intro-to-cpp\project4\project4\llist.cpp(223): warning C4309: 'initializing': truncation of constant value
+  Project4.vcxproj -> D:\University-Coursework\CS215-Intro-to-CPP\Project4\Debug\Project4.exe
