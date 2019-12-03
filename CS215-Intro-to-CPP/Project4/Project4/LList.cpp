@@ -239,6 +239,12 @@ node * LList::max() {
 //----------------------------------------------------
 // Sorts the list in ascending order by key values
 void LList::sort() {
+	LList * buffer = new LList; // Temporary list acting as a buffer
+	node * p = head;
+	while (p->next != NULL)
+	{
+		// TODO: Check notes on selection sort
+	}
 
 } // sort()
 
