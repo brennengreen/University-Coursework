@@ -1,30 +1,14 @@
 % Your header comment goes here
 
 %%% Arduino configuration: change these lines as necessary
-%Connect_Arduino();
+Connect_Arduino();
 
 %%% Your program goes here. Variable a is your Arduino object.
 
 % Frequencies of musical notes, in Hz.
-c = 261;
-d = 294;
-e = 329;
-f = 349;
-g = 391;
-gS = 415;
-a = 440;
-aS = 455;
-b = 466;
-cH = 523;
-cSH = 554;
-dH = 587;
-dSH = 622;
-eH = 659;
-fH = 698;
-fSH = 740;
-gH = 784;
-gSH = 830;
-aH = 880;
+C = 262;
+E = 330;
+G = 392;
 Rest = 0;
 
 % Durations of musical notes, in seconds.
@@ -33,42 +17,12 @@ Half = Whole / 2;
 Quarter = Whole / 4;
 
 % The song to play.  Column 1 is the note, column 2 the duration. 
-Section1 = [
-        a, 500; ...
-        a, 500; ... 
-        a, 500; ...
-        f, 350; ...
-        cH, 150; ...  
-        a, 500; ...
-        f, 350; ...
-        cH, 150; ...
-        a, 650;
- ]; 
-
- Section1_5 = [
-    eH, 500; ...
-    eH, 500; ...
-    eH, 500; ...
-    fH, 350; ...
-    cH, 150; ...
-    gS, 500; ...
-    f, 350;  ...
-    cH, 150; ...
-    a, 650;  ...
- ];
-
- Section2 = [
-     
- ];
-
- Section2_5 = [
-     
- ];
-
- Variant_1 = [
-     
- ];
-
+Song = [ C,     Quarter; ...
+         G,     Half; ...
+         E,     Quarter; ...
+         Rest,  Quarter; ...
+         C * 2, Half; ...    % Multiplying by two goes up an octave
+       ];
 
 while true
     if readDigitalPin(a, 'D2')
