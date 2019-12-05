@@ -1,3 +1,12 @@
+//-----------------------------------------------------------
+//						CS 215 – Fall 2019
+//							Project 4
+//-----------------------------------------------------------
+// Author: Brennen Green
+// Section: 006
+// Description: Brief description of the project. Ex: Gas Pump
+// Assistance: I received help from no one.
+//-----------------------------------------------------------
 #include <iostream>
 #include "LList.h"
 
@@ -97,6 +106,12 @@ node * LList::getb4(node * r) {
 		p = p->next;
 		prev = prev->next;
 	}
+	if (p == r)
+	{
+		return prev;
+	}
+	p = p->next;
+	prev = prev->next;
 	return NULL;
 } // getb4()
 
@@ -207,6 +222,20 @@ bool LList::drop(int k) {
 				return false;
 			}
 		}
+		p = p->next;
+	}
+	if (p->key == k)
+	{
+		if (remove(p) == true)
+		{
+			delete p;
+			p = NULL;
+			return true;
+		}
+		else // Failed to remove the node from list
+		{
+			return false;
+		}
 	}
 	return false;
 } // drop()
@@ -234,6 +263,7 @@ node * LList::max() {
 	return maxNode;
 } // max()
 
+// TODO: FIX SORT!
 //----------------------------------------------------
 //				       sort
 //----------------------------------------------------

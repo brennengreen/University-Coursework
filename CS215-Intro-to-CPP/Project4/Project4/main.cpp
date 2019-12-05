@@ -1,12 +1,3 @@
-//-----------------------------------------------------------
-//						CS 215 – Fall 2019
-//							Project 4
-//-----------------------------------------------------------
-// Author: Brennen Green
-// Section: 006
-// Description: Brief description of the project. Ex: Gas Pump
-// Assistance: I received help from no one.
-//-----------------------------------------------------------
 #include <iostream>
 #include "LList.h"
 
