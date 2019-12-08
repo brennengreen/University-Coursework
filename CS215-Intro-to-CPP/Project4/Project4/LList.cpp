@@ -4,7 +4,7 @@
 //-----------------------------------------------------------
 // Author: Brennen Green
 // Section: 006
-// Description: Brief description of the project. Ex: Gas Pump
+// Description: A linked list implementation for a Singedly-List-List
 // Assistance: I received help from no one.
 //-----------------------------------------------------------
 #include <iostream>
