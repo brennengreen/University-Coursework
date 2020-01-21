@@ -4,7 +4,7 @@
 //-----------------------------------------------------------
 // Author: Brennen Green
 // Section: 006
-// Description: Brief description of the project. Ex: Gas Pump
+// Description: A linked list implementation for a Singedly-List-List
 // Assistance: I received help from no one.
 //-----------------------------------------------------------
 #include <iostream>
@@ -48,7 +48,7 @@ node * LList::search(int srchKey) {
 	{
 		return p;
 	}
-	while (p->next != NULL)
+	while (p != NULL)
 	{
 		if (p->key == srchKey)
 		{
@@ -97,7 +97,7 @@ node * LList::getb4(node * r) {
 	}
 	p = p->next;
 	prev = head;
-	while (p->next != NULL)
+	while (p != NULL)
 	{
 		if (p == r)
 		{
@@ -106,12 +106,6 @@ node * LList::getb4(node * r) {
 		p = p->next;
 		prev = prev->next;
 	}
-	if (p == r)
-	{
-		return prev;
-	}
-	p = p->next;
-	prev = prev->next;
 	return NULL;
 } // getb4()
 
@@ -207,7 +201,7 @@ bool LList::remove(node * r) {
 //----------------------------------------------------
 bool LList::drop(int k) {
 	node * p = head;
-	while (p->next != NULL)
+	while (p != NULL)
 	{
 		if (p->key == k)
 		{
@@ -224,19 +218,6 @@ bool LList::drop(int k) {
 		}
 		p = p->next;
 	}
-	if (p->key == k)
-	{
-		if (remove(p) == true)
-		{
-			delete p;
-			p = NULL;
-			return true;
-		}
-		else // Failed to remove the node from list
-		{
-			return false;
-		}
-	}
 	return false;
 } // drop()
 
@@ -249,9 +230,9 @@ node * LList::max() {
 	node * p = head;
 	if (p == NULL)
 		return NULL;
-	int max = -999999999999;
-	node * maxNode = new node();
-	while (p->next != NULL)
+	int max = -999999;
+	node * maxNode = NULL;
+	while (p != NULL)
 	{
 		if (p->key > max)
 		{
