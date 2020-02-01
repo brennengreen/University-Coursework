@@ -1,0 +1,50 @@
+Alabama,Montgomery,Yellowhammer,Camellia,Yellowhammer State,1819-12-14,1702
+Alaska,Juneau,Willow Ptarmigan,Forget-me-not,The Last Frontier,1959-01-03,1784
+Arizona,Phoenix,Cactus Wren,Saguaro Cactus Blossom,Grand Canyon State,1912-02-14,1776
+Arkansas,Little Rock,Mockingbird,Apple Blossom,Natural State,1836-06-15,1686
+California,Sacramento,California Valley Quail,Golden Poppy,Golden State,1850-09-09,1769
+Colorado,Denver,Lark Bunting,Columbine,Centennial State,1876-08-01,1858
+Connecticut,Hartford,American Robin,Mountain Laurel,Constitution State,1788-01-09,1634
+Delaware,Dover,Blue Hen Chicken,Peach Blossom,First State,1787-12-07,1638
+Florida,Tallahassee,Mockingbird,Orange Blossom,Sunshine State,1845-03-03,1565
+Georgia,Atlanta,Brown Thrasher,Cherokee Rose,Peach State,1788-01-02,1733
+Hawaii,Honolulu,Nene (Hawaiian Goose),Hibiscus,Aloha State,1959-08-21,1820
+Idaho,Boise,Mountain Bluebird,Syringa,Gem State,1890-07-03,1842
+Illinois,Springfield,Cardinal,Native Violet,Prairie State,1818-12-03,1720
+Indiana,Indianapolis,Cardinal,Peony,Crossroads of America,1816-12-11,1733
+Iowa,Des Moines,Eastern Goldfinch,Wild Rose,Hawkeye State,1846-12-28,1788
+Kansas,Topeka,Western Meadowlark,Native Sunflower,Sunflower State,1861-01-29,1727
+Kentucky,Frankfort,Kentucky Cardinal,Goldenrod,Bluegrass State,1792-06-01,1774
+Louisiana,Baton Rouge,Pelican,Magnolia,Pelican State,1812-04-30,1699
+Maine,Augusta,Chickadee,White Pine Cone and Tassel,Pine Tree State,1820-03-15,1624
+Maryland,Annapolis,Baltimore Oriole,Black-Eyed Susan,Old Line State,1788-04-28,1634
+Massachusetts,Boston,Chickadee,Mayflower,Bay State,1788-02-06,1620
+Michigan,Lansing,Robin,Apple Blossom,Great Lakes State,1837-01-26,1668
+Minnesota,St. Paul,Common Loon,Pink and White Lady Slipper,North Star State,1858-05-11,1805
+Mississippi,Jackson,Mockingbird,Magnolia,Magnolia State,1817-12-10,1699
+Missouri,Jefferson City,Bluebird,Hawthorn,Show Me State,1821-08-10,1735
+Montana,Helena,Western Meadowlark,Bitterroot,Treasure State,1889-11-08,1809
+Nebraska,Lincoln,Western Meadowlark,Goldenrod,Cornhusker State,1867-03-01,1823
+Nevada,Carson City,Mountain Bluebird,Sagebrush,Silver State,1864-10-31,1849
+New Hampshire,Concord,Purple Finch,Purple Lilac,Granite State,1788-06-21,1623
+New Jersey,Trenton,Eastern Goldfinch,Purple Violet,Garden State,1787-12-18,1660
+New Mexico,Santa Fe,Roadrunner,Yucca Flower,The Land of Enchantment,1912-01-06,1610
+New York,Albany,Bluebird,Rose Rhododendron,Empire State,1788-07-26,1614
+North Carolina,Raleigh,Cardinal,Dogwood,Tar Heel State,1789-11-21,1660
+North Dakota,Bismarck,Western Meadowlark,Wild Prairie Rose,Peace Garden State,1889-11-02,1812
+Ohio,Columbus,Cardinal,Scarlet Carnation,Buckeye State,1803-03-01,1788
+Oklahoma,Oklahoma City,Scissor-Tailed Flycatcher,Mistletoe,Sooner State,1907-11-16,1889
+Oregon,Salem,Western Meadowlark,Oregon Grape,Beaver State,1859-02-14,1811
+Pennsylvania,Harrisburg,Ruffed Grouse,Mountain Laurel,Keystone State,1787-12-12,1682
+Rhode Island,Providence,Rhode Island Red,Violet,Ocean State,1790-05-29,1636
+South Carolina,Columbia,Carolina Wren,Yellow Jessamine,Palmetto State,1788-05-23,1670
+South Dakota,Pierre,Ring-Necked Pheasant,American Pasqueflower,Mount Rushmore State,1889-11-02,1859
+Tennessee,Nashville,Mockingbird,Iris,Volunteer State,1796-06-01,1769
+Texas,Austin,Mockingbird,Bluebonnet,Lone Star State,1845-12-29,1682
+Utah,Salt Lake City,California Gull,Sego Lily,Beehive State,1896-01-04,1847
+Vermont,Montpelier,Hermit Thrush,Red Clover,Green Mountain State,1791-03-04,1724
+Virginia,Richmond,Cardinal,Dogwood,Old Dominion,1788-06-25,1607
+Washington,Olympia,Willow Goldfinch,Western Rhododendron,Evergreen State,1889-11-11,1811
+West Virginia,Charleston,Cardinal,Big Rhododendron,Mountain State,1863-06-20,1727
+Wisconsin,Madison,Robin,Wood Violet,Badger State,1848-05-29,1766
+Wyoming,Cheyenne,Meadowlark,Indian Paintbrush,Equality State,1890-07-10,1834
