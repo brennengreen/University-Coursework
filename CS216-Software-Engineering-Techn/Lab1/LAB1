@@ -1,0 +1,91 @@
+/home/bdgr235/CS216/Lab1
+total 4
+-rw-rw-r-- 1 bdgr235 bdgr235 25 Jan 22 11:10 file1
+ ____________________________________
+/ Hello, Charlie Brown. I am Brennen \
+\ Green.                             /
+ ------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+    1  ls
+    2  cd Desktop/
+    3  ls
+    4  cd ..
+    5  echo hi
+    6  cool
+    7  clear
+    8  ls
+    9  cd ..
+   10  cd .
+   11  code
+   12  cd ..
+   13  cd ~
+   14  code
+   15  vim
+   16  echo $PS1
+   17  export PS1="\u@\h:\w$ "
+   18  export PS1="\u@\h:\W$ "
+   19  git clone https://github.com/brennengreen/University-Coursework.git
+   20  cd University-Coursework/
+   21  mkdir CS216-Software-Engineering-Techn
+   22  cd CS216-Software-Engineering-Techn/
+   23  cd ..
+   24  git add .
+   25  git commit -m "VM Setup Complete"
+   26  git config --global user.email "brennengreen@outlook.com"
+   27  git config --global user.name "Brennen Green"
+   28  git commit -m "VM Setup Complete"
+   29  git add .
+   30  git commit -m "VM Setup Complete"
+   31  ls
+   32  cd CS216-Software-Engineering-Techn/
+   33  cat hi.txt
+   34  touch temp.txt
+   35  ls
+   36  cd ..
+   37  git add .
+   38  git commit -m "VM Setup Complete"
+   39  git push -u origin master
+   40  git pull
+   41  git push -u origin master
+   42  git pull
+   43  git clone https://github.com/brennengreen/University-Coursework.git
+   44  ls
+   45  rm University-Coursework/
+   46  rm -rf University-Coursework/
+   47  ls
+   48  git diff
+   49  ls
+   50  mkdir CS216
+   51  ls
+   52  cd CS216/
+   53  mkdir Lab1
+   54  ls
+   55  cd Lab1/
+   56  ls
+   57  pwd
+   58  pwd > file1
+   59  ls
+   60  cat file1 
+   61  ls -l
+   62  ls -l >> file1
+   63  LS
+   64  cat file1 
+   65  cowsay "Hello, Charlie Brown. I am Brennen Green." >> file1
+   66  cat file1
+   67  echo shell
+   68  echo $shell
+   69  echo $SHELL
+   70  history
+   71  history > file2
+                                                                             
+ mmmmmm           "                          mmm   mmmm   mmmm  mmm      mmm 
+ #      m mm    mmm    mmm   m   m         m"   " #"   " "   "#   #    m"   "
+ #mmmmm #"  #     #   #" "#  "m m"         #      "#mmm      m"   #    #m""#m
+ #      #   #     #   #   #   #m#          #          "#   m"     #    #    #
+ #mmmmm #   #     #   "#m#"   "#            "mmm" "mmm#" m#mmmm mm#mm   #mm#"
+                  #           m"                                             
+                ""           ""                                              
