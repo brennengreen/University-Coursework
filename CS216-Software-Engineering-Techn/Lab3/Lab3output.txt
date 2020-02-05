@@ -1,0 +1,48 @@
+Original (from file)  --> CS215 or CS216
+Reverse using a loop  --> 612SC ro 512SC
+Reverse by recursion  --> 612SC ro 512SC
+Reverse using a stack --> 612SC ro 512SC
+
+
+Original (from file)  --> race car
+Reverse using a loop  --> rac ecar
+Reverse by recursion  --> rac ecar
+Reverse using a stack --> rac ecar
+
+
+Original (from file)  --> evil olive
+Reverse using a loop  --> evilo live
+Reverse by recursion  --> evilo live
+Reverse using a stack --> evilo live
+
+
+Original (from file)  --> stack cats
+Reverse using a loop  --> stac kcats
+Reverse by recursion  --> stac kcats
+Reverse using a stack --> stac kcats
+
+
+Original (from file)  --> 625 1225 2025 3025
+Reverse using a loop  --> 5203 5202 5221 526
+Reverse by recursion  --> 5203 5202 5221 526
+Reverse using a stack --> 5203 5202 5221 526
+
+
+Original (from file)  --> was it a car or a cat I saw
+Reverse using a loop  --> was I tac a ro rac a ti saw
+Reverse by recursion  --> was I tac a ro rac a ti saw
+Reverse using a stack --> was I tac a ro rac a ti saw
+
+
+Original (from file)  --> never odd or even
+Reverse using a loop  --> neve ro ddo reven
+Reverse by recursion  --> neve ro ddo reven
+Reverse using a stack --> neve ro ddo reven
+
+
+Original (from file)  --> a nut for a jar of tuna
+Reverse using a loop  --> anut fo raj a rof tun a
+Reverse by recursion  --> anut fo raj a rof tun a
+Reverse using a stack --> anut fo raj a rof tun a
+
+
