@@ -38,9 +38,9 @@ int main(int argc, char** argv)
             cout << "The original string you type is:    " << original << endl;
 
             // Your code starts here...
-            cout << "Reversed using loops:    " << to_rev.rev() << endl;
-            cout << "Reversed using stack:    " << to_rev.rev_stack() << endl; 
-            cout << "Reversed using recursion:" << to_rev.rev_recursive() << endl; 
+            cout << "Reversed using loops:      " << to_rev.rev() << endl;
+            cout << "Reversed using stack:      " << to_rev.rev_stack() << endl; 
+            cout << "Reversed using recursion:  " << to_rev.rev_recursive() << endl; 
             
             
             
