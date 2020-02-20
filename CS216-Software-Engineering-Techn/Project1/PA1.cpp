@@ -18,6 +18,7 @@ int main() {
 		cout << "3. Multiplication Problem" << endl;
 		cout << "4. Quit Program          " << endl;
 		cin >> in;
+		// TODO: Write cin.fail() method
 		while (cin.fail())
 		{
 			cin.clear();
@@ -25,31 +26,15 @@ int main() {
 			cout << "Invalid Input! Try again: ";
 			cin >> in;
 		}	
+		
+		// TODO: Put all into conditional loop if in < 4
+		MathOperations op;
 		switch (in) 
 		{
 			case 1:
 			{
 				// run addition method
-				MathOperations op = generateAddition();
-				op.print();
-				int answer;
-				cin >> answer;
-				while (cin.fail())
-				{
-					cin.clear();
-					cin.ignore(256, '\n');
-					cout << "Invalid Input! Try again: ";
-					cin >> answer;
-				}
-				if (op.checkAnswer(answer))
-				{
-					cout << "Correct!" << endl;
-				}
-				else
-				{
-					cout << "Better luck next time!" << endl;	
-					cout << "Correct answer: " << op.getAnswer() << endl;
-				}
+				op = generateAddition();
 				break;
 			}
 			case 2:
@@ -62,6 +47,25 @@ int main() {
 				break;
 			default:
 				cout << "Invalid Input";
+		}
+		op.print();
+		int answer;
+		cin >> answer;
+		while (cin.fail())
+		{
+			cin.clear();
+			cin.ignore(256, '\n');
+			cout << "Invalid Input! Try again: ";
+			cin >> answer;
+		}
+		if (op.checkAnswer(answer))
+		{
+			cout << "Correct!" << endl;
+		}
+		else
+		{
+			cout << "Better luck next time!" << endl;
+			cout << "Correct answer: " << op.getAnswer() << endl;	
 		}
 	}	
 
