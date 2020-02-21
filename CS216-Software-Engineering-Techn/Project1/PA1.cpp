@@ -83,7 +83,6 @@ int main() {
 	report.generateReport();
 	return 0;
 }
-
 MathOperations generateMultiplication() {
 	int numOne = rand() % 100 + 1;
 	int scalar = rand() % 9 + 1;
@@ -92,6 +91,16 @@ MathOperations generateMultiplication() {
 	op.Multiplication();
 	return op;
 }
+
+/***********************************************
+ Method: generateSubtraction
+
+ Purpose: Generations a MathOperation constructed
+ to produce a subtraction question for the user
+
+ Returns: MathOperation op , a MathOperation with
+ two initialized operands and set to Subtraction
+***********************************************/
 
 MathOperations generateSubtraction() {
 	int numOne = rand() % 500 + 1;
@@ -109,6 +118,16 @@ MathOperations generateSubtraction() {
 	op.Subtraction();
 	return op;
 }
+
+/***********************************************
+Method: generateAddition
+
+Purpose: Generations a MathOperation constructed
+to produce an addition question for the user
+
+Returns: MathOperation op , a MathOperation with
+two initialized operands and set to Addition
+***********************************************/
 
 MathOperations generateAddition() {
 	int numOne = rand() % 500 + 1;
