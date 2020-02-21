@@ -7,7 +7,11 @@ git pull
 git add .
 
 # commit all changes to head
-git commit -m "auto-push"
+if [ $# > 0 ]
+then git commit -m "$0"
+else 
+	git commit -m "auto-push"
+fi
 
 # push all changes to origin
 git push -u origin master
