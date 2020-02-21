@@ -1,4 +1,13 @@
+#!/bin/bash
+
+# pull origin
 git pull
+
+# add all changes
 git add .
+
+# commit all changes to head
 git commit -m "auto-push"
+
+# push all changes to origin
 git push -u origin master
