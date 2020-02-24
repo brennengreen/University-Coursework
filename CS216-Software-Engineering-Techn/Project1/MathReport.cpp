@@ -1,4 +1,4 @@
-/* course: CS216-001
+/* course: CS216-002
  * Project: Lab5 (as part of Project 1)
  * Purpose: Provide the implementation of member functions for  the class named MathReport
  * Author: Brennen Green
@@ -23,19 +23,9 @@ MathReport::MathReport()
 //    otherwise, increase numWrongAnswers
 void MathReport::insert(MathOperations newQuestion, int response)
 {
-	// If the answer is correct insert it at the front, if wrong push to back
-	// This will allow us to know the first numCorrectAnswer indices have a 
-	// question that was answered correctly
-	if (newQuestion.checkAnswer(response))
-	{	
-		mathQuestions.insert(mathQuestions.begin(), newQuestion);
-		numCorrectAnswers++;
-	}
-	else 
-	{
-		mathQuestions.push_back(newQuestion);
-		numWrongAnswers++;
-	}
+	// Add question to the end of the vector
+	mathQuestions.push_back(newQuestion);
+	numWrongAnswers++;
 }
 
 // return the value of numCorrectAnswers

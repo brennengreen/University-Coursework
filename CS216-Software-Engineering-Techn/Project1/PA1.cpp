@@ -1,5 +1,5 @@
 /******************************************
-Class: CS216-001
+Class: CS216-002
 Assignment: Project 1
 Title: Math Tutor
 Purpose: A math tutoring program for a child

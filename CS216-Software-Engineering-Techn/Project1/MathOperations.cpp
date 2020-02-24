@@ -1,4 +1,4 @@
-/* course: CS216-001
+/* course: CS216-002
  * Project: Lab 4 (as part of Project 1)
  * Purpose: to define the class named MathOperations
  * Author: Brennen Green
