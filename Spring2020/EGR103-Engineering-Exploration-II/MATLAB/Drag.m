@@ -27,7 +27,6 @@ VelocityY(1)=vely;
 deltaTime=.001; % seconds
 height=y(1);
 
-changes = 0;
 while height>=0 % check that the ball has not hit ground yet 
     index=index+1; % setup and index
    
@@ -44,18 +43,14 @@ while height>=0 % check that the ball has not hit ground yet
     % and drag have the same sign. Calculate the new acceleration in the y.
     % *******************************************************
     if (vely < 0)
-        fprintf("Changing C\n")
-        c = -c;
-        changes = changes + 1;
+       acc_y = g + ((-c*(vely*vely))/mass);
+    else
+       acc_y = g + ((c*(vely*vely))/mass);
     end
-    acc_y = g - (-c*(vely*vely))/mass;
     % *******************************************************
     % Now calculate the acceleration in the x .
     % *******************************************************
     acc_x = (c * (velx*velx))/mass;
-    
-    %fprintf("Y:" + acc_y + "\n")
-    %fprintf("X:" + acc_x + "\n")
     % *****************************************************
     % calculate the new velocity at the end of the time step
     % this will have X and Y components, so you need a variable
