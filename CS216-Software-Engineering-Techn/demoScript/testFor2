@@ -1,0 +1,8 @@
+#!/bin/bash
+# for loop example
+# display the content under current working directory using ls command
+echo "The files under current working directory:"
+for i in $(ls -a)
+do
+    echo $i
+done

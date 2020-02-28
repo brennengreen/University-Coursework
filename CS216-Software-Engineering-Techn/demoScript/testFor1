@@ -1,0 +1,8 @@
+#!/bin/bash
+# for loop example
+# display one digit numbers in decreasing order
+for num in {9..0}
+do
+	echo "Number: $num"
+done 
+

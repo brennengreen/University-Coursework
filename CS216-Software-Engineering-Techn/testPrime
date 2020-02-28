@@ -1,0 +1,23 @@
+#!/bin/bash
+# using command line arguments
+if [ $# -ne 2 ]
+then
+    echo "Warning: need exactly two command line arguments to decide the integer range!"
+    echo "Usage: $0 integer1 integer2"
+    exit 1
+fi
+#decide the integer range
+#if integer1 <= integer2, then the range is [integer1, integer2] 
+#   otherwse the range is [integer2, integer1]
+echo "The parameters are $*"
+start=$1
+end=$2
+if [ $1 -gt $2 ]
+then 
+     start=$2
+     end=$1
+fi
+echo "The starting integer is $start"
+echo "The ending integer is $end"
+#decide whether each number in the range [$start, $end] is prime or not
+#your script starts here...

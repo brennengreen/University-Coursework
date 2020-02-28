@@ -1,0 +1,68 @@
+#!/bin/bash
+# Provide a simple math tutor for a second-grade student in an elementary school
+# Repeatedly display the main menu to let the user choose an option (enter Q or q to quit):
+#    if opiton is 1, generate an addition problem for the user to solve
+#    if opiton is 2, generate a subtraction problem for the user to solve
+#    if opiton is 3, generate a multiplication problem for the user to solve
+#    if other option, display the message of invalid choice.
+# For each option of 1, 2, or 3, it should wait for the user to enter the answer
+#    if the answer is correct, a message of congratulations should be displayed
+#    if the answer is wrong, the correct answer should be displayed
+
+usr_option=0
+while [ $usr_option != 'q' ]
+do
+	echo "     Math Is Fun! Take a challenge..."
+	echo "-------------------------------------"
+	echo "1. Addition problem"
+	echo "2. Subtraction problem"
+	echo "3. Multiplication problem"
+	echo "-------------------------------------"
+	echo "Please input your menu option (enter Q or q to quit)"
+	read usr_option
+
+# Your script should start here
+# create a loop to repeatedly ask the user to input the option from the main menu until the user enters Q or q to quit
+	
+	ans=0
+	valid=false
+	case $usr_option in
+		1) n1=$(((RANDOM % (500 - 1 + 1)) + 1))
+		   n2=$(((RANDOM % (500 - 1 + 1)) + 1))
+		   echo "$n1 + $n2 ="
+		   ans=$(( $n1 + $n2))
+		   valid=true;;
+		2) n1=$(((RANDOM % (500 - 1 + 1)) + 1))
+		   n2=$(((RANDOM % (500 - 1 + 1)) + 1))
+		   if [ $n1 -lt $n2 ] 
+		   then
+			echo "$n2 - $n1 ="
+			ans=$(( $n2 - $n1))
+		   else
+			echo "$n1 - $n1 ="
+			ans=$(( $n1 - $n2))
+		   fi
+		   valid=true;;
+		3) n1=$(((RANDOM % (100 - 1 + 1)) + 1))
+		   n2=$(((RANDOM % (9 - 1 + 1)) + 1))
+		   echo "$n1 * $n2 ="
+		   ans=$(( $n1 * $n2))
+		   valid=true;;
+		[qQ]) exit 0;;
+		*) echo "Invalid Response!"
+		   continue;;
+	esac
+	read resp
+	if [ $resp -eq $ans ]
+	then
+		echo "Great job!"
+	else
+		echo "Sorry.. the correct answer is: $ans"
+	fi
+	
+done
+
+
+
+
+

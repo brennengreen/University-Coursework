@@ -1,0 +1,7 @@
+#!/bin/bash
+# Escaping characters
+bash_var="Bash Script" 
+echo $bash_var
+echo \$bash_var
+echo \\
+

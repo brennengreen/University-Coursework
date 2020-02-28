@@ -1,0 +1,14 @@
+#!/bin/bash 
+#Script to test while statement 
+echo "please input an integet"
+read num
+#display the multiplication table for the input number
+#on each row: display num * i (i from 1 to 9)
+i=1 
+while [ $i -le 9 ] 
+do 
+     result=$((num*i))
+     echo "$num * $i = $result" 
+     i=$((i+1)) 
+done
+
