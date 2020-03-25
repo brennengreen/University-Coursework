@@ -43,7 +43,10 @@ void IMDB::insert_an_actor(string actorName, set<string> movieTitles)
     /* Second upgrade movies_db */
     // for each movieTitle in the set of movieTitles,
     // insert actorName to its associated set of actors in the map, movies_db
-
+    for (set<string>::iterator i = movieTitles.begin(); i != movieTitles.end(); i++)
+    {
+	movies_db[*i].insert(actorName);
+    }
 
 
 
