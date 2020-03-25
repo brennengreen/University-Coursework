@@ -82,14 +82,26 @@ string IMDB::matchExistingMovie(string movieTitle) const
 // return true if it does; otherwise return false
 bool IMDB::isExistingMovie(string movieTitle) const
 {
-
+	if (movies_db.find(movieTitle) != movies_db.end())
+	{
+		return true;
+	} else
+	{
+		return false;
+	}
 }
 
 // check if an actorName does exist in the map
 // return true if it does; otherwise return false
 bool IMDB::isExistingActor(string actorName) const
 {
-
+	if (actors_db.find(actorName) != actors_db.end())
+	{
+		return true;
+	} else
+	{
+		return false;
+	}
 }
 
 // return a set of movie titles which actorName was in
@@ -97,7 +109,14 @@ bool IMDB::isExistingActor(string actorName) const
 //                   display message andreturn an empty set
 set<string> IMDB::find_movies_for_an_actor(string actorName) const
 {
-
+	if (isExistingActor(actorName)) 
+	{
+		return actors_db.at(actorName);
+	} else
+	{
+		cout << "Actor not found in database!" << endl;
+		return set<string>();
+	}
 }
 
 // return a set of actor names which were all in the movieTitle
@@ -105,5 +124,13 @@ set<string> IMDB::find_movies_for_an_actor(string actorName) const
 //                   display message and return an empty set
 set<string> IMDB::find_actors_in_a_movie(string movieTitle) const
 {
-
+	if (isExistingMovie(movieTitle))
+	{
+		return movies_db.at(movieTitle);
+	} else
+	{
+		cout << "Movie not found in database!" << endl;
+		return set<string>();
+	}
 }
+
