@@ -1,0 +1,11 @@
+#0  __memmove_avx_unaligned_erms () at ../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:423
+#1  0x00007ffff74ce994 in _IO_new_file_xsputn (f=0x7ffff782f760 <_IO_2_1_stdout_>, data=<optimized out>, n=140737488346560) at fileops.c:1258
+#2  0x00007ffff74c2977 in __GI__IO_fwrite (buf=0x4, size=1, count=140737488346560, fp=0x7ffff782f760 <_IO_2_1_stdout_>) at iofwrite.c:39
+#3  0x00007ffff7b5fcb4 in std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) () from /usr/lib/x86_64-linux-gnu/libstdc++.so.6
+#4  0x000055555555990e in analyzeCoActors (imdb=...) at Lab9.cpp:141
+#5  0x0000555555559517 in main (argc=2, argv=0x7fffffffe3f8) at Lab9.cpp:108
+
+
+QUESTIONS:
+1. The issue is the order in which the cin.clear() and cin.ignore() function were initially called, the result left the stream filled with the three words that were originally entered so each call to cin would extract the next word in the order "two" "and" "one". Causing three invalid option warns to show up until the buffer finally emptied itself. 
+2. The values of input_to_check are (respectively): "two" "and" "one"
