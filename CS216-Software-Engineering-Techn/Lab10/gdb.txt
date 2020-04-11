@@ -1,0 +1,99 @@
+Breakpoint 2 at 0xa26: file Lab10.cpp, line 31.
+Breakpoint 3 at 0xa38: file Lab10.cpp, line 32.
+Note: breakpoint 1 also set at pc 0xa03.
+Breakpoint 4 at 0xa03: file Lab10.cpp, line 27.
+Breakpoint 5 at 0xa14: file Lab10.cpp, line 30.
+Breakpoint 6 at 0xc44: file Lab10.cpp, line 47.
+Breakpoint 7 at 0xbe4: file Lab10.cpp, line 45.
+Breakpoint 8 at 0xcbc: file Lab10.cpp, line 52.
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000000000000a03 in main() at Lab10.cpp:23
+2       breakpoint     keep y   0x0000000000000a26 in main() at Lab10.cpp:31
+3       breakpoint     keep y   0x0000000000000a38 in main() at Lab10.cpp:32
+4       breakpoint     keep y   0x0000000000000a03 in main() at Lab10.cpp:27
+5       breakpoint     keep y   0x0000000000000a14 in main() at Lab10.cpp:30
+6       breakpoint     keep y   0x0000000000000c44 in main() at Lab10.cpp:47
+7       breakpoint     keep y   0x0000000000000be4 in main() at Lab10.cpp:45
+8       breakpoint     keep y   0x0000000000000cbc in main() at Lab10.cpp:52
+Starting program: /home/bdgr235/University-Coursework/CS216-Software-Engineering-Techn/Lab10/Lab10 
+
+Breakpoint 1, main () at Lab10.cpp:28
+28	    srand(time(0));
+$1 = -9
+$2 = (const int *) 0x55555555506c <MIN>
+
+Breakpoint 5, main () at Lab10.cpp:30
+30	    num1 = rand_in_range(MIN, MAX);
+$3 = (const int *) 0x555555555070 <MAX>
+$4 = (int *) 0x7fffffffe30c
+$5 = 0
+$6 = 9
+rand_in_range (min=-9, max=9) at functions.cpp:19
+19	    int random_number = (rand() % ((max - min) +1)) + min;
+20	    return random_number;
+21	}
+
+Breakpoint 2, main () at Lab10.cpp:31
+31	    num2 = rand_in_range(MIN, MAX);
+
+Breakpoint 3, main () at Lab10.cpp:32
+32	    num3 = rand_in_range(MIN, MAX);
+35	    cout << "num1: " << num1 << endl;
+$7 = 3
+$8 = -6
+$9 = (int *) 0x7fffffffe30c
+$10 = (int *) 0x7fffffffe310
+Quit
+Starting program: /home/bdgr235/University-Coursework/CS216-Software-Engineering-Techn/Lab10/Lab10 
+
+Breakpoint 1, main () at Lab10.cpp:28
+28	    srand(time(0));
+Argument required (expression to compute).
+No breakpoint at all.
+Function "info" not defined.
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000555555554a03 in main() at Lab10.cpp:23
+	breakpoint already hit 1 time
+2       breakpoint     keep y   0x0000555555554a26 in main() at Lab10.cpp:31
+3       breakpoint     keep y   0x0000555555554a38 in main() at Lab10.cpp:32
+4       breakpoint     keep y   0x0000555555554a03 in main() at Lab10.cpp:27
+	breakpoint already hit 1 time
+5       breakpoint     keep y   0x0000555555554a14 in main() at Lab10.cpp:30
+6       breakpoint     keep y   0x0000555555554c44 in main() at Lab10.cpp:47
+7       breakpoint     keep y   0x0000555555554be4 in main() at Lab10.cpp:45
+8       breakpoint     keep y   0x0000555555554cbc in main() at Lab10.cpp:52
+No breakpoint number 23.
+No breakpoint number 31.
+No breakpoint number 32.
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000555555554a03 in main() at Lab10.cpp:23
+	breakpoint already hit 1 time
+2       breakpoint     keep y   0x0000555555554a26 in main() at Lab10.cpp:31
+3       breakpoint     keep y   0x0000555555554a38 in main() at Lab10.cpp:32
+4       breakpoint     keep y   0x0000555555554a03 in main() at Lab10.cpp:27
+	breakpoint already hit 1 time
+5       breakpoint     keep y   0x0000555555554a14 in main() at Lab10.cpp:30
+6       breakpoint     keep y   0x0000555555554c44 in main() at Lab10.cpp:47
+7       breakpoint     keep y   0x0000555555554be4 in main() at Lab10.cpp:45
+8       breakpoint     keep y   0x0000555555554cbc in main() at Lab10.cpp:52
+Starting program: /home/bdgr235/University-Coursework/CS216-Software-Engineering-Techn/Lab10/Lab10 
+
+Breakpoint 1, main () at Lab10.cpp:28
+28	    srand(time(0));
+$11 = {i = {0, 1045149306}, d = 1.2904777690891933e-08}
+$12 = {i = {0, 1068498944}, d = 0.0625}
+23	int main()
+24	{
+25	    int num1, num2, num3;
+26	
+27	    // generate three random numbers in the range of [MIN, MAX]
+28	    srand(time(0));
+29	
+30	    num1 = rand_in_range(MIN, MAX);
+31	    num2 = rand_in_range(MIN, MAX);
+32	    num3 = rand_in_range(MIN, MAX);
+Deleted breakpoints 1 4 
+No breakpoint at this line.
+No breakpoint at this line.
+__srandom (x=1586359371) at random.c:209
+209	random.c: No such file or directory.
