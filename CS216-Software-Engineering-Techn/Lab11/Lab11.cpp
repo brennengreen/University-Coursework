@@ -19,7 +19,7 @@ int main()
     // Create a graph given by Figure 1 of Lab 11
     Graph testingGraph;
     testingGraph.addEdge('A', 'B');
-    testingGraph.addEdge('A', 'E');     //you need to comment out this statement for one testing case
+    //testingGraph.addEdge('A', 'E');     //you need to comment out this statement for one testing case
     testingGraph.addEdge('B', 'C');
     testingGraph.addEdge('B', 'D');
     testingGraph.addEdge('C', 'D');

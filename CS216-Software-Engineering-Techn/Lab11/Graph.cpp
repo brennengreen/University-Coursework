@@ -1,5 +1,6 @@
 #include "Graph.h"
 #include <queue>
+#include <iostream>
 
 Graph::Graph() {
 }
@@ -22,29 +23,34 @@ void Graph::addEdge(char v, char w) {
 
 
 int Graph::BFS(char s, char t, map<char, int>& distance, map<char, char>& go_through) {
+	bool foundTarget = false;
 	for (auto it = adjMap.begin(); it!=adjMap.end(); ++it)
 	{
 		char currVertex = it->first;
 		distance[currVertex] = -1;
-		queue<char> thisQ;
-		distance[s] = 0;
-		go_through[s] = s;
-		thisQ.push(s);
-		char current = s;
-		while (thisQ.size() > 0 && current != t) {
-			current = thisQ.front();
-			thisQ.pop();
-			for ( auto w : adjMap[current] )
-			{
-			    if (distance[w] == -1) {
-				distance[w] = distance[current]+1;
+		if (currVertex == t)
+			foundTarget = true;
+	}
+	if (!foundTarget) return INVALID_VERTEX;
+	queue<char> thisQ;
+	distance[s] = 0;
+	go_through[s] = s;
+	thisQ.push(s);
+	char current = s;
+	while (thisQ.size() > 0 && current != t) {
+		current = thisQ.front();
+		thisQ.pop();
+		for (auto w : adjMap[current])
+		{
+			if (distance[w] == -1) {
+				distance[w] = distance[current] + 1;
 				go_through[w] = current;
 				thisQ.push(w);
-			    }
 			}
 		}
-		return distance[t];
 	}
+
+	return distance[t];
 }
 
 
