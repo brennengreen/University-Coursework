@@ -1,4 +1,8 @@
 % Vision Code Peer Review
+clear;
+clc;
+a = arduino;
+
 
 PIXELS_LEFT_TO_MIDDLE = 393;
 
@@ -23,3 +27,13 @@ else
     end
     sprintf("Launcher needs to adjust %d pixels to the %s", abs(offset), direction)
 end
+
+s = servo(a,'D3','MaxPulseDuration',2e-3,'MinPulseDuration',1e-3);
+writePosition(s, .3);
+canFire = true;
+while (1)
+    if (readDigitalPin(a, 'D8') && canFire)
+       disp("Fire") 
+    end
+end
+    
