@@ -145,7 +145,7 @@ int main(int argc, char* argv[])
             // your code starts here...
 	    string nextVertex = word1;
 	    cout << word1;
-	    while (go_through[nestVertex] != word2)
+	    while (go_through[nextVertex] != word2)
 	    {
 		cout << "--->" << go_through[nextVertex];
 		nextVertex = go_through[nextVertex];

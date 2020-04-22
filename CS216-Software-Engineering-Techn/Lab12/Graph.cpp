@@ -12,12 +12,12 @@
 #include <queue>
 
 // default constructor
-Graph::Graph()
+template<typename Vertex> Graph<Vertex>::Graph()
 {
 }
 
 // check if an edge exists between v and w
-bool Graph::hasEdge(Vertex v, Vertex w)
+template<typename Vertex> bool Graph<Vertex>::hasEdge(Vertex v, Vertex w)
 {
     if (adjMap.find(v) == adjMap.end())
         return false;
@@ -29,7 +29,7 @@ bool Graph::hasEdge(Vertex v, Vertex w)
 
 // add an edge between v and w to the graph
 // note that it is an undirected graph
-void Graph::addEdge(Vertex v, Vertex w)
+template<typename Vertex> void Graph<Vertex>::addEdge(Vertex v, Vertex w)
 {
     adjMap[v].insert(w);
     adjMap[w].insert(v);
@@ -42,7 +42,7 @@ void Graph::addEdge(Vertex v, Vertex w)
 // store the shortest path distance from the given source s  to vertex w in distance map<w, distance>
 // store which next vertex to go through on the shortest path to the given source s in go_through map<w, v>. 
 // Here a pair <w, v> in go_through map represents on the shortest path from w to the given source s, it needs to take the path: w-->v...-->s  
-int Graph::BFS(Vertex s, Vertex t, map<Vertex, int>& distance, map<Vertex, Vertex>& go_through)
+template<typename Vertex> int Graph<Vertex>::BFS(Vertex s, Vertex t, map<Vertex, int>& distance, map<Vertex, Vertex>& go_through)
 {
     if ( adjMap.find(s) == adjMap.end() || adjMap.find(t) == adjMap.end())
     {

@@ -20,7 +20,7 @@ using namespace std;
 const int NOPATH = -1;
 const int INVALID_VERTEX = -2;
 
-template <typename Vertex>;
+template <typename Vertex>
 class Graph
 {
    public:
