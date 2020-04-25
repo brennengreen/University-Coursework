@@ -14,6 +14,7 @@
  */
 
 #include <iostream>
+#include <stack>
 #include <string>
 #include <fstream>
 #include <algorithm>     // for transform() function
@@ -143,15 +144,23 @@ int main(int argc, char* argv[])
             cout << "The ladder distance from [" << word1 << "] to [" << word2 << "] is " << dis << "-step away." << endl;
             cout << "A ladder from [" << word1 << "] to [" << word2 << "]:" << endl;
             // your code starts here...
-	    string nextVertex = word1;
-	    cout << word1;
-	    while (go_through[nextVertex] != word2)
+	    string nextVertex = word2;
+	    stack<string> ladder;
+	    ladder.push(word2);
+	    while (go_through[nextVertex] != word1)
 	    {
-		cout << "--->" << go_through[nextVertex];
+		ladder.push(go_through[nextVertex]);
 		nextVertex = go_through[nextVertex];
 	    }
-	    cout << "--->" << word2 << endl;
-        }   
+	    cout << word1 << "--->";
+	    for (int i = 0; i < ladder.size(); i++)
+	    {
+		cout << ladder.top() << "--->";
+		ladder.pop();
+	    }
+	    cout << word2 << endl;
+            break;
+	}   
     }
 
     cout << "Thank you for using this program, bye..." << endl;
