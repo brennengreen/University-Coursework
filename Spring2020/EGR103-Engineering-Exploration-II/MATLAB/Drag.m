@@ -120,3 +120,10 @@ plot(angleDeg, LandingDistance);
 title('Distance to goal at goal height');
 xlabel('Angle of initial launch');
 ylabel('Distance from launcher when passing goal height');
+
+newMat = zeros(13, 2);
+for i = 1:1:13
+   newMat(i, 1) = angleDeg(i);
+   newMat(i, 2) = LandingDistance(i);
+end
+writematrix(newMat, "LinearModel.xlsx")
