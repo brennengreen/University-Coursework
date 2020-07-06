@@ -1,0 +1,329 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+
+\begin{document}
+\title{Homework 4}
+\author{Brennen Green}
+\maketitle
+
+
+\begin{enumerate}
+    \item \begin{verbatim}Ch4.1 Exercise #4\end{verbatim}
+        \begin{enumerate}
+            \item $ P(1) $ is the basis statement 
+            \item $ P(1) = 1^3 = (\frac{1(1+1)}{2})^2 = (2/2)^2 = 1^2 = 1^3 \qed$
+            \item \textbf{Inductive Hypothesis:}  Assume that $P(n)$ holds for $P(k)$ or that:
+                $$1^3 + 2^3 + \dots + k^3 = (\frac{k(k+1)}{2})^2$$
+            \item In the inductive step we prove that the inductive hypothesis holds for $P(k+1)$
+            \item \textbf{Inductive Step:}
+                \begin{align*}
+                    &  P(k+1) = 1^3 + 2^3 + \dots + k^3 + (k+1)^3 = (\frac{(k+1)((k+1)+1)}{2})^2 \\
+                    & (\frac{k(k+1)}{2})^2 + (k+1)^3 = (\frac{(k+1)((k+1)+1)}{2})^2 \\
+                    & \frac{(k^2+k)^2}{4} + (k+1)^3 = \frac{(k+1)^2(k+2)^2}{4} \\
+                    & \frac{(k^2+k)^2+ 4(k+1)^3}{4} = \frac{(k+1)^2(k+2)^2}{4} \\
+                    & (k^2+k)^2+ 4(k+1)^3 = (k+1)^2(k+2)^2 \\
+                    & k^4+6k^3+13k^2+12k+4=k^4+6k^3+13k^2+12k+4 \\
+                    & \therefore P(k+1) \text{ holds} \qed 
+                \end{align*}
+            \item These steps put together demonstrate mathematical induction to prove that $P(n)$ is
+            true for $ n \in \mathbb{Z}^+ $
+        \end{enumerate}
+    
+    \newpage
+    
+    \item \begin{verbatim}Ch4.1 Exercise #5\end{verbatim}
+        \begin{proof}
+            \begin{align*}
+                &\textbf{Prove}: P(n) = 1^2 + 3^2 + \dots + (2n+1)^2 = \frac{(n+1)(2n+1)(2n+3)}{3}\\
+                &\textbf{Basis}: (2(0)+1)^2 = \frac{(0+1)(2(0)+1)(2(0)+3)}{3} =  (1)^3 = \frac{(1)(1)(3)}{3} = 1^3 \\
+                &\textbf{Assume}: 1^2 + 3^2 + \dots + (2(k)+1)^2 = \frac{(k+1)(2k+1)(2k+3)}{3} \\
+                &\textbf{Inductive Step}:\\ 
+                & 1^2 + 3^2 + \dots + (2(k)+1)^2 + (2(k+1)+1)^2 = \frac{(k+2)(2(k+1)+1)(2(k+1)+3)}{3} \\
+                &\frac{(k+1)(2k+1)(2k+3)}{3} + (2(k+1)+1)^2 = \frac{(k+2)(2(k+1)+1)(2(k+1)+3)}{3} \\
+                &\frac{(k+1)(2k+1)(2k+3)+3(2(k+1)+1)^2}{3} = \frac{(k+2)(2k+3)(2k+5)}{3} \\
+                &(k+1)(2k+1)(2k+3)+3(2k+3)^2 = (k+2)(2k+3)(2k+5) \\
+                &(k+1)(2k+1)+3(2k+3) = (k+2)(2k+5) \\
+                &2k^2+9k+10=2k^2+9k+10 \\
+                &\therefore P(n) \text{ holds for all nonnegative } n \in \mathbb{Z}^+ \text{ by mathematical induction} \qedhere
+            \end{align*}
+        \end{proof}
+
+    \item \begin{verbatim}Ch4.1 Exercise #6\end{verbatim}
+        \begin{proof}
+            \begin{align*}
+                & \textbf{Prove}: P(n) = 1(1!) + 2(2!) + \dots + n(n!) = (n+1)! - 1 \\
+                & \textbf{Basis}: 1(1)! = (1+1)! - 1 = 2! - 2 = 2*1 - 2 = 1 \\
+                & \textbf{Assume}:  1(1!) + 2(2!) + \dots + k(k!) = (k+1)! - 1 \\
+                & \textbf{Inductive Step}: \\
+                & 1(1!) + 2(2!) + \dots + k(k!) + (k+1)((k+1)!) = ((k+1)+1)! - 1 \\
+                & (k+1)! - 1 + (k+1)(k+1)! = (k+2)! - 1 \\
+                & (k+1)! + (k+1)(k+1)! = (k+2)! \\
+                & (k+1)!(k+2) = (k+2)! \\
+                & (k+2)! = (k+2)! \\
+                & \therefore P(n) \text{ holds for }n \in \mathbb{Z}^+ \text{ by mathematical induction} \qedhere
+            \end{align*}
+        \end{proof}
+    
+    \newpage
+
+    \item \begin{verbatim}Ch4.1 Exercise #10\end{verbatim}
+        \begin{enumerate}
+            \item $ P(n) = \frac{1}{1(2)} + \frac{1}{2(3)} + \dots + \frac{1}{n(n+1)} = \frac{n}{n+1} $
+            \item \begin{proof}
+                \begin{align*}
+                    & \textbf{Basis}: \frac{1}{1(2)} = \frac{1}{1+1} = \frac{1}{2} \\
+                    & \textbf{Assume}:\frac{1}{1(2)} + \frac{1}{2(3)} + \dots + \frac{1}{k(k+1)} = \frac{k}{k+1}\\
+                    & \textbf{Inductive Step}: \\
+                    & \frac{1}{1(2)} + \frac{1}{2(3)} + \dots + \frac{1}{k(k+1)} + \frac{1}{(k+1)(k+2)} = \frac{k+1}{k+2} \\
+                    & \frac{k(k+2)}{k+1} + \frac{1}{k+1} = k+1 \\
+                    & \frac{k(k+2)+1}{k+1} = k+1 \\
+                    & k^2 + 2k + 1 = k^2 + 2k + 1 \\
+                    & \therefore P(n) \text{ holds for all } n \in \mathbb{Z}^+ \text{ by mathematical induction}\qedhere
+                \end{align*}
+                \end{proof}
+        \end{enumerate}
+
+    \item \begin{verbatim}Ch4.1 Exercise #31\end{verbatim}
+        \begin{proof}
+            \begin{align*}
+                & \textbf{Prove}: \forall n \in \mathbb{Z}^+ (2 | n^2 + n) \\
+                & \textbf{Basis}: 2 | 1^2 + 1 = 2 | 2 \\
+                & \textbf{Assume}: 2 |  k^2 + k \\
+                & \textbf{Inductive Step}: 2 | (k+1)^2 + (k + 1) \\
+                & 2 | k^2 + 2k + 1 + k + 1 \\
+                & 2 | k^2 + k + 2k + 2 \\
+                & 2 | (k^2 + k) + 2(k+1) \;\;\;\text{ Divisble by 2 by our assumption \& divisibility rules }\\
+                & \therefore 2 | n^2 + n \text{ holds for } n\in\mathbb{Z}^+ \text{ by mathematical induction} \qedhere
+            \end{align*}
+        \end{proof}
+
+    \newpage
+    
+    \item \begin{verbatim}Ch4.2 Exercise  #2\end{verbatim}
+        \begin{proof}
+            \begin{align*}
+                & P(n) = \text{the nth domino in the set will fall} \\
+                & \textbf{Basis}: P(1), P(2), P(3) \text{ are true because the first 3 dominoes fall} \\
+                & \textbf{Inductive Step}: P(k+1) \text{'s true because we know that} \\
+                & \text{$P(k-2)$ is true fall and that every time a domino falls the domino} \\
+                & \text{three places after will fall as well} \\
+                & \therefore P(n) \text{ will hold infinitely by strong induction} \qedhere
+            \end{align*}
+        \end{proof}
+
+    \item \begin{verbatim}Ch4.2 Exercise  #4\end{verbatim}
+        \begin{enumerate}
+            \item $P(18) = 7 + 7 + 4 = 18$ $P(19) = 4 + 4 + 4 + 7 = 19$\newline
+                $P(20) = 4 + 4 + 4 + 4 + 4 = 20$ $P(21) = 7 + 7 + 7 = 21$
+            \item The inductive hypothesis is that $P(18), P(19), P(20), P(21) .. P(k)$
+                is true
+            \item In the inductive step we need to prove the hypothesis holds for
+                $P(k+1)$ with $k \ge 21$
+            \item Since $k\ge21$ then we know that $P(k-3)$ is true by adding a 4-cent stamp
+                then we arrive back at $P((k-3)+4) = P(k+1)$ thus $P(k)$ holds for $k\ge21$
+            \item These statements prove that $P(n)$ is true while $n\ge18$ due to the
+                definition of strong mathematical induction
+        \end{enumerate}
+
+    \newpage
+
+    \item \begin{verbatim}Ch4.2 Exercise  #5\end{verbatim}
+        \begin{enumerate}
+            \item All possible postages that can be formed from 4-cent and 11-cent
+                stamps are any combinations of $4x + 11y$ with $x,y\in(\mathbb{Z} \ge 0)$
+                $$ 4,8,11,12,15,16,19,20,22,23,24,26,27,28,30,31,32,etc $$
+                Showing that any integer $n\ge30$ can be written in the form $4x+11y$
+            \item 
+                \begin{proof}
+                    \begin{align*}
+                        & \textbf{Basis}: P(n) n = 30 : 4(2) + 11(2) = 30 \\
+                        & \textbf{Assume}: P(k) : 2x + 11y \text{ is true}\\
+                        & \textbf{Inductive Step}: \\
+                        & \text{If $P(k)$ is true and can be formed with 11-cent stamps then} \\
+                        & \text{the $k+1$-cent stamp can also be formed by replacing the} \\
+                        & \text{11-cent steps with three 4-cent stamps} \\
+                        & \\
+                        & \text{If $P(k)$ is true and can be formed with at least eight} \\
+                        & \text{4-cent stamps then you can replace those eight stamps} \\
+                        & \text{with three 11-cent stamps to get a $k+1$-cent stamp} \\ 
+                        & \\
+                        & \therefore P(k+1) \text{ is true} \\
+                        & \therefore P(n) \text{ is true for $n\ge30$ by mathematical induction} \qedhere
+                    \end{align*}
+                \end{proof}
+            \item .
+                \begin{proof}
+                    \begin{align*}
+                        & \textbf{Basis}: P(30) = 4*2 + 11*2 = 30 \\
+                        & P(31) = 4*5 + 11*1 = 31 \; P(32) = 4*8 + 11*0 = 32 \\
+                        & P(33) = 4*0 + 11*3 = 33 \\
+                        & \textbf{Assume}: P(k) = 4x + 11y = k \\
+                        & \textbf{Inductive Step}: \\
+                        & P(k+1) = P(k-3) + 4 \\
+                        & \therefore P(k+1) \text{ is true} \\
+                        & \therefore P(n) \text{ is true for $n\ge30$ by strong induction} \qedhere
+                    \end{align*}
+                \end{proof}
+        \end{enumerate}
+
+    \newpage
+
+    \item \begin{verbatim}Ch4.2 Exercise  #7\end{verbatim}
+        Any combinations of 2x + 5y can be made with 2 and 5 dollar bills
+        $$2,4,5,6,7,8,9,10, etc$$
+        Therefore any $n\in\mathbb{Z}\ge 4$ can be made with a combination of \$2 and
+        \$5 bills
+        \begin{proof}
+            \begin{align*}
+                & \textbf{Basis}: P(4) = 2*2 = 4 \; P(5) = 5*1 = 5 \; P(6) = 2*3 = 6\\
+                & \textbf{Assume}: P(4), P(5), P(6),\dots,P(k) \text{ is true} \\
+                & \textbf{Inductive Step}: \\
+                & \text{Since $P(k-1)$ is true and $k-1 + 2 = k+1$ then $P(k+1)$ is true} \\
+                & \therefore P(n) \text{ is true for $n\ge4$ by strong induction} \qedhere
+            \end{align*}
+        \end{proof}
+    
+    \item \begin{verbatim}Ch4.2 Exercise #10\end{verbatim}
+        $$ P(n) = \text{If a chocolate bar has n squares then the result is} $$
+        $$ \text{how many breaks it takes to get n seperate squares} $$
+        $P(1)$ takes zero breaks, $P(2)$ takes one, $P(3)$ takes two. Therefore
+        it appears that P(n) takes n-1 breaks to get n individual squares
+        \begin{proof}
+            \begin{align*}
+                & \textbf{Basis}: P(1) = 1 - 1 = 0 \; P(2) = 2 - 1 = 0 \\
+                & P(3) = 3 - 1 = 2 \\
+                & \textbf{Assume}: P(1),P(2),P(3),\dots,P(k) \; are \; true \\
+                & \textbf{Inductive Step}: \text{ Since the bar with k squares can be broken}\\
+                & \text{with k-1 breaks. Then if the bar $k+1 = xy$ (x rows, y columns)} \\
+                & \text{Is first broken into two separate bars, one with k squares, and} \\
+                & \text{one bar equivalent to P(1), then the number of breaks is} \\
+                & P(k+1) = P(k) + 1 = (k-1) + 1 = k \\
+                & \therefore \text{Our hypothesis holds for $n\in\mathbb{Z}^+ P(n)$ by strong induction} \qedhere
+            \end{align*}
+        \end{proof}
+
+    \newpage
+
+    \item \begin{verbatim}Ch4.3 Exercise #2\end{verbatim}
+        \begin{enumerate}
+            \item $f(1) = -2(3) = -6 \; f(2) = -2(-6) = 12 \; f(3) = -2(12) = -24$
+                $f(4) = -2(-24) = 48 \; f(5) = -2(48) = 96$
+            \item $f(1) = 3(3)+7 = 16 \; f(2) = 3(16)+7 = 55 \; f(3) = 3(55)+7 = 172$
+                $f(4) = 3(172)+7 = 523 \; f(5) = 3(523)+7 = 1576$
+            \item $f(1) = (3)^2 - 2(3) = 3 \; f(2) = (3)^2 - 2(3) = 3 \; f(3) = 3\newline $
+                $f(4) = 3 \; f(5) = 3$
+            \item $f(1) = 3^{\frac{3}{3}} = 3 \; f(2) = 3^{\frac{3}{3}} = 3 \; f(3) = 3 \;f(4) = 3 \; f(5) = 3$
+        \end{enumerate}
+    
+    \item \begin{verbatim}Ch4.3 Exercise #2\end{verbatim}
+        \begin{enumerate}
+            \item $a_n = 6 + a_{n-1} \; a_0 = 0$
+            \item $a_n = 2 + a_{n-1} \; a_0 = 1$
+            \item $a_n = 10*a_{n-1} \; a_0 = 1$
+            \item $a_n = a_{n-1} \; a_0 = 5$
+        \end{enumerate}
+    
+    \item \begin{verbatim}Ch4.3 Exercise #10\end{verbatim}
+        $$S_{m}(n)=S_{m}(n-1)+1 \text{ for $n\ge 1$ and $S_m(0) = m$}$$
+    
+    \item \begin{verbatim}Ch4.3 Exercise #18\end{verbatim}
+        $$ A = \begin{bmatrix}1 & 1 \\1 & 0 \end{bmatrix} A^n = \begin{bmatrix} f_{n+1} & f_n \\ f_n & f_{n-1}\end{bmatrix}$$
+        $$ \textbf{Basis}:A^1 = \begin{bmatrix} f_2 & f_1 \\ f_1 & f_0 \end{bmatrix} = \begin{bmatrix} 1 & 1 \\ 1 & 0 \end{bmatrix}$$
+        $$ \textbf{Assume}: A^k = \begin{bmatrix}f_{k+1} & f_k \\ f_k & f_{k-1}\end{bmatrix} $$
+        $$ \textbf{Inductive Step}: A^{k+1} = A^k * A = \begin{bmatrix}f_{k+1} & f_k \\ f_k & f_{k-1}\end{bmatrix} \begin{bmatrix} 1 & 1 \\ 1 & 0 \end{bmatrix}$$
+        $$ = \begin{bmatrix}f_{m+2} & f_{m+1}\\f_{m+1}&f_m\end{bmatrix} \;\; \therefore A^n = \begin{bmatrix}f_{n+1} & f_n \\ f_n & f_{n-1}\end{bmatrix}\text{ by induction}$$
+
+    \newpage
+
+    \item \begin{verbatim}Ch4.3 Exercise #43\end{verbatim}
+        \begin{proof}
+            \begin{align*}
+                & \textbf{Basis}: n(T) = 1\; h(T) = 0 :\; 1 \ge 2(0) + 1 \\
+                & \textbf{Assume}: n(T_1)\ge 2h(T_1)+1\;and\;n(T_2)\ge 2h(T_2)+1 \\
+                & \textbf{Inductive Step}: \\
+                & n(T) = 1 + n(T_1) + n(T_2) \\
+                & h(T) = 1 + max(h(T_1), h(T_2)) \\
+                & n(T) = 1 + n(T_1) + n(T_2) \ge 1 + 2h(T_1)+1+2h(T_2) + 1\\
+                & \ge 1 + 2max(h(T_1), h(T_2)) + 2 \\
+                & \ge 1 + 2(max(h(T_1), h(T_2)) + 1) \;\;\;\; \text{$(h(T) = 1 + max(h(T_1), h(T_2)))$} \\
+                & \therefore n(T) \ge 2h(T) + 1 \text{ by structural induction} \qedhere
+            \end{align*}
+        \end{proof}
+    
+    \item \begin{verbatim}Ch4.4 Exercise #8\end{verbatim}
+        \begin{verbatim}
+    def sum(n: positive integer)
+        if n==1 then
+            return 1
+        else
+            return sum(n - 1) + n
+        \end{verbatim}
+
+    \item \begin{verbatim}Ch4.4 Exercise #10\end{verbatim}
+        \begin{verbatim}
+    def arrayMax(arr: positive integer array, size: integer)
+        if size == 1 then
+            return arr[0]
+        else
+            return max(arrayMax(arr[0:size-1], size-1), arr[size])
+        \end{verbatim}
+    
+    \newpage
+
+    \item \begin{verbatim}Ch4.4 Exercise  #32\end{verbatim}
+        \begin{verbatim}
+    def nthTerm(n: positive integer)
+        if n == 0 then
+            return 1
+        if n == 1 then
+            return 2
+        if n == 2 then
+            return 3
+        
+        return nthTerm(n-1) + nthTerm(n-2) + nthTerm(n-3)
+        \end{verbatim}   
+    
+    \item \begin{verbatim}Ch4.4 Exercise #35\end{verbatim}
+        \begin{verbatim}
+    Recursive:
+    def nthTerm(n: positive integer)
+        if n == 0 then
+            return 1
+        if n == 1 then
+            return 3
+        if n == 2 then
+            return 5
+        return nthTerm(n-1) + nthTerm(n-2)^2 + nthTerm(n-3)^3
+
+    Iterative: (Iterative of the more efficient algorithm)
+    def nthTerm(n: positive integer)
+        if n == 0 then
+            return 1
+        if n == 1 then
+            return 3
+        if n == 2 then
+            return 5
+        for i := 1 to n - 2
+            a = d * c^2 * b^3
+            b = c
+            c = d
+            d = a
+        return a
+        \end{verbatim}   
+    
+    \item \begin{verbatim}Ch4.4 Exercise #44\end{verbatim}
+        \begin{align*}
+            & 1:\;\; 4, 3, 2, 5, 1, 8, 7, 6 \\
+            & 2:\;\; 4, 3, 2, 5 | 1, 8, 7, 6 \\
+            & 3:\;\; 4, 3| 2, 5 | 1, 8 | 7, 6 \\
+            & 4:\;\; 4| 3| 2| 5 | 1| 8 | 7| 6 \;\;\; \text{Divide Step (vertical bar splits groupings)}\\
+            & 5:\;\; 3, 4| 2, 5 | 1, 8 | 6, 7 \\
+            & 6:\;\; 2, 3, 4, 5 | 1, 6, 7, 8 \\
+            & 7:\;\; 1, 2, 3, 4, 5, 6, 7, 8 \\
+        \end{align*}
+        
+    \end{enumerate}
+
+\end{document}
+

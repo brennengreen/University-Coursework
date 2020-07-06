@@ -1,0 +1,221 @@
+\documentclass[12pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+
+\begin{document}
+\title{Homework 3}
+\author{Brennen Green}
+\maketitle
+
+
+\begin{enumerate}
+    \item \begin{verbatim}Ch3.1 Exercise #5\end{verbatim}
+        Start at the second element and sequentially iterate over the list of elements and comparing
+        every element to the one before it. If an element is equal to the one before it, remove that
+        element from the list.
+    \item \begin{verbatim}Ch3.1  Exercise  #23\end{verbatim}
+        A function is onto  if and only if $ f(a) = f(b) \rightarrow a = b $ so in order to check
+        if a our two sets of integers and function are onto, we must ensure there is no case where
+        $ f(a) = f(b) $ is true yet $ a \ne b $ \newline \newline
+        So our algorithm must iterate over the image set $ b_i $, at every element we must iterate over 
+        the pre-image $ a_j $ until we find an element where $ a_j = b_i $. If there is an element 
+        $ b_i $ that does not have some matching element $ a_j $ then we return our algorithm as
+        false. If our algorithm iterates over the entire image set with no interuption, the algorithm
+        returns true. 
+    \item \begin{verbatim}Ch3.2 Exercise #15\end{verbatim}
+        If some function is $ \mathcal{O}(1) $ it is the same as saying that, in the worst case, a function
+        will always produce some constant and never grow.
+    \item \begin{verbatim}Ch3.2 Exercise #30\end{verbatim}
+        If some function is $ \Omega(1) $ it is the same as saying that, in the best case, a function
+        will always produce some constant and never grow.
+        
+    \newpage
+
+    \item \begin{verbatim}Ch3.2 Exercise #31\end{verbatim}
+        If some function is $ \Theta(1) $ it is the same as saying that, in the best case, a function
+        will always produce some constant and never grow. Or put in other words, the function is both
+        $ \Omega(1) $ AND $ \mathcal{O}(1) $
+    \item \begin{verbatim}Ch3.3  Exercise  #28 \end{verbatim}
+        \begin{enumerate}[label=\roman*]
+            \item Since bubble sort makes $ \frac{n(n-1)}{2} $ (or ) comparisons with input n, we can plug 2n into this equation
+            to find that with input 2n bubble sort makes $ 2n^2 - n $ comparisons. Dividing the amount of comparisons at 2n by
+            the number of comparisons at n that this change in the number of comparisons was more than double and definitely
+            significant.
+
+            \item We have an identical process to compare the growth of comparisons for insertion sort. Since instertion sort
+            also makes $ \frac{n(n-1)}{2} $ comparisons with an input of n, plugging 2n into this will show us that with an
+            input of 2n insertion sort will need $ 2n^2 -n $ comparisons. Which is more than a doubling of comparisons and
+            significant growth.
+        \end{enumerate}
+        These two results make sense as both functions have extremely similar computational complexities.
+    \item \begin{verbatim}Ch3.4 Exercise #5 \end{verbatim}
+        \begin{proof}
+            \begin{align*}
+                & a | b \wedge b | a \rightarrow (a = b) \vee (a = -b)  \\
+                & a | b \rightarrow ac = b \wedge b | a \rightarrow bc = a && \text{(definition of division)} \\
+                &  (bc)c = b  \\
+                &  bc^2 = b \\
+                &  c = \pm1  \\
+                &  a(1) = b a(-1) = b  \\
+                &  a = b \vee a = -b  \qedhere 
+            \end{align*}
+        \end{proof}
+
+    \newpage
+
+    \item \begin{verbatim}Ch3.4 Exercise #16\end{verbatim}
+        \begin{enumerate}[label=\alph*]
+            \item 1
+            \item 4
+            \item 3
+            \item 9
+        \end{enumerate}
+
+    \item \begin{verbatim}Ch3.4 Exercise #24\end{verbatim}
+        \begin{proof}
+            \begin{align*}
+                & \text{n is an odd integer} \rightarrow n^2 \equiv 1(mod 8) \\
+                & n = 2k + 1 \\
+                & 8 | n^2 - 1 \\
+                & 8 | (2k + 1)^2 - 1 \\
+                & 8 | 4k^2 + 4k \\
+                & 8 | 4k(k + 1) \\
+                & 8 | 4(2x)   && \text{(k(k+1) is even since k or k+1 is even)} \\
+                & 8 | 8x \\
+                & \therefore 8 | n^2 - 1 \\
+                & \therefore n^2 \equiv 1(mod 8) && \text{(definition of congruency)} \qedhere 
+            \end{align*}
+        \end{proof}
+
+    \item \begin{verbatim}Ch3.5 Exercise #4\end{verbatim}
+        \begin{enumerate}[label=\alph*]
+            \item $ 3 * 13 $ 
+            \item $ 3 * 3 * 3 * 3 $
+            \item $ 101 $
+            \item $ 13 * 11 $
+            \item $ 17 * 17 $
+            \item $ 31 * 29 $
+
+        \end{enumerate}
+    
+    \newpage
+
+    \item \begin{verbatim} Ch3.5 Exercise #31 \end{verbatim}
+        \begin{proof}
+            \begin{align*}
+                & \forall k \in \mathbb{Z}(6 | k*(k+1)*(k+2)) \\
+                & 1.\;\; 2 | k*(k+1)*(k+2) && \text{(at least one number will be even)} \\
+                & 2.\;\; 3 | k*(k+1)*(k+2) && \text{(every 3rd integer is divisible by 3)} \\
+                & 3.\;\; 2 * 3 | k*(k+1)*(k+2) && \text{((a $|$ c) and (b $|$ c) then ab $|$ c)} \\
+                & 4.\;\; \therefore 6 | k*(k+1)*(k+2) \qedhere
+            \end{align*}
+        \end{proof}
+    
+    \item \begin{verbatim} Ch3.6 Exercise #1 \end{verbatim}
+        \begin{enumerate}[label=\alph*]
+            \item 1110 0111
+            \item 10 0011 0110 100
+            \item 1 0111 1101 0110 1100
+        \end{enumerate}
+
+    \item \begin{verbatim} Ch3.6 Exercise #3 \end{verbatim}
+        \begin{enumerate}[label=\alph*]
+            \item 31
+            \item 513
+            \item 341
+            \item 26896
+        \end{enumerate}
+
+    \item \begin{verbatim} Ch3.6 Exercise #3 \end{verbatim}
+        \begin{enumerate}[label=\alph*]
+            \item 2062
+            \item 79275
+            \item 43962
+            \item 233811181
+        \end{enumerate}
+
+    \newpage
+
+    \item \begin{verbatim} Ch3.6 Exercise #24 \end{verbatim}
+        \begin{enumerate}[label=\alph*]
+            \item 1
+            \item 1
+            \item 1
+            \item 139
+            \item 1
+            \item 1
+        \end{enumerate}
+    \item \begin{verbatim} Ch3.8 Exercise #2 \end{verbatim}
+        \begin{enumerate}[label=\alph*]
+            \item 
+                \textbf{A} + \textbf{B} = 
+                $\begin{bmatrix}
+                    0 & 3 & 9 \\
+                    1 & 4 & -1 \\
+                    2 & -5 & -3    
+                \end{bmatrix} $
+            \item 
+                \textbf{A} + \textbf{B} =
+                $\begin{bmatrix}
+                    -4 & 9 & 2 & 10 \\
+                    -4 & -5 & 4 & 0   
+                \end{bmatrix} $
+        \end{enumerate}
+    \item \begin{verbatim} Ch3.8 Exercise #3 \end{verbatim}
+        \begin{enumerate}[label=\alph*]
+            \item 
+                \textbf{AB} = 
+                $\begin{bmatrix}
+                    1 & 11 \\
+                    2 & 18    
+                \end{bmatrix} $
+            \item 
+                \textbf{AB} =
+                $\begin{bmatrix}
+                    2 &  -2  & -3 \\
+                    1 &   0  & 2 \\
+                    9 &  -4  & 4    
+                \end{bmatrix} $
+            \item 
+                \textbf{AB} =
+                $\begin{bmatrix}
+                    -4 & 15 & -4 & 1\\
+                    -3 & 10 & 2 & -3\\
+                    0 & 2 & -8 & 6\\
+                    1 & -8 & 18 & -13  
+                \end{bmatrix} $
+        \end{enumerate}
+    \item \begin{verbatim} Ch3.8 Exercise #5 \end{verbatim}
+        \textbf{A} = $\begin{bmatrix} \frac{9}{5} & -\frac{6}{5} \\ -\frac{1}{5} & \frac{4}{5}  \end{bmatrix}$
+    
+    \newpage
+
+    \item \begin{verbatim} Ch3.8 Exercise #10 \end{verbatim}
+         \begin{enumerate}[label=\alph*]
+            \item 3x5
+            \item Undefined
+            \item 3x4
+            \item Undefined
+            \item Undefined
+            \item 4x5
+         \end{enumerate}
+    
+    \item \begin{verbatim} Ch3.8 Exercise #18  \end{verbatim}
+         If a matrix $A^{-1}$ is the inverse of matrix A then the product of the two is the identity matrix.
+         Since the product of \newline\newline
+         
+         $\begin{bmatrix}2 & 3 & -1 \\1 & 2 & 1 \\-1 & -1 & 3\end{bmatrix} $ 
+         *
+         $\begin{bmatrix}7 & -8 & 5 \\-4 & 5 & -3 \\1 & -1 & 1\end{bmatrix}$
+         =
+         $\begin{bmatrix}1 & 0 & 0 \\0 & 1 & 0 \\0 & 0 & 1\end{bmatrix}$\newline\newline
+
+         which is a variation of the identity matrix then it can be said that the latter matrix
+         is the inverse of the former.
+
+         
+        
+\end{enumerate}
+
+\end{document}
+
