@@ -1,0 +1,128 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+
+\begin{document}
+\title{Homework 5}
+\author{Brennen Green}
+\maketitle
+
+
+\begin{enumerate}
+    \item \begin{verbatim}Ch5.1 Exercise #2\end{verbatim} 
+        There are 27 * 37 or 999 offices in the building.
+    \item \begin{verbatim}Ch5.1 Exercise #8\end{verbatim} 
+        There are 26*25*24 or 15600 possible initials
+    \item \begin{verbatim}Ch5.1 Exercise #23\end{verbatim}
+        \begin{enumerate}
+            \item $10^3 - 10 = 990$
+            \item $5 * 10 * 10 = 500$
+            \item $1 * 1 * 9 * 3 = 27$
+        \end{enumerate}
+    \item \begin{verbatim}Ch5.1 Exercise #31\end{verbatim}
+        \begin{enumerate}
+            \item $21^8 = 37,822,859,361$
+            \item $21*20*19*18*17*16*15*14 = 8,204,716,800$
+            \item $5*26^7 = 40,159,050,880$
+            \item $5*25*24*23*22*21*20*19 = 12,113,640,000$
+            \item $ 26^8 - 21^8 = 171,004,205,215 $
+            \item $ 8 * 5 * 21^7 = 72,043,541,640 $
+            \item $ 26^7 - 21^7 = 6,230,721,635 $
+            \item $ 1*25*24*23*22*21*20*19 - 1*20*19*18*17*16*15*14 = 2,032,027,200$
+        \end{enumerate}
+    \item \begin{verbatim}Ch5.2 Exercise #4\end{verbatim}
+        \begin{enumerate}
+            \item 5 balls
+            \item 13 balls
+        \end{enumerate}
+    
+    \newpage
+    
+    \item \begin{verbatim}Ch5.2 Exercise #9\end{verbatim}
+        $ 99 (students) * 50 (states) + 1 (student) = 4951 \;students $
+    \item \begin{verbatim}Ch5.2 Exercise #9\end{verbatim}
+        \begin{enumerate}
+            \item \begin{proof}
+                The list of integers which add up to 11 are: $$(1,10), (2,9), (3,8), (4,7), (5,6)$$
+                Looking at the list you can see it is split into the first and second half of the 10 integers.
+                In otherwords, the first and last groupings of 5 integers.
+                \begin{align*}
+                    & \text{1. If we pick 5 integers, there is no gaurantee any will add to 11}\\
+                    & \text{2. Adding 2 integers will give at-least 2 combinations equal to 11}\\
+                    & \text{3. This is an effective example of the Pigeonhole Principle} \qedhere
+                \end{align*}
+            \end{proof}
+            \item There would not be two combinations but there would be at-least
+            one combination that equals 11 if you choose six integers.
+        \end{enumerate}
+    \item \begin{verbatim}Ch5.2 Exercise #21\end{verbatim}
+        $ \{4, 3, 2, 1, 8, 7, 6, 5, 12, 11, 10, 9, 16, 15, 14, 13\} $
+    \item \begin{verbatim}Ch5.3 Exercise #2\end{verbatim}
+        5040
+    \item \begin{verbatim}Ch5.3 Exercise #5\end{verbatim}
+        \begin{enumerate}
+            \item $P(6,3) = 120$
+            \item $P(6,5) = 720$
+            \item $P(8,1) = 8$
+            \item $P(8,5) = 6,720$
+            \item $P(8,8) = 40,320$
+            \item $P(10,9)= 3,628,800$
+        \end{enumerate}
+    \item \begin{verbatim}Ch5.3 Exercise #11\end{verbatim}
+        \begin{enumerate}
+            \item $10 nCr 4 = 210 \text{ strings}$
+            \item $1 + C(10,1) + C(10,2) + C(10=3) + C(10,4) = 386 \text{ strings}$
+            \item $C(10,4) + C(10,5) + C(10,6) + C(10,7) + C(10,8) + C(10,9) + C(10,10) = 848 \text{ strings}$
+            \item $C(10,5) = 252$
+        \end{enumerate}
+    
+    \newpage
+
+    \item \begin{verbatim}Ch5.3 Exercise  #28\end{verbatim}
+        $C(40,17) = 88,732,378,800$
+    \item \begin{verbatim}Ch5.4 Exercise #3\end{verbatim}
+        $(x+y)^6 = x^6 + 6x^5y + 15x^4y^2 + 20x^3y^3 + 15x^2y^4 + 6xy^5 + y^6$
+    \item \begin{verbatim}Ch5.4 Exercise #6\end{verbatim}
+        $\binom{11}{7}x^7 = 330$
+    \item \begin{verbatim}Ch5.4 Exercise #23\end{verbatim}
+        \begin{proof}
+            Show that $\forall n,k \in \mathbb{Z}^+ (\binom{n+1}{k} = (n+1)\binom{n}{k-1}/k)$
+            \begin{align*}
+                & \binom{n+1}{k} = \frac{(n+1)!}{k!((n+1)-k)!} \\
+                & = \frac{(n+1)*n!}{k!((n+1)-k)!} \\
+                & = \frac{(n+1)*n!}{k*(k-1)!*(n+1-k)!} \\
+                & = \frac{n+1}{k} * \frac{n!}{(k-1)!*(n+1-k))!} \\
+                & = \frac{n+1}{k} * \frac{n!}{(k-1)!*(n-(k-1))!} \\
+                & = \frac{n+1}{k} * \binom{n}{k-1} \\
+                & \therefore  \binom{n+1}{k} = (n+1)\binom{n}{k-1}/k \qedhere
+            \end{align*}
+        \end{proof}
+    \item \begin{verbatim}Ch5.5 Exercise  #9\end{verbatim}
+        \begin{enumerate}
+            \item $ C(n+r-1,r) = C(13, 6) = 1,716$
+            \item $ C(n+r-1,r) = C(19, 12) = 50,388$
+            \item $ C(n+r-1,r) = C(31, 24) = 2,629,575$
+            \item $ C(n+r-1,r) = C(11, 4) = 330$
+            \item $ C(15,9) + C(14,8) + C(13,7) = 9,724$
+        \end{enumerate}
+
+    \item \begin{verbatim}Ch5.5 Exercise #14\end{verbatim}
+        $ C(n+r-1, r) = C(20, 4) = \frac{20!}{4!(16!)} = 4,845$
+    \item \begin{verbatim}Ch5.5 Exercise #30\end{verbatim}
+        $ \frac{11!}{1! * 4! * 4! * 2!} = 34,650$
+    \item \begin{verbatim}Ch5.6 Exercise #2\end{verbatim}
+        156423, 156423, 165432, 165432, 231456, 231456, 234561, 234561, 435612, 543216, 543216
+    \item \begin{verbatim}Ch5.6 Exercise  #4\end{verbatim}
+        \begin{enumerate}
+            \item 1423
+            \item 51234
+            \item 13254
+            \item 612354
+            \item 1623574
+            \item 23587461
+        \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+

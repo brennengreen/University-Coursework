@@ -1,0 +1,139 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{color}
+
+\begin{document}
+\title{Exam One}
+\author{Brennen Green}
+\maketitle
+
+
+\begin{enumerate}
+    \item
+    \begin{tabular}{@{ }c@{ }@{ }c | c@{ }@{}c@{}@{ }c@{ }@{ }c@{ }@{ }c@{ }@{}c@{ } | c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c@{ }@{ }c}
+        p & q & $\neg$ & ( & p & $\rightarrow$ & q & ) &  & p & $\wedge$ & $\neg$ &q& \\
+        \hline 
+        T & T &  &  &  & F &  &  &  &   &  & F &  & \\
+        T & F &  &  &  & T &  &  &  &   &  & T &  & \\
+        F & T &  &  &  & F &  &  &  &   &  & F &  & \\
+        F & F &  &  &  & F &  &  &  &   &  & F &  & \\
+    \end{tabular}
+    
+    \item 
+    \begin{align*}
+        & 1. \;\; \neg a \wedge b &\text{(Original Premise)} \\
+        & 2. \;\; \neg a & \text{(Simplication: } \neg a \wedge b \rightarrow \neg a) \\
+        & 3. \;\; c \rightarrow a \\
+        & 4. \;\; \neg c & \text{(Modus Tollens: } \neg a \wedge (c\rightarrow a) \rightarrow \neg c) \\
+        & 5. \;\; \neg c \rightarrow d \\
+        & 6. \;\; d  & \text{(Modus Ponens: } \neg c \wedge (\neg c \rightarrow d) \rightarrow d) \\
+        & 7. \;\; d \rightarrow e \\
+        & 7. \;\; \therefore e & \text{(Modus Ponens: } d \wedge (d \rightarrow e) \rightarrow e) \\
+    \end{align*}
+
+    \newpage
+
+    \item Prove: $ a,b\in \mathbb{Z} a^2 + b^2$ is even, then $ a + b $ is also even
+        \begin{proof}
+            \begin{align*}
+                & \text{Even Integer} = 2i \\
+                & a = 2i \; b = 2j \\
+                & a^2 + b^2 = 4i^2 + 4j^2 = 2(2(i^2 + j^2)) \text{  (Even Form)} \\
+                & a + b = 2i + 2j = 2(i+j) \text{  (Even Form)} \\
+                & \therefore a,b\in \mathbb{Z} a^2 + b^2 \text{is even, then $ a + b $ is also even}
+            \end{align*}
+        \end{proof}
+    
+
+    \item Prove: $ \nexists x,y \in \mathbb{Z} (4x^2 - y^2 = 1)$
+        \begin{proof}
+            \begin{align*}
+                & \exists x,y \in \mathbb{Z} (4x^2 - y^2 = 1) \dots (1) \\
+                & x = 2k \;\; y = 2k + 1 \\
+                & 4(2k)^2 - (2k+1)^2 = 1 \\
+                & 16k^2 - 4k^2 - 4k - 1 = 1 \\
+                & 12k^2 - 4k - 2 = 0 \\
+                & \nexists k \in \mathbb{Z} (12k^2 - 4k - 2 = 0) & \text{(Quadratic Equation)}\\
+                & \therefore \nexists x,y \in \mathbb{Z} (4x^2 - y^2 = 1) \text{ by contradiction}
+            \end{align*}
+        \end{proof}
+
+    \item Prove: $ \forall n > 2 (\text{if n is prime then n is odd}) $
+        \begin{proof}
+            \begin{align*}
+                & \text{Contrapositive: }\forall n > 2(\text{if n is not prime then n is even}) \\
+                & \text{If n is not prime then its divisible by more than 1 and itself} \\
+                & \text{If n is even then} n = 2k \\
+                & 2 | 2k \wedge 1 | 2k \wedge k | 2k \wedge 2k | 2k\\
+                & \therefore \forall n > 2(\text{if n is not prime then n is even}) \\
+                & \therefore \forall n > 2 (\text{if n is prime then n is odd) by contraposition}
+            \end{align*}
+        \end{proof}
+    
+    \newpage
+
+    \item
+        \begin{enumerate}
+            \item $M \cap A$
+            \item $F - M$
+            \item $R \cap (A \cap F)$
+            \item $(R - Y) \cap (F \cap M) - A$
+        \end{enumerate}
+    
+    \item Premise:$ (B - A) \cup (C - A) = (B\cup C) - A$
+        \begin{align*}
+            &(B - A) = \{x | x \in B \wedge x \notin A\} \\
+            &(C - A) = \{x | x \in B \wedge x \notin A\} \\
+            & (B - A) \cup (C - A) = \{x | (x \in B \wedge x \in C) \wedge x \notin A \} \\
+            & \\
+            & (B\cup C) = \{x | x \in B \wedge x \in C\} \\
+            & (B\cup C) - A = \{x | (x \in B \wedge x \in C) \wedge x \notin A\} \\
+            & \\
+            & \therefore \text{The premise has been shown}
+        \end{align*}
+
+    \item No the function $g(x) = 2x - 1$ is not onto because there are elements
+    in the set of integers that the function $g(x)$ does not map to given the
+    domain. As an example, there is no integer such that g(x) = 2. In fact,
+    no even integer is mapped by this function because it is actually just a different
+    representation of an odd integer.
+
+    \item If $ f(x) = \frac{x^2}{1-x} $ and $ g(x) = | x^2 - x | $ then $ f \circ g = f(g(x)) = \frac{x^2 - x}{1-|x^2 - x|}$
+
+    \item $ \sum_{n=0}^{142}(7n) $
+    
+    \item 
+        \begin{proof}
+            \begin{align*}
+                &\text{Basis}: \prod_{i=2}^{2}{1-\frac{1}{i^2}} = 1 - \frac{1}{4} = \frac{2+1}{2*2} = \frac{3}{4}\\
+                &\text{Assume}: \prod_{i=2}^{k}(1-\frac{1}{i^2}) = \frac{k+1}{2k} \\
+                &\text{Inductive Step}: \prod_{i=2}^{k+1}(1-\frac{1}{i^2}) = \frac{k+2}{2k+2} \\
+                &\frac{k+1}{2k} * (1-\frac{1}{k^2}) = \frac{k+2}{2k+2} \\
+                &\frac{k+2}{2(k+1)} = \frac{k+2}{2k+2} \\
+                &\frac{k+2}{2k+2} = \frac{k+2}{2k+2} \\
+                &\therefore \text{the premise put forth in the question is true by induction}        
+            \end{align*}
+        \end{proof}
+    
+    \item The smallest amount is 42 such that every integer $n \ge 42$ can be formed with 7 and 8 cent stamps
+        \begin{proof}
+            \begin{align*}
+                &\text{Basis}: P(42) =  7*6 + 8*0 = 42 \; P(43) =  7 * 5 + 8 = 43\\
+                &\text{Assume}: P(42), P(43), \dots , P(k) = 7x+8y\\
+                &\text{Inductive Step}: \\
+                & \text{In order to achieve P(k+1) just replace one} \\
+                &\text{7 cent stamp with one 8 cent stamp} \\
+                & \\
+                &\text{Alternatively, if P(k) can be made with six 8-cent stamps} \\
+                &\text{then P(k+1) can be made with seven 7-cent stamps} \\ 
+                &\therefore \text{P(n) is true for all $n \ge 42$ by strong induction}
+            \end{align*}
+        \end{proof}
+
+    \item $ a_{i+1} = (i +1)^2 + 7 = i^2 + 2i + 1 + 7 \; a_0 = 7$
+
+    \end{enumerate}
+
+\end{document}
+
