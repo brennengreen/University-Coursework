@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{color}
+\usepackage{tikz}
+
+% Tikz settings optimized for causal graphs.
+% Just copy-paste this part
+\usetikzlibrary{shapes,decorations,arrows,calc,arrows.meta,fit,positioning}
+\tikzset{
+    -Latex,auto,node distance =1 cm and 1 cm,semithick,
+    state/.style ={ellipse, draw, minimum width = 0.7 cm},
+    point/.style = {circle, draw, inner sep=0.04cm,fill,node contents={}},
+    bidirected/.style={Latex-Latex,dashed},
+    el/.style = {inner sep=2pt, align=left, sloped}
+}
+
+\begin{document}
+\title{CS275 Final Exam}
+\author{Brennen Green}
+\maketitle
+
+
+\begin{enumerate}
+    \item The coefficient of $x^6$ in the expansion of $(7x+3y)^{11} = \frac{11!}{5!(11-5)!}(7x)^6(3y)^5 = 13207982634$ (coefficient only)
+    \item In this question you stated there was a flush (five cards of the same suit) but then defined a straight (five cards with consecutive types)
+        I did not know which to use for my answer so I will give two parts using both the number of flushes + straight flushes and the number of straights + straight flushes.
+        \begin{enumerate}
+            \item The Question Using Flushes: \newline
+                Possible flushes (including straight flushes):$ 4 * C(13, 5) = 4 * 1287 = 5,148$ possible 5-card hands
+            \item The Question Using Straights: \newline
+                Possible straights (including straight flushes):$ 10 * 4^5 = 10,240$ possible 5-card hands
+        \end{enumerate}
+    \item $2^9 - 2C(9,0) - 2C(9,1) - 2C(9,2) - C(9,3) = 336$ bit strings
+    \item E and F are not indepedent. In order for two events to be independent then
+        P(E)P(F) = P(E$\cap$F). P(E) = $\frac{15}{32}$ P(F) = $\frac{1}{5}$. P(E$\cap$F) = $\frac{1}{4}$
+        Since in this scenario $P(E)*P(F) = \frac{15}{160} \neq \frac{1}{4}$ the events E and F are not independent
+    \item $\frac{C(4, 2) + C(3, 2) + C(2,2)}{P(5,3)} = \frac{10}{60} = \frac{1}{6}$
+    \item 2*Expected Value of Fair Die + Expected Value of Weighted Die = 2*3.5 + $\frac{11}{3}$ = $\frac{32}{3}$
+    \newpage
+    \item $r^2 - 7r - 12 = 0 \rightarrow r = \frac{7 \pm \sqrt{97}}{2}$\newline
+        $a_n = \alpha_1(\frac{7 + \sqrt{97}}{2}) + \alpha_2 \frac{7 - \sqrt{97}}{2} \text{ AND } a_0 = 4\;a_1 = 7$\newline
+        $\therefore \alpha_1 = \frac{194-7\sqrt{97}}{97} \;\; \alpha_2 = \frac{7\sqrt{97} + 194}{97}$ \newline
+        $\therefore a_n = \frac{194-7\sqrt{97}}{97}(\frac{7 + \sqrt{97}}{2}) + \frac{7\sqrt{97} + 194}{97}(\frac{7 - \sqrt{97}}{2})$
+    \item $$a_n = 1.05a_{n-1} + 1.10a_{n-2}$$
+          $$a_0 = \$500 \; \; a_1 = \$525 $$
+          $$a_2 = \$1,101.25 \; a_3 = \$1,733.81$$
+          $$ \dots $$
+          $$ a_{17} = \$2,930,701.11 $$
+    \item $$ a_n = 8a_{n-1} + 10^{n-1} \; a_0 = 1$$
+          $$ G(x) - a_0 = \sum_{k = 1}^{\infty}a_kx^k$$
+          $$ = \sum_{k = 1}^{\infty}(8a_{k-1}+10^{k-1})x^k$$
+          $$ = 8x\sum_{k = 1}^{\infty}a_{k-1}x^{k-1} + 10x^2\sum_{k = 1}^{\infty}10^{k-2}x^{k-2}$$
+          $$ = 8xG(x) + \frac{10x^2}{1-10x} $$
+          $$ G(x) = \frac{5x}{4(-10x + 1)} $$
+    \item If $a, b, c \in \mathbb{Z}$ and $a | b \wedge b | c$ then $n_1$ and $n_2$ exists such that $a*n_1 = b$
+        and $b*n_2 = c$ then $ (n_1 * n_2)a = c \rightarrow a | c$ and the relation is transitive
+    \item In order for a relation to be transitive then if (a,b) and (b,c) exist in the relation, so must (a,c)
+        That means this relation represented in the matrix is not transitive, there may be multiple examples in the
+        matrix to prove this however we only need one to prove that it is not transitive. In the matrix (3,2) and (2,3)
+        are both relations but (3,3) is not in the adjacency matrix.
+    \item \begin{enumerate}
+        \item A graph is reflexive if every element loops to itself
+        \item A graph is irreflexive if no elements loop to themself
+        \item A graph is symmetric if every edge of a directed graph has a compliment going in the opposite direction
+        \item A graph is antisymmetric if no edge of a directed graph has a compliment in the opposite direction
+        \item A graph is transitive if for ever pair of edge (x,y) and (y,z) there exists an edge (x,z)
+    \end{enumerate}
+\end{enumerate}
+
+\end{document}
+

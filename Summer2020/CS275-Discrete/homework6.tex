@@ -1,0 +1,64 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+
+\begin{document}
+\title{Homework 6}
+\author{Brennen Green}
+\maketitle
+
+
+\begin{enumerate}
+    \item $18 / 36 = 1/2\;or\;50\%$
+    \item $\frac{\binom{50}{3}}{\binom{52}{5}} = \frac{19,600}{2,598,960} \approx 0.00754$
+    \item $\frac{\binom{13}{5} * 4^5}{\binom{52}{5}} = \frac{1,317,888}{2,598,960} \approx 0.5071$
+    \item $\frac{3^6}{6^6} = 0.015625$
+    \item $\frac{1}{\binom{100}{8}} = \frac{1}{186,087,894,300} \approx 0.000000000005374$
+    \item $ P(1) = P(2) = P(4) = P(5) = P(6) = \frac{1}{7} $ $ P(3) = \frac{2}{7} $ 
+    \item $ P(7) = \frac{9}{49} $ By adding the probabilities of all 6 possible outcomes that equal 7 
+    \item \begin{enumerate}
+        \item 0.5
+        \item 0.5
+        \item $\frac{1}{n}$
+        \item $ 0.5 * 0.5 = 0.25 $
+        \item $ \frac{1}{3} $
+    \end{enumerate}
+    \item \begin{proof}
+        \begin{align*}
+            &P(\overline{E}\cap\overline{F}) = 1 - P(E\cup F)\\
+            &1 - P(E \cup F) = 1 - P(E) - P(F) + P(E \cap F) \\
+            &= \; (1-P(E))(1-P(F))\\
+            &= \; P(\overline{E})P(\overline{F}) \text{ definition of independence} \\
+            &\therefore \overline{E}\;\&\;\overline{F} \text{ are independent} \qedhere
+        \end{align*}
+    \end{proof}
+    \item \begin{enumerate}
+        \item E and F are not independent
+        \item E and F are not independent
+        \item E and F are not independent
+    \end{enumerate}
+    \item $P(F|E) = \frac{3}{5}$
+    \item P(Frida picked from box 1 $|$ she picked a blue ball) = 0.75
+    \item P(Ann picked from box 2 $|$ she picked an orange ball) = $\frac{35}{68}$
+    \item P(does not use opium $|$ tests negative) = 0.999 \newline P(uses opium $|$ tests positive) = 0.3242
+    \item $P(F_j | E) = \frac{P(E|F_1)P(F_1)}{\sum_{j = 1}^{3}P(E|F_j)P(F_j)} = \frac{3}{17} \approx 0.1765$
+    \item $\sum_{n=0}^{10} \binom{10}{n}(5/6)^{10-n}(1/6)^n = 1.667$
+    \item $ 3.5 + 3.5 + 3.5 = 10.5 $ Since each dice has an expected value of 3.5
+    \item 6 times
+    \item \begin{proof}
+        \begin{align*}
+            & \text{X = Number of First Die Z = Number of Second Die} \\
+            & E(Z) = E(X) = 3.5 \\
+            & E(Y) = 3.5 + 3.5 = 7 \\
+            & E(XY) = E(X(X+Z)) = E(X^2) + E(X)E(Z) \\
+            & E(X^2) = 1^2/6 + 2^2/6 + 3^2/6 + 4^2/6 + 5^2/6 + 6^2/6 = 15.1667 \\
+            & E(XY) = 15.1667 + (3.5)(3.5) = 27.41667 \\
+            & E(X)E(Y) = 3.5 * 7 = 24.5 \\
+            & \therefore E(XY) \neq E(X)E(Y) \qedhere
+        \end{align*}
+    \end{proof}
+    \item $np(1-p) = 10*(.5)(.5) = 2.5 $
+\end{enumerate}
+
+\end{document}
+

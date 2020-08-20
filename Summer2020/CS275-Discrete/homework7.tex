@@ -1,0 +1,115 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+
+\begin{document}
+\title{Homework 7}
+\author{Brennen Green}
+\maketitle
+
+
+\begin{enumerate}
+    \item \begin{enumerate}
+        \item 2, 12, 72, 432, 2592, 15552
+        \item 2, 4, 16, 256, 65536, 4294967296
+        \item 1, 2, 5, 11, 26, 59
+        \item 1, 1, 6, 27, 204, 1695
+        \item 1, 2, 0, 1, 3, 3
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item -3(0) + 4(0) = 0 = $a_n$
+        \item -3(1) + 4(1) = 1 = $a_n$
+        \item $-3(-4^{n-1}) + 4(-4^{n-2}) = -3(-4)(-4^{n-2}) + 4(-4^{n-2})$
+        $ = (-4)^{n-2}*(-4)^2 = -4^n$
+        \item $ -3(2(-4)^{n-1}+3)+4(2(-4)^{n-2}+3) $\newline
+        $ = -6(-4)^{n-1}-9+4(2(-4)^{n-2}+3)$\newline
+        $ = (-4)^{n-2}(-6*(-4)+8)+3 $\newline
+        $ = (-4)^{n-2}(16)(2)+3 $\newline
+        $ = 2(-4)^n + 3 = a_n $
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item $ a_n = a_{n-1}*1.09 \; a_0 = 1000$
+        \item $ 1.09^n * 1000 $
+        \item $ \$5,529,041 $
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item $a_n = a_{n-1} + a_{n-2} + 2^{n-2}$
+        \item $a_0 = 0 \; a_1=0 \;$
+        \item $a_7 = a_6 + a_5 + 2^5 = 43 + 19 + 32 = 94$
+    \end{enumerate}
+    \newpage
+    \item \begin{enumerate}
+        \item Linear Homogenous Relationship with degree of 2
+        \item Not Homogenous
+        \item Not Linear
+        \item Linear Homogenous Relationship with degree of 3
+        \item Not Linear
+        \item Not Homogenous
+        \item Linear Homogenous Relationship with degree of 7
+    \end{enumerate}
+    \item \begin{enumerate}
+        \item $P_n = 1.2P_{n-1} + 0.45P_{n-2} \; P_0 = \$100,000 \; P_1 = \$120,000$
+        \item $P_n = (\frac{250000}{3})*(\frac{3}{2})^n + (50000)*(-\frac{3}{10})^n$
+    \end{enumerate}
+    \item $ a_n = 5 + 3(-2)^n - 3^n $
+    \item $ a_n = \alpha_1 * (1)^n + \alpha_2 * (-2)^n + \alpha_3 * (3)^n + \alpha_4 * (-4)^n $ 
+    \item \begin{align*}
+        & f(64) = f(32) + 2 \\
+        & = f(16) + 2 + 2 \\
+        & = f(8) + 2 + 2 + 2 \\
+        & = f(4) + 2 + 2 + 2 + 2 \\
+        & = f(2) + 2 + 2 + 2 + 2 + 2 \\
+        & = f(1) + 2 + 2 + 2 + 2 + 2 + 2 \\
+        & = 2 + 12 = 14 \text{ comparisons}\\
+    \end{align*}
+    \item \begin{enumerate}
+        \item $f(3) = f(1) + 1 = 1+1 = 2$
+        \item $f(27) = f(9) + 1 = f(3) + 1 + 1 = f(1) + 1 + 1 + 1 = 4$
+        \item $f(729) = f(243) + 1 = f(81) + 2 = f(27) + 3 = f(9) + 4$\newline
+        $=f(3) + 5 = f(1) + 6 = 7 $
+    \end{enumerate}
+    \item \begin{align*}
+        & f(n) = 2f(\frac{n}{3}) + 4 \\
+        & f(3^k) = 2f(3^{k-1}) + 4 \\
+        & \dots \\
+        & = 2^k * f(1) + 4(2^k - 1) \\
+        & = 2^k + 4(2^k - 1) \\
+        & = 2^k + 2^{k+2} - 4 \\
+    \end{align*}
+    \item \begin{proof}
+        \begin{align*}
+            & f(n) = C_1 * n^d + C_2 * n^{\log_b{a}} \\
+            & C_1 = \frac{b^d * c}{b^d - 1} \; C_2 = \frac{b^d * c}{a - b^d} \\
+            & a = 5 \; b = 4 \; c = 6 \; d = 1 \; \text{(Divide and Conquer Recurrence Relation)}\\
+            & C_1 = -24 \; C_2 = 25 \\
+            & f(n) = -24n + 25n^{\log_4{5}} \\
+            & f(4^k) = -24(4^k) + 25(4^k)^{\log_4{5}} \\
+            & = 3 * 2^{2k+3} + 25(4^k)^{\log_4{5}} \\
+            & = 3 * 2^{2k+3} + 5^{k+2} \qedhere
+        \end{align*}
+    \end{proof}
+    \item \begin{enumerate}
+        \item 1024
+        \item 11
+        \item 66
+        \item 292,864
+        \item 20,412
+    \end{enumerate}
+    \item $ a_k = 3*a_{k-1} + 2 = 2*3^k - 1  $
+    \item \begin{enumerate}
+        \item 30
+        \item 29
+        \item 24
+        \item 18
+    \end{enumerate}
+    \item $(650,000+1,250,000) - 1,450,000 = 450,000$
+    \item \begin{enumerate}
+        \item 10,000
+        \item 11,100
+        \item 11,095
+    \end{enumerate}
+    \item 68 of the integers not exceeding 100 are divisible by 5 or 7
+\end{enumerate}
+
+\end{document}
+
