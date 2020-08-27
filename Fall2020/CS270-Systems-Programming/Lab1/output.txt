@@ -1,0 +1,2 @@
+The decimal value of val is 56
+The character corresponding to val is 8
