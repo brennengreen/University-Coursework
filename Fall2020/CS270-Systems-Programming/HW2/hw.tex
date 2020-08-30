@@ -1,0 +1,93 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{color}
+
+\begin{document}
+\title{Homework 1\\--\\\large CS270 Fall 2020}
+\date{}
+\author{Brennen Green}
+\maketitle
+
+\section{Practice Problems 2.17, 2.19, 2.24, 2.29, 2.47}
+    \begin{enumerate}
+        \item[(2.17)]
+            \begin{tabular}{||c | c | c | c||} 
+            \hline
+            Hexadecimal & Binary & $B2U_4(x)$ & $B2T_4(x)$ \\ [0.5ex] 
+            \hline\hline
+            0xA & 1010 & $2^3 + 2^1 = 10$ & -$2^3 + 2^1 = -6$ \\ 
+            \hline
+            0x1 & 0001 & $2^0 = 1$ & $ 2^0 = 1 $ \\
+            \hline
+            0xB & 1011 & $2^3 + 2^1 + 2^0 = 11 $ & $-2^3 + 2^1 + 2^0 = -5$ \\
+            \hline
+            0x2 & 0010 & $ 2^1 = 2 $ & $ 2^1 = 2 $ \\
+            \hline
+            0x7 & 0111 & $ 2^2 + 2^1 + 2^0 = 7 $ & $ 2^2 + 2^1 + 2^0 = 7 $ \\
+            \hline
+            0xC & 1100 & $ 2^3 + 2^2 = 12 $ & $ -2^3 + 2^2 = -4 $ \\ 
+            \hline
+            \end{tabular}
+           
+        \item[(2.19)]
+            \begin{tabular}{||c | c||} 
+            \hline
+            x & $T2U_4(x)$ \\ [0.5ex] 
+            \hline\hline
+            -1 & 15  \\ 
+            \hline
+            -5 & 11 \\
+            \hline
+            -6 & 10 \\
+            \hline
+            -4 & 12 \\
+            \hline
+            1 & 1 \\
+            \hline
+            8 & 8 \\ 
+            \hline
+            \end{tabular}
+        \item[(2.24)]
+            \begin{tabular}{||c | c || c | c || c | c||} 
+            \hline
+            Original & Truncated & Original & Truncated & Original & Truncated \\ [0.5ex] 
+            \hline\hline
+            1 & 1  & 1 & 1 & 1 & 1\\ 
+            \hline
+            3 & 3 & 3 & 3 & 3 & 3\\
+            \hline
+            5 & 5 & 5 & 5 & 5 & 5\\
+            \hline
+            C & 4 & 12 & 4 & -4 & -4\\
+            \hline
+            E & 6 & 14 & 6 & -2 & -2\\
+            \hline
+            \end{tabular}
+        \item[(2.29)]
+        \begin{tabular}{||c | c | c | c | c ||} 
+            \hline
+            x & y & x + y & $x +^t_5 y$ & Case \\ [0.5ex] 
+            \hline\hline
+            10100 & 10001  & 100101 & 00101 &  1\\ 
+            \hline
+            11000 & 11000 & 110000 & 10000 &  2\\
+            \hline
+            10111 & 01000 & 111111 & 11111 &  2\\
+            \hline
+            00010 & 00101 & 000111 & 00111 & 3\\
+            \hline
+            01100 & 00100 & 010000 & 10000 &  4\\
+            \hline
+            \end{tabular}
+        \item[(2.47)]     
+    \end{enumerate}
+
+
+\section{Homework Problems 2.77}
+
+\section{L2\_show-bytes.c}
+
+
+\end{document}
+
