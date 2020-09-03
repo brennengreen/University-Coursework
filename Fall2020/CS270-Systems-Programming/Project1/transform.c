@@ -61,11 +61,11 @@ void processDecimal(char * token) {
 }
 
 void processHex(char * token) {
-	printf("Hex: ");
-	for ( int i = 0; i < strlen(token); i++) {
-		printf("%c", *(token+i));
-	}
-	printf("\n");
+	// printf("Hex: ");
+	// for ( int i = 0; i < strlen(token); i++) {
+	// 	printf("%c", *(token+i));
+	// }
+	// printf("\n");
 	int val;
 	sscanf((token + 0), "%x", &val);  // read a hexadecimal number 
 	printf("Decimal:%d Alphanumeric: %c\n", val, val);
@@ -74,8 +74,8 @@ void processHex(char * token) {
 
 int skipWhitespace(int * iterator, char thisLine[1024]) {
 	int len = strlen(thisLine) - 1;
-	while (((*iterator)<=len) && (thisLine[(*iterator)]==' ')) (*iterator)++; //skip the leading space 
-	if ((*iterator) <= 90) {
+	while (((*iterator)<len) && (thisLine[(*iterator)]==' ')) (*iterator)++; //skip the leading space 
+	if ((*iterator) <= len) {
 		return 1;
 	} else {
 		return 0;
