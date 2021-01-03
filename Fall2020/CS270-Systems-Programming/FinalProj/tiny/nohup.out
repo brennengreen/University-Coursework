@@ -1,0 +1,410 @@
+Accepted connection from (10.113.3.159, 57287)
+GET / HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57288)
+GET /godzilla.gif HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57289)
+GET / HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57290)
+GET /godzilla.gif HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57292)
+GET / HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57291)
+GET /godzilla.gif HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57293)
+GET /p4calculator.html HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57294)
+GET /cgi-bin/calc?op=add&operand1=1&operand2=5 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57295)
+GET /cgi-bin/calc?op=subtract&operand1=1&operand2=5 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57296)
+GET /cgi-bin/calc?op=multiply&operand1=3&operand2=5 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57297)
+GET /cgi-bin/calc?op=subtract&operand1=3&operand2=5 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57300)
+GET /cgi-bin/calc?op=add&operand1=3&operand2=5 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; uky_aet="%2525252525252525252525255Bobject%25252525252525252525252520Object%2525252525252525252525255D"
+
+Accepted connection from (10.113.3.159, 57301)
+Accepted connection from (10.113.1.199, 51186)
+GET / HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51187)
+GET /godzilla.gif HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51188)
+GET /favicon.ico HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51189)
+GET /p4calculator.html HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51190)
+Accepted connection from (10.113.1.199, 51199)
+GET /home.html HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51198)
+GET /home.html HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51202)
+GET /godzilla.gif HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://bdgr235.cs.uky.edu:8000/home.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51203)
+GET /godzilla.gif HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://bdgr235.cs.uky.edu:8000/home.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51207)
+GET /p4calculator.html HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/home.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51208)
+GET /p4calculator.html HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/home.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51209)
+GET /cgi-bin/calc?op=add&operand1=33&operand2=56 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51219)
+GET /cgi-bin/calc?op=subtract&operand1=33&operand2=54 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51220)
+GET /cgi-bin/calc?op=multiply&operand1=33&operand2=54 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51224)
+GET /cgi-bin/calc?op=multiply&operand1=333231553453454352&operand2=543241232131312 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51226)
+Accepted connection from (10.113.1.199, 51363)
+GET / HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51364)
+GET /godzilla.gif HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: image/avif,image/webp,image/apng,image/*,*/*;q=0.8
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51441)
+GET / HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Purpose: prefetch
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51440)
+GET /godzilla.gif HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: application/signed-exchange;v=b3;q=0.9,*/*;q=0.8
+Purpose: prefetch
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51443)
+GET /p4calculator.html HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51444)
+GET /cgi-bin/calc?op=add&operand1=-5&operand2=6 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51446)
+GET /cgi-bin/calc?op=subtract&operand1=-5&operand2=-6 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51447)
+GET /cgi-bin/calc?op=subtract&operand1=-5&operand2=6 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJKoZIhvcNAQkEMRYEFBl3BebjqXTXlagEVLO8WEuQmyc4MAkGByqGSM44BAMELzAtAhUA68%2Fqawe8tQ3jTkWlzSPxU1NK0DwCFA9yIMTTnj5C9g92yKI6ev7pr5Lz
+
+Accepted connection from (10.113.1.199, 51451)
+GET /cgi-bin/calc?op=multiply&operand1=-5&operand2=6 HTTP/1.1
+Host: bdgr235.cs.uky.edu:8000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://bdgr235.cs.uky.edu:8000/p4calculator.html
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Cookie: _ga=GA1.2.234992075.1586524220; _hjid=a2ae8515-ef3d-46f8-897c-d7705f729631; _cap=768328221589578158; __utma=43166241.234992075.1586524220.1593709959.1593709959.1; __utmz=43166241.1593709959.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); __unam=730c264-171cc800b4f-2d987385-38; _gid=GA1.2.126036912.1605406839; _hjTLDTest=1; uky_aet="%252525252525252525252525255Bobject%2525252525252525252525252520Object%252525252525252525252525255D"; MYSAPSSO2=AjExMDAgAA5wb3J0YWw6YmRncjIzNYgAC3VpZHB3ZGxvZ29uAQAHQkRHUjIzNQIAAzAwMAMAA0VQUAQADDIwMjAxMTE2MTI1OQUABAAAAAoKAAdCREdSMjM1%2FwEFMIIBAQYJKoZIhvcNAQcCoIHzMIHwAgEBMQswCQYFKw4DAhoFADALBgkqhkiG9w0BBwExgdAwgc0CAQEwIjAdMQwwCgYDVQQDEwNFUFAxDTALBgNVBAsTBEoyRUUCAQAwCQYFKw4DAhoFAKBdMBgGCSqGSIb3DQEJAzELBgkqhkiG9w0BBwEwHAYJKoZIhvcNAQkFMQ8XDTIwMTExNjEyNTkwN1owIwYJK

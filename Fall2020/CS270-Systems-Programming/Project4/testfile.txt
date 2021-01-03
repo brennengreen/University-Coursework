@@ -1,0 +1,4 @@
+cd directory_1
+/bin/cat test1.txt test2.txt test3.txt
+ls -lt
+/usr/bin/wc test1.txt

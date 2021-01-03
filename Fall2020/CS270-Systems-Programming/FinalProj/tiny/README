@@ -1,0 +1,67 @@
+------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------- APPENDED FOR UK CS270 PROJECT 4 ----------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+-Project 4                                                                                                                         -
+-Brennen Green                                                                                                                     -
+-University of Kentucky                                                                                                            -
+-                                                                                                                                  -
+-This project utilized the tiny webserver produced by Dave O'Hallaron, you can read about the webserver in the below README.       -
+-                                                                                                                                  -
+-My contribution to this project was the calc.c program. This program is responsible for parsing a query string sent from          -
+-the server. From this string calc.c obtains the correct operation ( +, -, * ) and the two respective operands and carries out     -
+-the operation follow this ruleset:                                                                                                -
+-                                                                                                                                  -
+-OPERAND1 OPERATION OPERAND2 = RESULT                                                                                              -
+-                                                                                                                                  -
+-It then communicates this information back to the server which in turn displays it to the user on the webpage.                    -
+-                                                                                                                                  -
+-You can access these webpages via the TINY server running on my virtual machine at:                                               -
+-http://bdgr235.cs.uky.edu:8000/ which also provides a link to the calculator on the webpage.                                      -
+-                                                                                                                                  -  
+-COMPILATION: To compile calc (and the webserver itself) just run make from the tiny directory.                                    -
+-COMPILING calc: To compile JUST CALC cd into the cgi-bin directory and run the make command                                       -
+-                                                                                                                                  -
+-FILES:                                                                                                                            -
+- ./cgi-bin/calc.c : The source code for the calc program                                                                          -
+- ./cgi-bin/Makefile : The makefile specifically for calc                                                                          -
+- ./README : This file                                                                                                             -
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------
+
+Tiny Web server
+Dave O'Hallaron
+Carnegie Mellon University
+
+This is the home directory for the Tiny server, a 200-line Web
+server that we use in "15-213: Intro to Computer Systems" at Carnegie
+Mellon University.  Tiny uses the GET method to serve static content
+(text, HTML, GIF, and JPG files) out of ./ and to serve dynamic
+content by running CGI programs out of ./cgi-bin. The default 
+page is home.html (rather than index.html) so that we can view
+the contents of the directory from a browser.
+
+Tiny is neither secure nor complete, but it gives students an
+idea of how a real Web server works. Use for instructional purposes only.
+
+The code compiles and runs cleanly using gcc 2.95.3 
+on a Linux 2.2.20 kernel.
+
+To install Tiny:
+   Type "tar xvf tiny.tar" in a clean directory. 
+
+To run Tiny:
+   Run "tiny <port>" on the server machine, 
+	e.g., "tiny 8000".
+   Point your browser at Tiny: 
+	static content: http://<host>:8000
+	dynamic content: http://<host>:8000/cgi-bin/adder?1&2
+
+Files:
+  tiny.tar		Archive of everything in this directory
+  tiny.c		The Tiny server
+  Makefile		Makefile for tiny.c
+  home.html		Test HTML page
+  godzilla.gif		Image embedded in home.html
+  README		This file	
+
