@@ -1,0 +1,144 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{color}
+
+\begin{document}
+\title{Homework 3\\--\\\large CS270 Fall 2020}
+\date{}
+\author{Brennen Green}
+\maketitle
+
+\section{Practice Problems, 3.1, 3.5, 3.6, 3.8, 3.9, 3.10, 3.18,3.21}
+\begin{enumerate}
+	\item[(3.1)]
+		\begin{tabular}{c | c} 
+	            Operand & Value \\ [0.5ex] 
+	            \hline
+	            $\%rax$ & 0x100  \\ 
+	            \hline
+	            $0x104$ &   0xAB\\
+	            \hline
+	            $\$0x108$ &   0x108 \\
+	            \hline
+	            $(\%rax)$ &  0xFF \\
+	            \hline
+	             $4(\%rax)$ &  0xAB \\
+	            \hline
+	             $9(\%rax, \%rdx)$&   0x11  \\ 
+	            \hline
+		  $260(\%rcx, \%rdx)$ & 0x13  \\ 
+	            \hline
+		$0xFC(,\%rcx, 4)$ &0xFF  \\ 
+	            \hline
+		 $(\%rax, \%rdx, 4)$ & 0x11   \\ 
+	            \hline
+	            \end{tabular}
+	\item[(3.5)]
+		\begin{verbatim}
+			void decode1(long *xp, long *yp, long *zp) {
+			    long regEight = *xp;
+			    long regRCX = *yp;
+			    long regRAX = *zp;
+			    *yp = regEight;
+			    *zp = regRCX;
+			    *xp = regRAX;
+			}
+		\end{verbatim}
+	\item[(3.6)]
+		\begin{tabular}{c | c} 
+	            Instruction & Result \\ [0.5ex] 
+	            \hline
+	            $leaq 9(\%rdx), \%rax$ &  9 + q \\ 
+	            \hline
+	            $leaq (\%rdx, \%rbx), \%rax$ & q + p  \\
+	            \hline
+	            $leaq (\%rdx, \%rbx, 3), \%rax$ &   q + 3p \\
+	            \hline
+	            $leaq 2(\%rbx, \%rbx, 7), \%rax$ &  2 + q + 7p \\
+	            \hline
+	            $leaq 0xE(,\%rdx,3), \%rax$ &   0xE + 3q\\
+	            \hline
+	            $leaq 6(\%rbx, \%rdx, 7), \%rax$ &   6 + p + 7q\\ 
+	            \end{tabular}
+	\item[(3.8)]
+			\begin{tabular}{c | c | c} 
+		            Instruction & Destination & Value \\ [0.5ex] 
+		            \hline
+		            $addq \%rcx, (\%rax)$ & 0x100 & 0x100 \\ 
+		            \hline
+		            $subq \%rdx, 8(\%rax)$ & 0x108 & 0xA8 \\
+		            \hline
+		            $imulq \$16, (\%rax, \%rdx, 8)$ & 0x118 & 0x110  \\
+		            \hline
+		            $incq 16(\%rax)$ & 0x110 & 0x14 \\
+		            \hline
+		            $decq \%rcx$ & \%rcx & 0\\
+		            \hline
+		            $subq \%rdx, \%rax$ & \%rax & 0xFD\\ 
+		            \end{tabular}
+	\item[(3.9)]
+		\begin{verbatim}
+			shift_left4_rightn:
+			    movq %rdi, %rax
+			    shl 4, %rax
+			    movl %rsi, %rcx
+			    shr %rcx, %rax
+		\end{verbatim}
+	\item[(3.10)]
+		\begin{verbatim}
+			short arith3(short x, short y, short z) {
+			    short p1 = y | z;
+			    short p2 = z >> 9;
+			    short p3 = !z;
+			    short p4 = z - y;
+			    return p4;
+			}
+		\end{verbatim}
+	\item[(3.18)]
+		\begin{verbatim}
+			short test(short x, short y, short z) {
+			    short val = z + y - x;
+			    if (z <= 5) {
+			        if (z >= 3) 
+			            val = z / y;
+			        else
+			            val = x / y;
+			    } else if (y <= 2)
+			        val = x / z;
+			    return val;
+			}
+		\end{verbatim}
+	\item[(3.21)]
+		\begin{verbatim}
+			short test(short x, short y) {
+			    short val = x ^ y;
+			    if (val < -3) {
+			        if (y < x) 
+			            val = x*y;
+			        else
+			            val = x+y;
+			    } else if (x > 2)
+			        val = x-y;
+			    return val;
+			}
+		\end{verbatim}
+		
+\end{enumerate}
+
+\section{Homework Problems, 3.58}
+\begin{verbatim}
+	long decode2(long x, long y, long z) {
+	    y = y - z;
+	    x = x * y;
+	    long temp = y;
+	    temp = temp << 63;
+	    temp = temp >> 63;
+	    temp = temp ^ x;
+	    return temp;
+	}
+
+\end{verbatim}
+   
+\end{document}
+

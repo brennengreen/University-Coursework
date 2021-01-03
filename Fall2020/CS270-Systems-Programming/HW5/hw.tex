@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+\usepackage{enumitem}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage{color}
+
+\begin{document}
+\title{Homework 5\\--\\\large CS270 Fall 2020}
+\date{}
+\author{Brennen Green}
+\maketitle
+
+\section{Practice Problems, 3.38, 3.41, 3.45, 3.48}
+\begin{enumerate}
+	\item[3.38] M = 5, N = 7
+	\item[3.41]
+	\begin{verbatim}
+		void st_init(struct test *st) {
+		    st->s.y = st->s.x;
+		    st->p = &(st->s.y);
+		    st->next = st;
+		}
+	\end{verbatim} 
+	\begin{enumerate}
+		\item[A.] 8 Bytes for p, 2 bytes for s.x, 2 for s.y, 8 bytes for s->next
+		\item[B.] 20 Bytes
+		\item[C.] (see code) 
+	\end{enumerate} 
+	\item[3.45]
+	\begin{enumerate}
+		\item[A.] *a = 0 bytes, b = 8 bytes, c = 12 bytes, d = 16 bytes, e = 24 bytes, f = 32 bytes,
+		g = 40 bytes, *h = 48 bytes  
+		\item[B.] 56 bytes
+		\item[C.] *a, *h, f, e, b, g, d, c
+	\end{enumerate}
+	\item[3.48]
+	\begin{enumerate}
+		\item[A.] Unprotected: v = \%rsp + 24, buf = \%rsp Protect: canary = offset 40, v = offset 8, buf = offset 16
+		\item[B.] The positioning of v allows the programmer to avoid a overflow of buf that might conflict with v
+	\end{enumerate}
+\end{enumerate}
+\newpage
+\section{Homework Problem 3.68}
+\begin{verbatim}
+	A = 9
+	B = 5
+\end{verbatim}
+\end{document}
+
+void setVal(str1 *p, str2 *q)
+p in %rdi, q in %rsi
+setVal:
+ movslq 8(%rsi), %rax // rax = 8 + *q
+ addq 32(%rsi), %rax // rax = 32 + *q
+ movq %rax, 184(%rdi) // rax = 184 + *p
+ ret
